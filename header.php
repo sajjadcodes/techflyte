@@ -22,7 +22,16 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-2 col-md-3 col-sm-3 col-4">
                         <div class="logo">
-                            <a href="#"><img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/images/logo-img.png" alt=""></a>
+                            <?php 
+
+                            $logo = get_field('logo', 'option');
+
+                                if($logo){
+                                    ?>
+                                    <a href="#"><img class="img-fluid" src="<?php echo $logo ?>" alt=""></a>
+                                <?php 
+                                }
+                                ?>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-8 col-md-7 col-sm-6 col-4 d-flex justify-content-center position-static">
@@ -67,10 +76,18 @@
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4 d-flex justify-content-end">
                         <div class="social-menu d-flex">
                             <ul class="list-unstyled p-0 m-0 d-flex justify-content-start align-items-center">
-                                <li><a href="#"><img src="images/linkedin-icon.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/twitter-icon.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/google-plus-icon.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/fb-icon.png" alt=""></a></li>
+
+
+                            <?php 
+
+                               $social_url = get_template_directory_uri( ) . '/assets'
+                            ?>
+
+                              <li><a href="#"><img src=" <?php echo $social_url;?>/images/linkedin-icon.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo $social_url;?>/images/twitter-icon.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo $social_url;?>/images/google-plus-icon.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo $social_url;?>/images/fb-icon.png" alt=""></a></li>
+                                
                             </ul>
                         </div>
                     </div>
