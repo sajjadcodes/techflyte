@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 
@@ -138,7 +139,7 @@ header .search-box form input[type="search"] {
 }
 
 header .search-box button {
-    padding: 5px;
+    padding: 5px 10px;
     background: #a714c6;
     color: #ffffff;
     font-size: 14px;
@@ -313,6 +314,10 @@ header .social-menu ul li {
     text-decoration: none;
 }
 
+.techflyte .techflyte-box a:hover {
+    text-decoration: underline;
+}
+
 .techflyte a.contract-btn {
     font-size: 24.88px;
     background: #00d4e0;
@@ -330,25 +335,162 @@ header .social-menu ul li {
 }
 
 
+/* OUR TEAM */
+.our-team {
+    padding: 162px 207px 113px;
+    background: #f6f4ef;
+}
+
+.our-team h2 {
+    font-size: 74.26px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+.our-team p {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 300;
+    margin-bottom: 125px;
+}
+
+.our-team .team-col {
+    position: relative;
+    margin-bottom: 90px;
+    box-shadow: 0 0 25px 5px #dad9d5;
+}
+.our-team .team-col img {
+	display: block;
+	margin: 0 auto;
+}
+
+.our-team .team-caption {
+    background: rgb(0, 212, 224, .7);
+    padding: 50px 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 123;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .5s;
+}
+.our-team .team-caption.active {
+	opacity: 1;
+    visibility: visible;
+}
+.our-team .team-col:hover .team-caption {
+	opacity: 1;
+    visibility: visible;
+}
+.our-team .team-caption h5 {
+    font-size: 40px;
+    line-height: 31px;
+    color: #a714c6;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.our-team .team-caption span {
+    font-size: 22px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 23px;
+    display: block;
+}
+
+.our-team .team-caption ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.our-team .team-caption ul li {
+    padding: 0 6px;
+}
+
+.our-team .team-detail h6 {
+	font-size: 31.46px;
+    line-height:38px;
+    color: #a714c6;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.our-team .team-detail p {
+	font-size: 22px;
+    line-height: 26px;
+    color: #232031;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.our-team .team-detail p:last-child {
+	margin-bottom: 0;
+}
+
+.our-team .nav-tabs .nav-link {
+	padding: 25px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	color: #2b2b2b;
+	font-weight: 400;
+	border: 0;
+}
+
+.our-team .nav-tabs {
+	border: 0;
+}
+
+.our-team .nav-tabs .nav-link img {
+	margin-right: 15px;
+}
+
+.our-team .tab-content {
+	padding: 25px 45px 25px;
+	background: #ffffff;
+}
+
+.our-team .tab-content p {
+	font-size: 20px;
+    line-height: 25px;
+    color: #aaaaaa;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.our-team .tab-content p:last-child {
+    margin-bottom: 0;
+}
+
 footer {
     background: #282842;
 }
 
 footer .copy-rights {
     background: #232031;
-    padding: 28px 0 45px;
+    padding: 35px 0;
     text-align: center;
 }
 
 footer .copy-rights p {
-    font-size: 24px;
-    line-height: 1.3;
+    font-size: 20px;
+    line-height: 1.2;
     color: #00d4e0;
     font-weight: 400;
     margin: 0;
 }
 
-.ftr-main {
+footer .ftr-main {
     padding: 0 150px 0 120px;
 }
 
@@ -395,6 +537,11 @@ footer .contact-form form input.input-field {
     padding: 0 10px;
 }
 
+footer .contact-form form input.input-field:focus,
+footer .contact-form form textarea.input-field:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 40, 66, 0.67);
+}
+
 footer .contact-form form textarea.input-field {
     width: 100%;
     background: #282842;
@@ -427,12 +574,12 @@ footer .contact-form form input[type="submit"]:hover {
 }
 
 footer .contact-icon {
-	width: 44px;
-	flex: 0 0 44px;
+    width: 44px;
+    flex: 0 0 44px;
 }
 
 footer .contact-detail p {
-	font-size: 26px;
+    font-size: 26px;
     line-height: 1.2;
     color: #00d4e0;
     font-weight: 400;
@@ -441,15 +588,17 @@ footer .contact-detail p {
 }
 
 footer .ftr-right {
-	padding: 157px 0 109px 156px;
+    padding: 157px 0 109px 156px;
 }
+
 footer .social-detail {
     padding-bottom: 95px;
     border-bottom: 1px solid #424357;
     margin-bottom: 70px;
 }
+
 footer .social-detail label {
-	font-size: 30px;
+    font-size: 30px;
     line-height: 24px;
     color: #00d4e0;
     font-weight: 700;
@@ -459,18 +608,20 @@ footer .social-detail label {
 }
 
 footer .social-detail ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 footer .social-detail ul li {
-	margin-left: 10px;
+    margin-left: 10px;
 }
+
 footer .social-detail ul li:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 footer .subscriber input.input-subscribe {
@@ -482,7 +633,13 @@ footer .subscriber input.input-subscribe {
     color: #00d4e0;
     font-size: 18px;
     padding: 0 10px;
+    border-radius: 0;
 }
+
+footer .subscriber input.input-subscribe:focus {
+    box-shadow: 0 0 0 0.2rem rgba(66, 67, 87, 0.67843137);
+}
+
 footer .subscriber button.submit {
     width: 120px;
     height: 50px;
@@ -493,56 +650,236 @@ footer .subscriber button.submit {
 }
 
 footer .ftr-menu h6 {
-	font-size:30px;
-	line-height:24px;
-	color: #00d4e0;
-	font-weight:700;
-	margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 24px;
+    color: #00d4e0;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
+
 footer .ftr-menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
 footer .ftr-menu ul li {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 footer .ftr-menu ul li a {
-	font-size:14.43px;
-	line-height:14px;
-	color: #ffffff;
-	font-weight:300;
-	display: inline-block;	
+    font-size: 14.43px;
+    line-height: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    display: inline-block;
 }
 
+footer .ftr-menu ul li a:hover {
+    color: #00d4e0;
+}
 
+footer a.download-btn {
+    display: inline-block;
+    background: #00d4e0;
+    padding: 0 14px;
+    border-radius: 3px;
+    font-size: 14.63px;
+    color: #424357;
+    line-height: 44px;
+    text-decoration: none;
+}
 
+footer a.download-btn:hover {
+    background: #424357;
+    color: #00d4e0;
+}
 
+.chat-box {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
 
+.chat-box button {
+    border: none;
+    padding: 0;
+    outline: none;
+    background: transparent;
+}
 
+/* OUR TEAM */
+.team-banner {
+    background: url('../images/team-banner-bg.png') no-repeat;
+}
+.service-banner {
+	background: url('../images/team-banner-bg.png') no-repeat;
+}
 
+.inner-page-bnr {
+    background-size: cover;
+    padding: 131px 0 454px 88px;
+}
 
+.inner-page-bnr h2 {
+    font-size: 99.57px;
+    line-height: .8;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0;
+}
 
+.inner-page-bnr h2 span {
+    color: #04d5e0;
+}
+/* OUR SERVICES */
+.techy-difference {
+	background: #f6f4ef;
+	padding:170px 170px 140px 0;
+}
+.sidebar-bnr {
+	box-shadow: 0 0 25px 5px #d6d5d0;
+}
+.sidebar-bnr img {
+	width: 100%;
+}
+.techy-caption-box {
+	background: #ffffff;
+	padding: 80px 40px 90px 54px;
+	box-shadow: 0 0 25px 5px #d6d5d0;
+	margin-left: -60px;
+    position: relative;
+    z-index: 1;
+}
+.techy-caption-box h3 { 
+	font-size: 54.05px;
+	line-height: .9;
+	color: #a714c6;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+.techy-caption-box h3 span { 
+	color: #04d5e1;
+	font-weight: 300;
+}
 
+.techy-caption-box p {
+	font-size: 26.88px;
+	line-height: 33px;
+	color: #181818;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.techy-caption-box p:last-child {
+	margin-bottom: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.staff-firm {
+    background: url('../images/firm-bg.png') no-repeat;
+    background-size: cover;
+    padding:113px 125px 59px; 
+}
+.staff-firm h2 {
+    font-size: 74.26px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 700;
+    margin-bottom: 86px;
+}
+.staff-firm .firm-col .firm-col-head {
+    margin-bottom: 57px;
+}
+.staff-firm .firm-col .firm-col-head h4 {
+    font-size: 208.38px;
+    line-height: .8;
+    color: #25cad2;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.staff-firm .firm-col .firm-col-head span {
+    font-size: 39.93px;
+    line-height: 39px;
+    color: #a714c6;
+    font-weight: 700;
+}
+.staff-firm .firm-col .firm-col-head img {
+    margin-left: 22px;
+}
+.staff-firm .firm-col p {
+    font-size: 25.67px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 300;
+    padding-left: 25px;
+}
+.our-services {
+    padding: 120px 170px 110px 0;
+}
+.our-services .service-detail {
+    padding-left: 197px;
+    margin-bottom: 125px;
+    padding-right: 125px;
+}
+.our-services img.ratio-img {
+    width: 42px;
+    margin-right: 30px;
+}
+.our-services .service-detail h3 {
+    font-size: 88.92px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 100px;
+}
+.our-services .service-detail p {
+    font-size: 22px;
+    line-height: 27px;
+    color: #0f1923;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    margin-bottom: 55px;
+}
+.our-services .service-detail h6 {
+    font-size: 22px;
+    line-height: 27px;
+    color: #0f1923;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+}
+.our-services .service-detail h6 span {
+    color: #a714c6;
+}
+.our-services .service-col {
+    box-shadow: 0 10px 25px 1px #dddddd;
+    padding: 46px 10px 64px 13px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+.our-services .service-col img {
+    margin-bottom: 46px;
+}
+.our-services .service-col h5 {
+    font-size: 20.45px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 23px;
+}
+.our-services .service-col p {
+    font-size: 14.06px;
+    line-height: 17px;
+    color: #0f1923;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 0;
+}
 /* Responsive */
-@media screen and (max-width: 1857px) {
+@media screen and (max-width: 1875px) {
     .banner h1 {
         font-size: 100px;
         line-height: 111px;
@@ -558,9 +895,20 @@ footer .ftr-menu ul li a {
     .banner span {
         font-size: 55px;
     }
-    .ftr-main {
-	    padding: 0 100px 0 100px;
+
+    .techy-caption-box h3 {
+	    font-size: 45px;
+	    margin-bottom: 45px;
 	}
+	.techy-caption-box p {
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 30px;
+	}
+
+    footer .ftr-main {
+        padding: 0 100px 0 100px;
+    }
 }
 
 @media screen and (max-width: 1750px) {
@@ -620,29 +968,118 @@ footer .ftr-menu ul li a {
         padding: 30px 50px;
         margin-bottom: 100px;
     }
-    .ftr-main {
-	    padding: 0 90px;
+
+    .inner-page-bnr {
+        padding: 130px 0 450px 60px;
+    }
+
+    .our-team {
+        padding: 160px 200px 110px;
+    }
+
+    .our-team h2 {
+        font-size: 70px;
+        margin-bottom: 75px;
+    }
+
+    .our-team p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
+
+    .techy-caption-box {
+	    padding: 60px 40px 70px 50px;
+	}	
+
+    .techy-caption-box h3 {
+	    font-size: 40px;
+	    margin-bottom: 40px;
 	}
-	footer .contact-form h5 {
-	    font-size: 50px;
-	    line-height: 40px;
+
+	.techy-caption-box p {
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-bottom: 25px;
 	}
-	footer .contact-detail p {
-	    font-size: 21px;
-	    padding-left: 30px;
-	}
-	footer .ftr-right {
-	    padding: 150px 0 100px 100px;
-	}
-	footer .social-detail label {
-	    font-size: 25px;
-	    line-height: 20px;
-	    margin-bottom: 35px;
-	    padding-left: 5px;
-	}
-	footer .social-detail ul li img {
-	    width: 50px;
-	}
+    .staff-firm h2 {
+        font-size: 65px;
+        margin-bottom: 80px;
+    }
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 170px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 36px;
+        line-height: 39px;
+        color: #a714c6;
+        font-weight: 700;
+    }
+    .staff-firm .firm-col p {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 25px;
+    }
+    .our-services {
+        padding: 120px 140px 110px 0;
+    }
+    .our-services .service-detail {
+        padding-left: 160px;
+        margin-bottom: 120px;
+        padding-right: 100px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 80px;
+        margin-bottom: 90px;
+    }
+    .our-services .service-detail p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+    .our-services .service-detail h6 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .our-services .service-col {
+        padding: 45px 10px 60px;
+    }
+    .our-services .service-col h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    footer .ftr-main {
+        padding: 0 90px;
+    }
+
+    footer .contact-form h5 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    footer .contact-detail p {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    footer .ftr-right {
+        padding: 150px 0 100px 100px;
+    }
+
+    footer .social-detail label {
+        font-size: 25px;
+        line-height: 20px;
+        margin-bottom: 35px;
+        padding-left: 5px;
+    }
+
+    footer .social-detail ul li img {
+        width: 50px;
+    }
+
+    .chat-box button img {
+        width: 200px;
+    }
 
 }
 
@@ -765,29 +1202,134 @@ footer .ftr-menu ul li a {
         padding: 0 40px;
     }
 
-    footer .contact-form form {
-	    max-width: 350px;
-	    margin: 0 auto 6px;
+    .our-team {
+        padding: 150px 150px 100px;
+    }
+
+    .our-team h2 {
+        font-size: 60px;
+        margin-bottom: 70px;
+    }
+
+    .our-team p {
+        font-size: 23px;
+        line-height: 27px;
+        margin-bottom: 90px;
+    }
+    .our-team .team-caption {
+	    padding: 30px 10px;
 	}
-	footer .ftr-right {
-	    padding: 150px 0 100px 50px;
-	}
-	footer .social-detail label {
-	    font-size: 20px;
-	    line-height: 15px;
-	    margin-bottom: 25px;
-	}
-	footer .social-detail ul li img {
-	    width: 45px;
-	}
-	footer .social-detail {
-	    padding-bottom: 50px;
-	    margin-bottom: 60px;
-	}
-	footer .ftr-menu h6 {
-	    font-size: 25px;
+	.our-team .team-caption h5 {
+	    font-size: 35px;
+	    line-height: 30px;
 	    margin-bottom: 20px;
 	}
+	.our-team .team-caption span {
+	    font-size: 20px;
+	    line-height: 16px;
+	    margin-bottom: 20px;
+	}
+	.our-team .team-col {
+	    margin-bottom: 70px;
+	}
+	.our-team .team-detail h6 {
+	    font-size: 30px;
+	    line-height: 35px;
+	    margin-bottom: 60px;
+	}
+	.our-team .team-detail p {
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-bottom: 30px;
+	}
+	.our-team .nav-tabs .nav-link {
+	    padding: 20px;
+	}
+
+	.techy-caption-box h3 {
+	    font-size: 35px;
+	    margin-bottom: 30px;
+	}	
+
+	.techy-caption-box p {
+	    font-size: 18px;
+		line-height: 23px;
+		margin-bottom: 20px;
+	}
+    .staff-firm .firm-col .firm-col-head {
+        margin-bottom: 50px;
+    }
+    .staff-firm .firm-col .firm-col-head img {
+        margin-left: 15px;
+        width: 65px;
+    }
+    .staff-firm .firm-col p {
+        font-size: 22px;
+        line-height: 28px;
+        padding-left: 20px;
+    }
+    .staff-firm h2 {
+        font-size: 55px;
+        margin-bottom: 70px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 150px;
+    }
+
+    .our-services {
+        padding: 120px 110px 110px 0;
+    }
+    .our-services .service-detail h3 {
+        font-size: 65px;
+        margin-bottom: 80px;
+    }
+    .our-services .service-detail p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-detail h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    		
+    footer .contact-form form {
+        max-width: 350px;
+        margin: 0 auto 6px;
+    }
+
+    footer .ftr-right {
+        padding: 150px 0 100px 50px;
+    }
+
+    footer .social-detail label {
+        font-size: 20px;
+        line-height: 15px;
+        margin-bottom: 25px;
+    }
+
+    footer .social-detail ul li img {
+        width: 45px;
+    }
+
+    footer .social-detail {
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    footer .ftr-menu h6 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .chat-box button img {
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 1366px) {
@@ -838,6 +1380,14 @@ footer .ftr-menu ul li a {
 
     .banner .bnr-btns a {
         font-size: 30px;
+    }
+
+    .inner-page-bnr {
+        padding: 100px 0 350px 50px;
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 85px;
     }
 
     .resume h3 {
@@ -898,18 +1448,141 @@ footer .ftr-menu ul li a {
         line-height: 60px;
         padding: 0 35px;
     }
-    footer .contact-form h5 {
-	    font-size: 40px;
-	    line-height: 35px;
+
+    .our-team {
+        padding: 130px 120px 100px;
+    }
+
+    .our-team h2 {
+        font-size: 50px;
+        margin-bottom: 65px;
+    }
+
+    .our-team p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 75px;
+    }
+    .our-team .team-caption h5 {
+	    font-size: 30px;
+	    line-height: 25px;
+	    margin-bottom: 15px;
 	}
-	footer .contact-icon {
-		width: 35px;
-		flex: 0 0 35px;
-	}
-	footer .contact-detail p {
+	.our-team .team-caption span {
 	    font-size: 18px;
-	    padding-left: 20px;
+	    margin-bottom: 15px;
 	}
+	.our-team .team-caption ul li img {
+	    width: 25px;
+	}
+	.our-team .team-col {
+	    margin-bottom: 50px;
+	}
+	.our-team .nav-tabs .nav-link {
+	    padding: 16px;
+	}
+	.our-team .nav-tabs .nav-link img {
+	    margin-right: 10px;
+	}
+	.our-team .tab-content {
+	    padding: 20px 40px 20px;
+	}
+	.our-team .nav-tabs .nav-link {
+	    padding: 20px;
+	    font-size: 18px;
+	}
+	.our-team .tab-content p {
+	    font-size: 18px;
+	    line-height: 23px;
+	    margin-bottom: 20px;
+	}
+	.our-team .team-detail h6 {
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 50px;
+	}
+	.our-team .team-detail p {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin-bottom: 25px;
+	}
+
+	.techy-difference {
+	    padding: 150px 100px 130px 0;
+	}	
+	.techy-caption-box h3 {
+	    font-size: 30px;
+	}
+	.techy-caption-box {
+	    padding: 50px 40px;
+	}	
+	.techy-caption-box p {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-bottom: 15px;
+	}	
+    .staff-firm {
+        padding: 100px 100px 55px;
+    }
+    .staff-firm h2 {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .staff-firm .firm-col .firm-col-head img {
+        width: 50px;
+    }
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 120px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .staff-firm .firm-col p {
+        font-size: 20px;
+        line-height: 25px;
+        padding-left: 15px;
+    }
+    .our-services {
+        padding: 100px 80px 100px 0;
+    }
+    .our-services .service-detail {
+        padding-left: 130px;
+        margin-bottom: 100px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .our-services img.ratio-img {
+        width: 40px;
+        margin-right: 25px;
+    }
+    .our-services .service-col {
+        padding: 35px 10px 40px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-col img {
+        margin-bottom: 30px;
+    }
+    footer .contact-form h5 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    footer .contact-icon {
+        width: 35px;
+        flex: 0 0 35px;
+    }
+
+    footer .contact-detail p {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .chat-box button img {
+        width: 130px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -964,6 +1637,10 @@ footer .ftr-menu ul li a {
         padding: 20px 10px;
     }
 
+    .inner-page-bnr h2 {
+        font-size: 75px;
+    }
+
     .resume {
         padding: 100px 40px 70px 70px;
     }
@@ -990,6 +1667,92 @@ footer .ftr-menu ul li a {
 
     .resume .resume-box {
         margin-top: 200px;
+    }
+
+    .chat-box button img {
+        width: 120px;
+    }
+
+    .our-team {
+        padding: 120px 100px 100px;
+    }
+
+    .our-team h2 {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .our-team .team-caption {
+	    padding: 20px 10px;
+	}
+	.our-team .team-caption h5 {
+	    font-size: 25px;
+	    margin-bottom: 10px;
+	}
+	.our-team .team-caption ul li img {
+	    width: 20px;
+	}
+	.our-team .team-caption span {
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	}
+	.our-team .team-caption ul li {
+	    padding: 0 5px;
+	}
+	.our-team .team-col {
+	    margin-bottom: 40px;
+	}
+	.our-team .team-detail h6 {
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-bottom: 30px;
+	}
+    .techy-difference {
+        padding: 100px 70px;
+    }
+    .techy-caption-box {
+        padding: 45px 30px;
+    }
+    .techy-caption-box h3 {
+        margin-bottom: 25px;
+    }
+    .staff-firm {
+        padding: 80px 80px 50px;
+    }
+    .staff-firm h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 100px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .staff-firm .firm-col .firm-col-head img {
+        width: 35px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .staff-firm .firm-col p {
+        font-size: 18px;
+    }
+    .our-services {
+        padding: 90px 20px 90px 0;
+    }
+    .our-services .service-detail {
+        padding: 0 25px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-detail p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
     }
 }
 
@@ -1062,7 +1825,7 @@ footer .ftr-menu ul li a {
     }
 
     .techflyte {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 
     .techflyte h2 {
@@ -1077,6 +1840,52 @@ footer .ftr-menu ul li a {
 
     .techflyte .techflyte-box img {
         width: 120px;
+    }
+
+    .chat-box button img {
+        width: 110px;
+    }
+
+    .our-team h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .our-team p {
+        margin-bottom: 50px;
+    }
+    .our-team .team-col {
+	    margin-bottom: 30px;
+	}
+	.team-detail {
+	    margin-top: 40px;
+	}
+    .techy-caption-box {
+        margin-left: 0;
+    }
+    .staff-firm {
+        padding: 75px 50px 50px;
+    }
+    .staff-firm {
+        padding: 75px 0 50px;
+    }
+    .staff-firm h2 {
+        font-size: 30px;
+    }
+    .our-services {
+        padding: 80px 0;
+    }
+    .our-services .service-detail {
+        padding: 0 25px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-col {
+    padding: 35px 10px 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+    footer .ftr-right {
+        padding: 100px 0 90px 0px;
     }
 }
 
@@ -1114,7 +1923,7 @@ footer .ftr-menu ul li a {
 
     header.is-active button.nav-menu-btn span:nth-child(1) {
         margin: 0;
-        transform: translateY(0.4vw) rotate(45deg);
+        transform: translateY(0.7vw) rotate(45deg);
     }
 
     header.is-active button.nav-menu-btn span:nth-child(2) {
@@ -1123,7 +1932,7 @@ footer .ftr-menu ul li a {
 
     header.is-active button.nav-menu-btn span:nth-child(3) {
         margin: 0;
-        transform: translateY(-0.9vw) rotate(-45deg);
+        transform: translateY(-0.6vw) rotate(-45deg);
     }
 
     header .nav-menu ul li {
@@ -1143,6 +1952,7 @@ footer .ftr-menu ul li a {
         top: 52px;
         min-width: 100%;
         width: 100%;
+        padding: 20px 0 !important;
     }
 
     header .search-bar.is-active .search-box {
@@ -1150,7 +1960,7 @@ footer .ftr-menu ul li a {
     }
 
     .banner {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 
     .banner h1 {
@@ -1171,6 +1981,14 @@ footer .ftr-menu ul li a {
     .banner .bnr-btns a {
         font-size: 15px;
         padding: 15px 10px;
+    }
+
+    .inner-page-bnr {
+        padding: 100px 0 250px 30px;
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 65px;
     }
 
     .resume {
@@ -1197,9 +2015,9 @@ footer .ftr-menu ul li a {
     }
 
     .techflyte a.contract-btn {
-        font-size: 16px;
-        line-height: 50px;
-        padding: 0 30px;
+        font-size: 15px;
+        line-height: 40px;
+        padding: 0 20px;
     }
 
     .techflyte p {
@@ -1208,6 +2026,59 @@ footer .ftr-menu ul li a {
         line-height: 1.2;
     }
 
+    .our-team {
+        padding: 70px 0;
+    }
+
+    .our-team h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .our-team .nav-tabs .nav-link {
+	    padding: 15px;
+	    font-size: 14px;
+	}
+	.our-team .tab-content {
+	    padding: 20px;
+	}
+	.our-team .nav-tabs .nav-link img {
+	    margin-right: 5px;
+	}
+	.our-team .tab-content p {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-bottom: 15px;
+	}
+	.our-team .team-detail p {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-bottom: 20px;
+	}
+    .techy-difference {
+        padding: 70px 50px;
+    }
+    .staff-firm {
+        padding: 70px 0px;
+    }
+    .staff-firm h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .firm-col {
+        margin-bottom: 40px;
+    }
+    .staff-firm .firm-col .firm-col-head {
+        margin-bottom: 50px;
+        justify-content: center !important;
+    }
+    .staff-firm .firm-col p {
+        text-align: center;
+    }
+
+    .our-services {
+        padding: 70px 0;
+    }
     footer .copy-rights {
         padding: 30px 0;
     }
@@ -1215,6 +2086,98 @@ footer .ftr-menu ul li a {
     footer .copy-rights p {
         font-size: 20px;
     }
+
+    footer .contact-form {
+        padding: 50px 40px;
+    }
+
+    footer .ftr-main {
+        padding: 30px 0 0;
+    }
+
+    footer .contact-form form {
+        max-width: 100%;
+    }
+
+    footer .contact-form form label {
+        font-size: 18px;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+
+    footer .contact-form h5 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer .contact-form form textarea.input-field {
+        margin-bottom: 30px;
+    }
+
+    footer .contact-detail p {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    footer .contact-icon {
+        width: 30px;
+        flex: 0 0 30px;
+    }
+
+    footer .social-detail label {
+        text-align: center;
+    }
+
+    footer .social-detail ul {
+        margin: 0 0 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .subscriber form {
+        justify-content: center !important;
+    }
+
+    footer .ftr-menu {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    footer .ftr-menu .ftr-nav-col {
+        margin-bottom: 30px;
+    }
+
+    footer .social-detail {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    footer .ftr-right {
+        padding: 50px 0 0px;
+    }
+
+    footer .contact-form form input.input-field {
+        font-size: 16px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    footer .contact-form form input[type="submit"] {
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    footer a.download-btn {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .chat-box button img {
+        width: 100px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1238,12 +2201,71 @@ footer .ftr-menu ul li a {
         padding: 10px 10px;
     }
 
-    .techflyte .techflyte-box {
-        padding: 35px 50px;
+    .inner-page-bnr h2 {
+        font-size: 60px;
     }
 
+    .techflyte .techflyte-box {
+        padding: 35px 30px;
+    }
+
+    .our-team h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .our-team p {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .techy-difference {
+        padding: 70px 30px;
+    }
+    .staff-firm h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    .our-services .service-detail {
+        padding: 0 15px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
     footer .copy-rights p {
         font-size: 16px;
+    }
+
+    footer .contact-form {
+        padding: 50px 20px;
+    }
+
+    footer .subscriber input.input-subscribe {
+        width: 300px;
+        height: 45px;
+    }
+
+    footer .subscriber button.submit {
+        width: 100px;
+        height: 45px;
+    }
+
+    footer .subscriber button.submit img {
+        width: 25px;
+    }
+
+    footer .social-detail ul li img {
+        width: 35px;
+    }
+
+    footer .contact-form form textarea.input-field {
+        margin-bottom: 20px;
+    }
+
+    .chat-box button img {
+        width: 90px;
     }
 }
 
@@ -1262,11 +2284,45 @@ footer .ftr-menu ul li a {
     }
 
     header.is-active button.nav-menu-btn span:nth-child(3) {
-        transform: translateY(-1vw) rotate(-45deg);
+        transform: translateY(-1.5vw) rotate(-45deg);
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 50px;
     }
 
     .techflyte h2 {
         font-size: 30px;
         margin-bottom: 15px;
     }
+
+    .techflyte .techflyte-box {
+        padding: 35px 20px;
+    }
+
+    .our-team p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .techy-difference {
+        padding: 70px 15px;
+    }
+    .techy-caption-box {
+        padding: 40px 25px;
+    }
+    .techy-caption-box h3 {
+        font-size: 25px;
+    }
+    .techy-caption-box p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    footer .subscriber .subscribe {
+        width: 200px;
+    }
+
+    .chat-box button img {
+        width: 80px;
+    }
+
 }

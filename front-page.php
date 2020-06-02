@@ -98,4 +98,4 @@ get_header();
       
         <?php get_footer(); ?>
 
-
+    <p>front-page.php</p>

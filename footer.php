@@ -5,27 +5,20 @@
                         <div class="col-xl-5">
                             <div class="contact-form">
                                 <h5>CONTACT US</h5>
-                                <form>
-                                    <label> Name</label>
-                                    <input class="input-field form-control" type="text" name="">
-                                    <label> Email</label>
-                                    <input class="input-field form-control" type="text" name="">
-                                    <label>Remarks</label>
-                                    <textarea class="input-field form-control"></textarea>
-                                    <div class="text-right">
-                                        <input type="submit" value="Submit" name="">
-                                    </div>
-                                </form>
+                                <?php 
+                                echo do_shortcode( '[contact-form-7 id="54" title="footer-contact"]' );
+                                ?>
                                 <div class="contact-detail">
                                     <div class="d-flex justify-content-start align-items-center mb-4">
                                         <div class="contact-icon">
-                                           <img class="img-fluid" src="images/phone-icon.png" alt=""> 
+                                            <?php $social_url = get_template_directory_uri( ) . '/assets' ?>
+                                           <img class="img-fluid" src="<?php echo $social_url;?>/images/phone-icon.png" alt=""> 
                                         </div>
                                         <p>(502) 612-0809</p>
                                     </div>
                                     <div class="d-flex justify-content-start align-items-center">
                                         <div class="contact-icon">
-                                           <img class="img-fluid" src="images/marker-icon.png" alt=""> 
+                                           <img class="img-fluid" src="<?php echo $social_url;?>/images/marker-icon.png" alt=""> 
                                         </div>
                                         <p>1866 Campus Place Louisville, KY 40229</p>
                                     </div>
@@ -39,10 +32,10 @@
                                         <div class="col-md-5">
                                             <label>Follow Us</label>
                                             <ul>
-                                                <li><a href="#"><img src="images/linkedin-img.png" alt=""></a></li>
-                                                <li><a href="#"><img src="images/twitter-img.png" alt=""></a></li>
-                                                <li><a href="#"><img src="images/google-plus-img.png" alt=""></a></li>
-                                                <li><a href="#"><img src="images/fb-img.png" alt=""></a></li>
+                                                <li><a href="#"><img src="<?php echo $social_url;?>/images/linkedin-img.png" alt=""></a></li>
+                                                <li><a href="#"><img src="<?php echo $social_url;?>/images/twitter-img.png" alt=""></a></li>
+                                                <li><a href="#"><img src="<?php echo $social_url;?>/images/google-plus-img.png" alt=""></a></li>
+                                                <li><a href="#"><img src="<?php echo $social_url;?>/images/fb-img.png" alt=""></a></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-7">
@@ -50,7 +43,7 @@
                                                 <label>Subscribe To Us</label>
                                                 <form class="d-flex justify-content-start align-items-center">
                                                     <input class="input-subscribe" type="text" name="">
-                                                    <button class="submit" type="submit"><img src="images/subscribe-img.png" alt=""></button>
+                                                    <button class="submit" type="submit"><img src="<?php echo $social_url;?>/images/subscribe-img.png" alt=""></button>
                                                 </form>
                                             </div>
                                         </div>
@@ -96,7 +89,8 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>Copyright © 2020 Tech Flyte. All Rights Reserved.</p>
+                            <!-- <p>Copyright © 2020 Tech Flyte. All Rights Reserved.</p> -->
+                            <p> Copyright &copy;  <?php echo date("Y"); echo " "; echo bloginfo('name'); ?> All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -105,14 +99,7 @@
         <!-- Footer Section End -->
     </div>
     <?php wp_footer(); ?>
-    <script>
-    $('.nav-menu-btn').click(function() {
-        $('header').toggleClass('is-active');
-    });
-    $('.search-btn').click(function() {
-        $('.search-bar').toggleClass('is-active');
-    });
-    </script>
+    
 </body>
 
 </html>
