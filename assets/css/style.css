@@ -514,6 +514,10 @@ footer .contact-form form {
     margin: 0 auto 6px;
 }
 
+footer .contact-form form .wp7-remmove---br br{
+    display: none;
+}
+
 footer .contact-form form label {
     font-size: 20px;
     line-height: 13px;
@@ -2095,7 +2099,8 @@ footer a.download-btn:hover {
         padding: 30px 0 0;
     }
 
-    footer .contact-form form {
+    /* footer .contact-form form  */
+     footer .contact-form form {
         max-width: 100%;
     }
 
@@ -2109,6 +2114,10 @@ footer a.download-btn:hover {
         font-size: 30px;
         line-height: 30px;
         margin-bottom: 30px;
+    }
+
+    footer .contact-form form input {
+        max-width: 100%  !important;
     }
 
     footer .contact-form form textarea.input-field {
