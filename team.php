@@ -4,7 +4,7 @@ function team_register() {
 	$labels = array(
 		'name' => _x('Team', 'post type general name'),
 		'singular_name' => _x('Team member', 'post type singular name'),
-		'add_new' => _x('Add New', 'portfolio item'),
+		'add_new' => _x('Add New', 'Team Member'),
 		'add_new_item' => __('Add New Team Member'),
 		'edit_item' => __('Edit Team Member'),
 		'new_item' => __('New Team Member'),

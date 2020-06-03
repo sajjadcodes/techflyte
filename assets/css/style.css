@@ -514,10 +514,6 @@ footer .contact-form form {
     margin: 0 auto 6px;
 }
 
-footer .contact-form form .wp7-remmove---br br{
-    display: none;
-}
-
 footer .contact-form form label {
     font-size: 20px;
     line-height: 13px;
@@ -716,13 +712,14 @@ footer a.download-btn:hover {
 /* OUR TEAM */
 .team-banner {
     background: url('../images/team-banner-bg.png') no-repeat;
+    background-size: cover;
 }
 .service-banner {
 	background: url('../images/team-banner-bg.png') no-repeat;
+    background-size: cover;
 }
 
 .inner-page-bnr {
-    background-size: cover;
     padding: 131px 0 454px 88px;
 }
 
@@ -853,6 +850,7 @@ footer a.download-btn:hover {
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     text-align: justify;
+    margin-bottom: 0;
 }
 .our-services .service-detail h6 span {
     color: #a714c6;
@@ -882,6 +880,133 @@ footer a.download-btn:hover {
     font-family: 'Rubik', sans-serif;
     margin-bottom: 0;
 }
+
+/* CONTRACTOR */
+.contractor-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+.contractors {
+    background: #f6f4ef;
+    padding:138px 104px 176px 0;
+}
+.contractor-caption-box {
+    padding-left: 102px;
+}
+.contractor-caption-box h3 {
+    font-size: 92.15px;
+    line-height: .8;
+    color: #04d5e1;
+    font-weight: 700;
+    margin-bottom: 88px;
+}
+.contractor-caption-box p {
+    font-size: 29.9px;
+    line-height: 36px;
+    color: #181818;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.contractor-caption-box a {
+    font-size: 38.62px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+    background: #a714c6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 77px;
+    border-radius: 44px;
+}
+
+.contractor-caption-box a:hover {
+    background: #04d5e1;
+}
+
+/* INFORMATION */
+.information {
+    background: #ffffff;
+    padding: 129px 80px 236px;
+}
+.information h6 {
+    font-size: 39.78px;
+    line-height:30px;
+    color: #a714c6;
+    font-weight:400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.information h2 {
+    font-size: 72px;
+    line-height:.9;
+    color: #00d4e0;
+    font-weight:300;
+    margin-bottom: 155px;
+}
+.information .card {
+    border:none;
+}
+
+.information .card-header {
+    border:none;
+    border-radius: 15px;
+    background: #f6f4ef;
+    padding:0;
+    margin-bottom: 12px;
+}
+.information .card-header button {
+    padding: 46px 50px 46px 100px;
+    outline: none;
+    border:none;
+    font-size: 28px;
+    color: #6f6f79;
+    font-weight:400;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+.controler-signs {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    z-index: 1;
+}
+.controler-signs span {
+    width: 40px;
+    height: 6px;
+    background: #cebc98;
+    border-radius: 3px;
+    display: block;
+    transition: all ease .5s;
+    
+}
+.card-header button.collapsed .controler-signs span { 
+    transform: rotate(90deg);
+}
+.card-header .controler-signs span:last-child {
+    position: relative;
+    top: -6px;
+}
+.card-header button.collapsed .controler-signs span:last-child {
+    transform: rotate(0deg);
+}
+.information .card-header button:focus {
+    box-shadow: none;
+}
+.information .card-header button:hover {
+    text-decoration: none;
+}
+.information .card-body {
+    padding: 28px 70px 40px;
+    font-size: 25px;
+    line-height: 36px;
+    color: #6f6f79;
+    font-weight:400;
+    font-family: 'Rubik', sans-serif;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 1875px) {
     .banner h1 {
@@ -1051,6 +1176,48 @@ footer a.download-btn:hover {
     .our-services .service-col h5 {
         font-size: 18px;
         margin-bottom: 20px;
+    }
+    .contractors {
+        padding: 130px 90px 170px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 80px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 85px;
+        margin-bottom: 80px;
+    }
+    .contractor-caption-box p {
+        font-size: 29px;
+        line-height: 35px;
+        margin-bottom: 40px;
+    }
+    .information {
+        padding: 120px 70px 200px;
+    }
+    .information h6 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .information h2 {
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+    .information .card-header button {
+        padding: 40px 45px 40px 80px;
+        font-size: 25px;
+    }
+    .information .card-body {
+        padding: 25px 50px 30px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -5px;
+    }
+    .controler-signs span {
+        width: 35px;
+        height: 5px;
     }
     footer .ftr-main {
         padding: 0 90px;
@@ -1301,7 +1468,53 @@ footer a.download-btn:hover {
         font-size: 16px;
         line-height: 22px;
     }
-    		
+    .contractors {
+        padding: 120px 70px 150px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 50px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 70px;
+        margin-bottom: 60px;
+    }
+    .contractor-caption-box p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .contractor-caption-box a {
+        font-size: 30px;
+        line-height: 25px;
+        padding: 25px 70px;
+    }
+    .information {
+        padding: 100px 50px 150px;
+    }
+    .information h6 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .information h2 {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+    .information .card-header button {
+        padding: 30px 40px 30px 50px;
+        font-size: 20px;
+    }
+    .information .card-body {
+        padding: 20px 40px 25px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -4px;
+    }
+    .controler-signs span {
+        width: 30px;
+        height: 4px;
+    }		
     footer .contact-form form {
         max-width: 350px;
         margin: 0 auto 6px;
@@ -1569,6 +1782,56 @@ footer a.download-btn:hover {
     .our-services .service-col img {
         margin-bottom: 30px;
     }
+    .contractors {
+        padding: 100px 50px 110px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 30px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .contractor-caption-box p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .contractor-caption-box a {
+        font-size: 25px;
+        line-height: 20px;
+        padding: 20px 50px;
+    }
+    .information {
+        padding: 90px 30px 120px;
+    }
+    .information h6 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .information h2 {
+        font-size: 35px;
+        margin-bottom: 55px;
+    }
+    .information .card-header button {
+        padding: 20px 30px 20px 40px;
+        font-size: 20px;
+    }
+    .information .card-body {
+        padding: 15px 30px 20px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .controler-signs {
+        right: 30px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -3px;
+    }
+    .controler-signs span {
+        width: 25px;
+        height: 3px;
+    }
     footer .contact-form h5 {
         font-size: 40px;
         line-height: 35px;
@@ -1758,6 +2021,49 @@ footer a.download-btn:hover {
         line-height: 20px;
         margin-bottom: 30px;
     }
+    .contractors {
+        padding: 90px 30px 100px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 10px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .contractor-caption-box p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .contractor-caption-box a {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 15px 40px;
+    }
+    .information {
+        padding: 80px 20px 90px;
+    }
+    .information .card-header button {
+        padding: 15px 20px 15px 30px;
+        font-size: 18px;
+    }
+    .information .card-body {
+        padding: 15px 20px 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .controler-signs {
+        right: 20px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -3px;
+    }
+    .controler-signs span {
+        width: 20px;
+        height: 3px;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1884,10 +2190,37 @@ footer a.download-btn:hover {
         margin-bottom: 40px;
     }
     .our-services .service-col {
-    padding: 35px 10px 40px;
-    margin-top: 30px;
-    margin-bottom: 0;
-}
+        padding: 35px 10px 40px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .contractors {
+        padding: 100px 70px;
+    }
+    .contractor-caption-box {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .information {
+        padding: 75px 15px 80px;
+    }
+    .information h6 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .information h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .information .card-header button {
+        padding: 13px 10px 13px 20px;
+        font-size: 16px;
+    }
+    .information .card-body {
+        padding: 10px 10px 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
     footer .ftr-right {
         padding: 100px 0 90px 0px;
     }
@@ -1988,7 +2321,7 @@ footer a.download-btn:hover {
     }
 
     .inner-page-bnr {
-        padding: 100px 0 250px 30px;
+        padding: 100px 0 250px;
     }
 
     .inner-page-bnr h2 {
@@ -2083,6 +2416,22 @@ footer a.download-btn:hover {
     .our-services {
         padding: 70px 0;
     }
+    .contractors {
+        padding: 70px 50px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .our-services .service-col {
+        text-align: center;
+    }
+    .information {
+        padding: 70px 0;
+    }
+    .controler-signs {
+        right: 10px;
+    }
     footer .copy-rights {
         padding: 30px 0;
     }
@@ -2099,8 +2448,7 @@ footer a.download-btn:hover {
         padding: 30px 0 0;
     }
 
-    /* footer .contact-form form  */
-     footer .contact-form form {
+    footer .contact-form form {
         max-width: 100%;
     }
 
@@ -2114,10 +2462,6 @@ footer a.download-btn:hover {
         font-size: 30px;
         line-height: 30px;
         margin-bottom: 30px;
-    }
-
-    footer .contact-form form input {
-        max-width: 100%  !important;
     }
 
     footer .contact-form form textarea.input-field {
@@ -2243,6 +2587,29 @@ footer a.download-btn:hover {
         font-size: 35px;
         margin-bottom: 30px;
     }
+    .contractors {
+        padding: 70px 30px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .contractor-caption-box p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .contractor-caption-box a {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+    .information h6 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .information h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
     footer .copy-rights p {
         font-size: 16px;
     }
@@ -2297,7 +2664,7 @@ footer a.download-btn:hover {
     }
 
     .inner-page-bnr h2 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .techflyte h2 {
@@ -2325,6 +2692,13 @@ footer a.download-btn:hover {
     .techy-caption-box p {
         font-size: 14px;
         line-height: 18px;
+    }
+    .contractors {
+        padding: 70px 15px;
+    }
+    .information .card-header button {
+        padding: 10px;
+        font-size: 15px;
     }
     footer .subscriber .subscribe {
         width: 200px;

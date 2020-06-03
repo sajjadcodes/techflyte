@@ -12,7 +12,7 @@ get_header();
                         <h2><?php the_field('home_subhead','option');?></h2>
                         <span><?php the_field('home_description','option');?></span>
                         <div class="bnr-btns">
-                            <a href="#">CONTRACTORS</a>
+                            <a href="<?php esc_html_e('contractor','techflyte');?>">CONTRACTORS</a>
                             <a href="#">Clients</a>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ get_header();
                         </div>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <a class="contract-btn" href="#">CONTRACTORS</a>
+                                <a class="contract-btn" href="<?php esc_html_e('contractor','techflyte');?>">CONTRACTORS</a>
                             </div>
                         </div>
                     </div>
