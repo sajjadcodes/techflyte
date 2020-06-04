@@ -13,6 +13,8 @@ add_theme_support( 'post-thumbnails', array( 'post','team' ) );
 include(get_theme_file_path( '/includes/front/enqueue.php' ));
 include(get_theme_file_path('/setup.php'));
 include(get_theme_file_path('/team.php'));
+include(get_theme_file_path('/includes/customizer.php'));
+
 
 
 
@@ -22,7 +24,9 @@ include(get_theme_file_path('/team.php'));
 // hooks
 
 add_action( 'wp_enqueue_scripts', 'tech_enqueue_files' );
-add_action( 'after_setup_theme', 'tech_custom_menu');
+add_action( 'after_setup_theme', 'tech_setup_theme');
+add_action( 'customize_register', 'mytheme_customize_register'); 
+//  add_action( 'after_setup_theme', 'mytheme_register_nav_menu');
 //custom post type hook
 add_action('init', 'team_register');
 

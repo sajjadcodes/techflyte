@@ -22,16 +22,30 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-2 col-md-3 col-sm-3 col-4">
                         <div class="logo">
-                            <?php 
+                          
+                          <?php 
 
-                            $logo = get_field('logo', 'option');
 
-                                if($logo){
+                                                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                                if ( has_custom_logo() ) {
+                                    ?>   
+                                 <a href="<?php home_url(); ?>"><img class="img-fluid" src="<?php echo $logo[0];?>" alt="'.get_bloginfo( 'name' ).'"></a>
+
+                                    <?php 
+                                                         }
+                                 else {
+                                        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+                                    }
+
+
+                                
+                                            
+                                            
+                                        
                                     ?>
-                                    <a href="#"><img class="img-fluid" src="<?php echo $logo ?>" alt=""></a>
-                                <?php 
-                                }
-                                ?>
+                                      
+                               
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-8 col-md-7 col-sm-6 col-4 d-flex justify-content-center position-static">
