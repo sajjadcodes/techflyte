@@ -6,6 +6,7 @@ function tech_setup_theme(){
     // custom logo feature
     
     add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
     
 
 

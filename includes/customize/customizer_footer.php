@@ -1,56 +1,108 @@
 <?php 
 
+
 $wp_customize->add_panel('techflyte_footer_panel',array(
         'title'             => 'TechFlyte Footer Settings',
-        'Description'       =>'You can customize header of the theme, like logo, social media url etc',
-        'priority'          =>'60',
+        'Description'       =>'You can customize footer of the theme, like logo, social media url etc',
+        'priority'          =>200,
     ));
 
 
-
-	// customizer settings
-  $wp_customize->add_setting( 'facebook_social_links' , array(
-    
-) );
-$wp_customize->add_setting( 'twitter_social_links' , array(
-    
-) );
-
-$wp_customize->add_setting( 'linkedin_social_links' , array(
-    
-) );
-
-// customizer sections
-
-$wp_customize->add_section( 'footer_social_links_section' , array(
-    'title'         => __( 'Social Media Links', 'techfylte' ),
-    'priority'      => 50,
-    'panel'         =>'techflyte_header_panel',
-) );
+		// customizer settings for footer social media links
+                $wp_customize->add_setting( 'footer_linkedin' , array(
+                    
+				) );
+				$wp_customize->add_setting( 'footer_twitter' , array(
+                    
+				) );
+				$wp_customize->add_setting( 'footer_instagram' , array(
+                    
+				) );
+					$wp_customize->add_setting( 'footer_facebook' , array(
+                    
+				) );
 
 
-// customizer control
+		// customizer settings for footer contact and address
+
+				$wp_customize->add_setting( 'footer_contact' , array(
+                    
+				) );
+				$wp_customize->add_setting( 'footer_address' , array(
+                    
+				) );
 
 
-$wp_customize->add_control('facebook_links_controller', array(
-	'label'      => __( 'Facebook URL', 'techfylte' ),
-	'section'    => 'footer_social_links_section',
-	'settings'   => 'facebook_social_links',
- ) );
+			// customizer settings for copyright
 
- $wp_customize->add_control('twitter_links_controller', array(
-	'label'      => __( 'Twitter URL', 'techfylte' ),
-	'section'    => 'footer_social_links_section',
-	'settings'   => 'twitter_social_links',
- ) );
- $wp_customize->add_control('linkedin_links_controller', array(
-	'label'      => __( 'LinkedIn URL', 'techfylte' ),
-	'section'    => 'footer_social_links_section',
-	'settings'   => 'linkedin_social_links',
- ) );
+		// customizer sections for footer contact us
+				$wp_customize->add_section('footer_contacts_details', array(
+					'title'					=>__('Contact and Address'),
+					'priority'				=>180,
+					'panel'					=>'techflyte_footer_panel',
+				));
 
- $wp_customize->add_control('instragram_links_controller', array(
-	'label'      => __( 'Instagram URL', 'techfylte' ),
-	'section'    => 'footer_social_links_section',
-	'settings'   => 'linkedin_social_links',
- ) );
+
+
+		// section for footer follow us social media links
+
+				 $wp_customize->add_section( 'footer_follow_us' , array(
+                    'title'         => __( 'Follow Us', 'techfylte' ),
+                    'priority'      => 170,
+                    'panel'         =>'techflyte_footer_panel',
+				) );
+				
+
+		// controller for footer social media links
+				  $wp_customize->add_control('footer_linkedin_links_controller', array(
+                    'label'      => __( 'Linkedin', 'techfylte' ),
+                    'section'    => 'footer_follow_us',
+					'settings'   => 'footer_linkedin',
+					'input_attrs'   => array(
+                            'placeholder' => __( 'username', 'techflyte'),   
+                        )
+				) );
+				
+				  $wp_customize->add_control('footer_twitter_links_controller', array(
+                    'label'      => __( 'Twitter', 'techfylte' ),
+                    'section'    => 'footer_follow_us',
+					'settings'   => 'footer_twitter',
+					'input_attrs'   => array(
+                            'placeholder' => __( 'username', 'techflyte'),   
+                        )
+				) );
+				 $wp_customize->add_control('footer_instagram_links_controller', array(
+                    'label'      => __( 'Instagram', 'techfylte' ),
+                    'section'    => 'footer_follow_us',
+					'settings'   => 'footer_instagram',
+					'input_attrs'   => array(
+                            'placeholder' => __( 'username', 'techflyte'),   
+                        )
+				) );
+
+				 $wp_customize->add_control('footer_facebook_links_controller', array(
+                    'label'      => __( 'Facebook', 'techfylte' ),
+                    'section'    => 'footer_follow_us',
+					'settings'   => 'footer_facebook',
+					'input_attrs'   => array(
+                            'placeholder' => __( 'username', 'techflyte'),   
+                        )
+				) );
+
+				// controller for footer contact and Address
+				  $wp_customize->add_control('footer_contact_controller', array(
+                    'label'      => __( 'Contact Number', 'techfylte' ),
+                    'section'    => 'footer_contacts_details',
+					'settings'   => 'footer_contact',
+					'input_attrs'   => array(
+                            'placeholder' => __( 'Contact Number', 'techflyte'),   
+                        )
+				) );
+				$wp_customize->add_control('footer_address_controller', array(
+                    'label'      => __( 'Address', 'techfylte' ),
+                    'section'    => 'footer_contacts_details',
+					'settings'   => 'footer_address',
+					'input_attrs'   => array(
+                            'placeholder' => __( 'Address', 'techflyte'),   
+                        )
+				) );
