@@ -50,7 +50,8 @@
                             
                         while ( $loop->have_posts() ) : $loop->the_post(); 
                         ?>
-                            <img class="img-fluid" src="<?php echo $team_img_url;?>/images/team-1.png" alt="">
+                            <!-- <img class="img-fluid" src="<?php echo $team_img_url;?>/images/team-1.png" alt=""> -->
+                            <?php the_post_thumbnail( 'full','' );?>
                             <div class="team-caption text-center">
                                 <h5><?php the_title(); ?></h5>
                                 <span><?php the_excerpt();?></span>

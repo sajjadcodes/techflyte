@@ -1,0 +1,46 @@
+<?php 
+
+
+
+
+    function employee_cpt_registeration(){
+
+        $labels = array(
+		'name'               => __( 'Employees' ),
+		'singular_name'      => __( 'Employee' ),
+		'add_new'            => __( 'Add New Employee' ),
+		'add_new_item'       => __( 'Add New member' ),
+		'edit_item'          => __( 'Edit Employee' ),
+		'new_item'           => __( 'Add New Employee' ),
+		'view_item'          => __( 'View Employee' ),
+		'search_items'       => __( 'Search Employee' ),
+		'not_found'          => __( 'No employee found' ),
+		'not_found_in_trash' => __( 'No employee found in trash' )
+
+        );
+
+        $supports = array(
+            'title',
+            'editor',
+            'thumnail',
+            'custom-fields',
+
+        );
+        $args= array(
+            'labels'                =>$labels,
+            'supports'              =>$supports,
+            'public'                =>true,
+            'capability_type'       =>'post',
+            'rewrite'               =>array('slug'=>'employees'),
+            'has_archive'           =>true,
+            'menu_position'         =>40,
+            'menu_icon'             =>'dashicons-businessperson',
+            'register_meta_box_cb'  =>'wpt_add_employee_metaboxes',
+
+        );
+        
+        register_post_type('event',$args);
+
+    }
+
+
