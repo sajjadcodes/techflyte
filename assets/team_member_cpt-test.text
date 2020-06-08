@@ -21,10 +21,9 @@ function team_register_cpt(){
             $args= array(
                 'labels'                =>$labels,
                 'public'                =>true,
-                'capability_type'       =>'post',
                 'rewrite'               =>array('slug'=>'employees'),
                 'has_archive'           =>true,
-                'menu_position'         =>40,
+                'menu_position'         =>120,
                 'menu_icon'             =>'dashicons-businessperson',
                 'supports'              =>array('title','thumbnail','custom-fields'),
                 'register_meta_box_cb'  =>'wpt_add_employee_metaboxes',
@@ -152,3 +151,31 @@ function wpt_employee_linkedin_link() {
 	echo '<input type="url" name="location" value="' . esc_textarea( $linkedin_url )  . '" class="widefat">';
 
 }
+
+
+
+
+/**
+ * Save the metabox data
+ */
+function wpt_save_employee_meta( $post_id, $post ) {
+
+	// Return if the user doesn't have edit permissions.
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return $post_id;
+	}
+
+	// Verify this came from the our screen and with proper authorization,
+	// because save_post can be triggered at other times.
+	if ( ! isset( $_POST['location'] ) || ! wp_verify_nonce( $_POST['event_fields'], basename(__FILE__) ) ) {
+		return $post_id;
+	}
+
+	// Now that we're authenticated, time to save the data.
+	// This sanitizes the data from the field and saves it into an array $events_meta.
+	$events_meta['location'] = esc_textarea( $_POST['location'] );
+
+	// Cycle through the $events_meta array.
+	// Note, in this example we just have one item, but this is helpful if you have multiple.
+	foreach ( $events_meta as $key => $value ) :
+
