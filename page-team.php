@@ -1,5 +1,8 @@
 
-<?php /* Template Name: team */ ?>
+<?php 
+$url = get_template_directory_uri(  ) . '/assets/images';
+
+?>
 
 
 <?php get_header(); ?>
@@ -33,10 +36,10 @@
                     <div class="col-lg-6">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><img src="<?php echo  get_template_directory_uri(  );?>/images/approach-img.png" alt="">APPROACH</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><img src="<?php echo  $url;?>/approach-img.png" alt=""><?php _e('APPROACH','techflyte');?></a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><img src="images/start-img.png" alt="">METHODS</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><img src="<?php echo $url;?>/start-img.png" alt=""><?php _e('METHODS','techflyte');?></a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -72,8 +75,5 @@
             </div>
         </div>
 
-
-
-<h1>Template: page-team.php</h1>
 <?php get_footer(); ?>
 
