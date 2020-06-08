@@ -24,6 +24,7 @@ function tech_team_cpt_init() {
     'menu_position' => 5,
     'supports'      => array( 'title', 'thumbnail', 'excerpt'),
     'has_archive'   => true,
+    'menu_icon'     =>'dashicons-businessman'
   );
 
 
