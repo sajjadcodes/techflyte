@@ -50,6 +50,7 @@ header .nav-menu ul li:hover a {
 
 header .nav-menu ul li a.active {
     border-color: #a714c6;
+    color: #10d6e2;
 }
 
 header .nav-menu ul li ul.sub-menu {
@@ -993,6 +994,7 @@ footer a.download-btn:hover {
 }
 .information .card-header button:focus {
     box-shadow: none;
+    text-decoration: none;
 }
 .information .card-header button:hover {
     text-decoration: none;
@@ -1005,7 +1007,128 @@ footer a.download-btn:hover {
     font-weight:400;
     font-family: 'Rubik', sans-serif;
 }
+/* CONTACT */
+.contact-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
 
+ .contact-banner h2 { 
+    font-weight: 300;
+}
+
+.contact-banner h2 span {
+    font-weight: 700;
+}
+.contact-us
+{
+    padding: 198px 230px 160px;
+}
+.contact-us h3 {
+    font-size: 70.73px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:600;
+    margin-bottom: 98px;
+    text-align: center;
+}
+ .contact-us span {
+    color: #00d4e0;
+}
+.contact-us p {
+    font-size: 30.65px;
+    line-height: 1.5;
+    color: #131313;
+    font-weight:300;
+    margin-bottom: 109px;
+    padding: 0 150px;
+    text-align: center;
+}
+.contact-us p a {
+    color: #a714c6;
+}
+.contact-us .contact-form{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 130px 80px 100px;
+    box-shadow: 0 0 30px 1px #f5e5f9;
+}
+.contact-us .contact-form h4 {
+    font-size: 42px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:600;
+    margin-bottom: 40px;
+}
+ .contact-us .contact-form label {
+    font-size: 28.05px;
+    line-height: 1.1;
+    color: #c8c8c8;
+    font-weight:400;
+    margin-bottom: 10px;
+    display: block;
+}
+/*  .contact-us .contact-form input.input-field  */
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"]
+ {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight:400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form textarea  */
+
+.wpcf7 textarea:focus {
+    box-shadow: none;
+}
+
+.contact-us .contact-form .wpcf7 textarea {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight:400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 70px;
+    margin-bottom: 90px;
+    border-radius: 0;
+}
+/* .contact-us .contact-form button */
+ .contact-us .wpcf7 input[type="submit"]{
+    background:#a714c6;
+    line-height: 67px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    height: 67px;
+    font-weight: 500;
+    width: 233px;
+    box-shadow: 0 20px 45px 0 #acb9c7;
+    display: flex;
+    align-items: center;
+}
+.contact-us .wpcf7 input[type="submit"]:hover {
+    background: #a714c6cf
+}
+
+.contact-us .wpcf7 input[type="submit"] img {
+    margin-left: 25px;
+}
 
 /* Responsive */
 @media screen and (max-width: 1875px) {
@@ -1034,7 +1157,18 @@ footer a.download-btn:hover {
 	    line-height: 30px;
 	    margin-bottom: 30px;
 	}
-
+    .contact-us {
+        padding: 150px 200px;
+    }
+    .contact-us h3 {
+        font-size: 65px;
+        margin-bottom: 90px;
+    }
+    .contact-us p {
+        font-size: 30px;
+        margin-bottom: 100px;
+        padding: 0 130px;
+    }
     footer .ftr-main {
         padding: 0 100px 0 100px;
     }
@@ -1218,6 +1352,18 @@ footer a.download-btn:hover {
     .controler-signs span {
         width: 35px;
         height: 5px;
+    }
+    .contact-us {
+        padding: 140px 190px;
+    }
+    .contact-us h3 {
+        font-size: 55px;
+        margin-bottom: 80px;
+    }
+    .contact-us p {
+        font-size: 25px;
+        margin-bottom: 90px;
+        padding: 0 100px;
     }
     footer .ftr-main {
         padding: 0 90px;
@@ -1514,6 +1660,17 @@ footer a.download-btn:hover {
     .controler-signs span {
         width: 30px;
         height: 4px;
+    }
+    .contact-us {
+        padding: 130px 150px;
+    }
+    .contact-us h3 {
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
+    .contact-us p {
+        margin-bottom: 80px;
+        padding: 0 90px;
     }		
     footer .contact-form form {
         max-width: 350px;
@@ -1832,6 +1989,18 @@ footer a.download-btn:hover {
         width: 25px;
         height: 3px;
     }
+    .contact-us {
+        padding: 100px 120px;
+    }
+    .contact-us h3 {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .contact-us p {
+        font-size: 22px;
+        margin-bottom: 70px;
+        padding: 0 43px;
+    }
     footer .contact-form h5 {
         font-size: 40px;
         line-height: 35px;
@@ -2063,6 +2232,57 @@ footer a.download-btn:hover {
         width: 20px;
         height: 3px;
     }
+    .contact-us {
+        padding: 90px 70px;
+    }
+    .contact-us h3 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .contact-us p {
+        margin-bottom: 60px;
+        padding: 0 40px;
+    }
+    .contact-us .contact-form {
+        max-width: 100%;
+        padding: 100px 50px;
+    }
+    .contact-us .contact-form h4 {
+        font-size: 35px;
+    }
+    .contact-us .contact-form label {
+        font-size: 25px;
+    }
+    .contact-us .contact-form input.input-field {
+        font-size: 25px;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    .contact-us .contact-form {
+        max-width: 100%;
+        padding: 70px 30px;
+    }
+    .contact-us .contact-form label {
+        font-size: 20px;
+    }
+    .contact-us .contact-form input.input-field {
+        font-size: 20px;
+        height: 35px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #c8c8c8;
+    }
+    .contact-us .contact-form textarea {
+        font-size: 25px;
+        height: 70px;
+        margin-bottom: 70px;
+    }
+    .contact-us .contact-form button {
+        line-height: 60px;
+        padding: 0 30px;
+        font-size: 20px;
+        height: 60px;
+        width: 210px;
+    }
 
 }
 
@@ -2220,6 +2440,17 @@ footer a.download-btn:hover {
         padding: 10px 10px 15px;
         font-size: 14px;
         line-height: 20px;
+    }
+    .contact-us {
+        padding: 80px 50px;
+    }
+    .contact-us h3 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .contact-us p {
+        margin-bottom: 50px;
+        padding: 0 10px;
     }
     footer .ftr-right {
         padding: 100px 0 90px 0px;
@@ -2432,6 +2663,21 @@ footer a.download-btn:hover {
     .controler-signs {
         right: 10px;
     }
+    .contact-us {
+        padding: 70px 0;
+    }
+    .contact-us h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .contact-us p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .contact-us .contact-form button img {
+        margin-left: 20px;
+    }
     footer .copy-rights {
         padding: 30px 0;
     }
@@ -2608,6 +2854,13 @@ footer a.download-btn:hover {
     }
     .information h2 {
         font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .contact-us h3 {
+        font-size: 20px;
+    }
+    .contact-us p {
+        font-size: 18px;
         margin-bottom: 30px;
     }
     footer .copy-rights p {
