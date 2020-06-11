@@ -726,7 +726,7 @@ footer a.download-btn:hover {
 
 .inner-page-bnr h2 {
     font-size: 99.57px;
-    line-height: .8;
+    line-height: 1.1;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 0;
@@ -1014,15 +1014,13 @@ footer a.download-btn:hover {
     padding: 115px 15px 515px 80px; 
 }
 
- .contact-banner h2 { 
+.contact-banner h2 { 
     font-weight: 300;
 }
-
-.contact-banner h2 span {
+.contact-banner h2 span { 
     font-weight: 700;
 }
-.contact-us
-{
+.contact-us {
     padding: 198px 230px 160px;
 }
 .contact-us h3 {
@@ -1033,7 +1031,7 @@ footer a.download-btn:hover {
     margin-bottom: 98px;
     text-align: center;
 }
- .contact-us span {
+.contact-us span {
     color: #00d4e0;
 }
 .contact-us p {
@@ -1048,7 +1046,7 @@ footer a.download-btn:hover {
 .contact-us p a {
     color: #a714c6;
 }
-.contact-us .contact-form{
+.contact-us .contact-form {
     max-width: 1050px;
     margin: 0 auto;
     padding: 130px 80px 100px;
@@ -1061,7 +1059,7 @@ footer a.download-btn:hover {
     font-weight:600;
     margin-bottom: 40px;
 }
- .contact-us .contact-form label {
+.contact-us .contact-form label {
     font-size: 28.05px;
     line-height: 1.1;
     color: #c8c8c8;
@@ -1069,12 +1067,7 @@ footer a.download-btn:hover {
     margin-bottom: 10px;
     display: block;
 }
-/*  .contact-us .contact-form input.input-field  */
-
-.wpcf7 input[type="text"],
-.wpcf7 input[type="tel"],
-.wpcf7 input[type="email"]
- {
+.contact-us .contact-form input.input-field {
     font-size: 28.05px;
     color: #c8c8c8;
     font-weight:400;
@@ -1086,14 +1079,12 @@ footer a.download-btn:hover {
     border-radius: 0;
 }
 
-/* .contact-us .contact-form input.input-field:focus, 
-.contact-us .contact-form textarea  */
-
-.wpcf7 textarea:focus {
+.contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form textarea {
     box-shadow: none;
 }
 
-.contact-us .contact-form .wpcf7 textarea {
+.contact-us .contact-form textarea {
     font-size: 28.05px;
     color: #c8c8c8;
     font-weight:400;
@@ -1104,8 +1095,7 @@ footer a.download-btn:hover {
     margin-bottom: 90px;
     border-radius: 0;
 }
-/* .contact-us .contact-form button */
- .contact-us .wpcf7 input[type="submit"]{
+.contact-us .contact-form button {
     background:#a714c6;
     line-height: 67px;
     padding: 0 40px;
@@ -1122,13 +1112,149 @@ footer a.download-btn:hover {
     display: flex;
     align-items: center;
 }
-.contact-us .wpcf7 input[type="submit"]:hover {
+.contact-us .contact-form button:hover {
     background: #a714c6cf
 }
 
-.contact-us .wpcf7 input[type="submit"] img {
+.contact-us .contact-form button img {
     margin-left: 25px;
 }
+
+/* LOYALTY PROGRAM */
+.loyalty-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+.loyalty-program {
+     background: url('../images/inner-content-bg.png');
+    padding: 137px 130px 164px;
+}
+.inner-content-wrap {
+    background: #ffffff;
+    padding: 123px 188px 147px 220px;
+    box-shadow: 0 0 20px -10px #b9b9b9;
+}
+.loyalty-program h2 {
+    font-size:92.15px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:700;
+    margin-bottom: 110px;
+    text-align: center;
+}
+.loyalty-program h4 {
+    font-size:32px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:500;
+    margin-bottom: 30px;
+}
+.loyalty-program p {
+    font-size:22px;
+    line-height: 26px;
+    color: #000000;
+    font-weight:400;
+    margin-bottom: 32px;
+}
+.loyalty-program p:last-child {
+    margin-bottom: 0;
+}
+.program-bnr {
+    margin-top: 24px;
+}
+.loyalty-program h5 {
+    font-size:32px;
+    line-height: 1;
+    color: #a714c6;
+    font-weight:500;
+    margin: 77px 0 54px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.benefits-col {
+    margin-bottom: 70px;
+}
+
+.benefits-col img {
+    margin: 0 auto 23px;
+    display: block;
+}
+
+.benefits-col h6 {
+    font-size:18.23px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight:300;
+    margin-bottom: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.benefits-col ul {
+    list-style-type: none;
+    padding: 0 0 0 65px;
+    margin: 0;
+}
+.benefits-col ul li {
+    font-size:18.23px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight:300;
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 25px;
+}
+.benefits-col ul li::before {
+    content: "";
+    position: absolute;
+    background:#a714c6;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    border-radius: 50%;
+    top: 6px;
+}
+
+/* SAFETY COMPLIANCE */
+.safety-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+
+.safety-compliance h3 {
+    font-size:44px;
+    line-height: 51px;
+    color: #a714c6;
+    font-weight:500;
+    margin-bottom: 60px;
+}
+.safety-compliance ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+.safety-compliance ul li {
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 300;
+    margin-bottom: 35px;
+    position: relative;
+    padding-left: 30px;
+}
+.safety-compliance ul li::before {
+    content: "";
+    position: absolute;
+    background: #a714c6;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    border-radius: 50%;
+    top: 6px;
+}
+
+
 
 /* Responsive */
 @media screen and (max-width: 1875px) {
@@ -1168,6 +1294,9 @@ footer a.download-btn:hover {
         font-size: 30px;
         margin-bottom: 100px;
         padding: 0 130px;
+    }
+    .inner-content-wrap {
+        padding: 120px 150px 140px 200px;
     }
     footer .ftr-main {
         padding: 0 100px 0 100px;
@@ -1365,6 +1494,38 @@ footer a.download-btn:hover {
         margin-bottom: 90px;
         padding: 0 100px;
     }
+    .loyalty-program {
+        padding: 130px 120px 150px;
+    }
+    .inner-content-wrap {
+        padding: 120px 120px;
+    }
+    .loyalty-program h2 {
+        font-size: 85px;
+        margin-bottom: 100px;
+    }
+    .loyalty-program p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .benefits-col h6 {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 28px;
+    }
+    .benefits-col ul li {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+    .safety-compliance h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+
     footer .ftr-main {
         padding: 0 90px;
     }
@@ -1671,7 +1832,39 @@ footer a.download-btn:hover {
     .contact-us p {
         margin-bottom: 80px;
         padding: 0 90px;
+    }
+    .loyalty-program {
+        padding: 120px 100px;
+    }
+    .inner-content-wrap {
+        padding: 100px 100px;
     }		
+    .loyalty-program h2 {
+        font-size: 75px;
+        margin-bottom: 90px;
+    }
+    .loyalty-program h4 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .loyalty-program p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .loyalty-program h5 {
+        font-size: 30px;
+        margin: 70px 0 50px;
+    }
+    .safety-compliance h3 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    .safety-compliance ul li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
     footer .contact-form form {
         max-width: 350px;
         margin: 0 auto 6px;
@@ -2001,6 +2194,38 @@ footer a.download-btn:hover {
         margin-bottom: 70px;
         padding: 0 43px;
     }
+    .loyalty-program {
+        padding: 100px 90px;
+    }
+    .inner-content-wrap {
+        padding: 90px;
+    }
+    .loyalty-program h2 {
+        font-size: 65px;
+        margin-bottom: 80px;
+    }
+    .loyalty-program h4 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .loyalty-program p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .loyalty-program h5 {
+        font-size: 28px;
+        margin: 50px 0 40px;
+    }
+    .safety-compliance h3 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .safety-compliance ul li {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
     footer .contact-form h5 {
         font-size: 40px;
         line-height: 35px;
@@ -2283,6 +2508,16 @@ footer a.download-btn:hover {
         height: 60px;
         width: 210px;
     }
+    .loyalty-program {
+        padding: 90px 80px;
+    }
+    .inner-content-wrap {
+        padding: 80px;
+    }
+    .loyalty-program h2 {
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
 
 }
 
@@ -2451,6 +2686,29 @@ footer a.download-btn:hover {
     .contact-us p {
         margin-bottom: 50px;
         padding: 0 10px;
+    }
+    .loyalty-program {
+        padding: 80px 70px;
+    }
+    .inner-content-wrap {
+        padding: 70px;
+    }
+    .loyalty-program h2 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .program-bnr, .safety-bnr {
+        margin-top: 40px;
+    }
+    .program-bnr, .safety-bnr img {
+        display: block;
+        margin: 0 auto;
+    }
+    .benefits-col img {
+        max-width: 180px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 15px;
     }
     footer .ftr-right {
         padding: 100px 0 90px 0px;
@@ -2678,6 +2936,39 @@ footer a.download-btn:hover {
     .contact-us .contact-form button img {
         margin-left: 20px;
     }
+    .loyalty-program {
+        padding: 70px 15px;
+    }
+    .inner-content-wrap {
+        padding: 50px 30px;
+    }
+    .loyalty-program h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .loyalty-program h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .loyalty-program p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .loyalty-program h5 {
+        font-size: 25px;
+    }
+    .benefits-col img {
+        max-width: 150px;
+    }
+    .safety-compliance h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .safety-compliance ul li {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 20px;
+    }
     footer .copy-rights {
         padding: 30px 0;
     }
@@ -2863,6 +3154,19 @@ footer a.download-btn:hover {
         font-size: 18px;
         margin-bottom: 30px;
     }
+    .benefits-col {
+        margin-bottom: 50px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 85px;
+    }
+    .benefits-col h6 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .benefits-col ul li {
+        font-size: 16px;
+    }
     footer .copy-rights p {
         font-size: 16px;
     }
@@ -2953,6 +3257,9 @@ footer a.download-btn:hover {
         padding: 10px;
         font-size: 15px;
     }
+    .benefits-col {
+        margin-bottom: 40px;
+    }
     footer .subscriber .subscribe {
         width: 200px;
     }
@@ -2960,5 +3267,22 @@ footer a.download-btn:hover {
     .chat-box button img {
         width: 80px;
     }
+    .benefits-col ul {
+        padding: 0 0 0 35px;
+    }
 
+}
+@media screen and (max-width: 375px) {
+    .inner-content-wrap {
+        padding: 40px 15px;
+    }
+    .loyalty-program h5 {
+        font-size: 22px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 10px;
+    }
+    .loyalty-program h2 {
+        font-size: 25px;
+    }
 }

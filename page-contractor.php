@@ -39,21 +39,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h6>INFORMATION</h6>
+                        <h6><?php _e('INFORMATION','techfyte');?></h6>
                         <h2>
-                            FREQUENTLY ASKED QUESTIONS
+                            <?php _e('FREQUENTLY ASKED QUESTIONS','techflyte');?>
                         </h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="accordion row" id="accordionExample">
-                    <?php get_template_part( 'partials/content', 'faq' );?>
+                    <?php get_template_part( 'partials/content','faq');?>
                     </div>
                 </div>
             </div>
         </div>
+</div>
+</div>
         <!-- Information section End -->
 
-<h1>TemplateContractor.php</h1>
+
 <?php get_footer();?>

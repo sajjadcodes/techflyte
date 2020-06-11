@@ -30,10 +30,11 @@ get_header();
                            <?php the_field('resume_description','option'); ?>
                         </p>
                         <?php $images_url = get_template_directory_uri( ) . '/assets' ?>
-                        <a href="<?php the_field('upload_file');?>">Upload Resume <img src="<?php echo $images_url;?>/images/upload-img.png" alt=""></a>
+                        <a href="<?php do_shortcode('[contact-form-7 id="1516" title="resume_upload"]'); ?>">Upload Resume <img src="<?php echo $images_url;?>/images/upload-img.png" alt=""></a>
                     </div>
                     <div class="col-md-6">
                         <div class="resume-box">
+                            
                             <img class="img-fluid" src="<?php echo $images_url;?>/images/resume-img.png" alt="">
                         </div>
                     </div>
