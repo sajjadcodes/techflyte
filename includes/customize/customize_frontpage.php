@@ -147,7 +147,7 @@
 	$wp_customize, 
 	'resume_image', 
 	array(
-		'label'      => __( 'Resume opposite side image', 'mytheme' ),
+		'label'      => __( 'Resume opposite side image', 'techflyte' ),
 		'section'    => 'home_resume_image',
 		'settings'   => 'resume_image',
 	) ) 
