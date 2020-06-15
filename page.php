@@ -8,6 +8,6 @@
 
 
 
-<p>page.php</p>
+
 
 <?php get_footer();?>

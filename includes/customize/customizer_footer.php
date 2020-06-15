@@ -31,7 +31,10 @@ $wp_customize->add_panel('techflyte_footer_panel',array(
 				$wp_customize->add_setting( 'footer_address' , array(
                     
 				) );
-
+		// footer upload file
+			$wp_customize->add_setting( 'techflyte_profile' , array(
+                    
+				) );
 
 			// customizer settings for copyright
 
@@ -41,7 +44,7 @@ $wp_customize->add_panel('techflyte_footer_panel',array(
 					'priority'				=>180,
 					'panel'					=>'techflyte_footer_panel',
 				));
-
+			
 
 
 		// section for footer follow us social media links
@@ -52,6 +55,15 @@ $wp_customize->add_panel('techflyte_footer_panel',array(
                     'panel'         =>'techflyte_footer_panel',
 				) );
 				
+
+				// profile uploader sections
+				
+				 $wp_customize->add_section( 'techflyte_profile_section' , array(
+                    'title'         => __( 'Upload profile', 'techfylte' ),
+                    'priority'      => 170,
+                    'panel'         =>'techflyte_footer_panel',
+				) );
+
 
 		// controller for footer social media links
 				  $wp_customize->add_control('footer_linkedin_links_controller', array(
@@ -106,3 +118,17 @@ $wp_customize->add_panel('techflyte_footer_panel',array(
                             'placeholder' => __( 'Address', 'techflyte'),   
                         )
 				) );
+
+
+				// upload profile uploader controller
+			
+				$wp_customize->add_control( 
+    				new WP_Customize_Upload_Control( 
+    				$wp_customize, 
+    				'techflyte_profile', 
+    			array(
+					'label'      => __( 'Techflyte profile', 'techflyte' ),
+					'section'    => 'techflyte_profile_section',
+					'settings'   => 'techflyte_profile',
+    				) ) 
+					);

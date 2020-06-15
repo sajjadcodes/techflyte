@@ -89,20 +89,20 @@
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4 d-flex justify-content-end">
                         <div class="social-menu d-flex">
-                            <ul class="list-unstyled p-0 m-0 d-flex justify-content-start align-items-center">
+                                <ul class="list-unstyled p-0 m-0 d-flex justify-content-start align-items-center">
 
 
-                            <?php 
+                                        <?php 
 
-                               $social_url = get_template_directory_uri( ) . '/assets'
-                            ?>
+                                        $social_url = get_template_directory_uri( ) . '/assets'
+                                        ?>
 
-                              <li><a href="https://www.linkedin.com/in/<?php echo get_theme_mod('linkedin_social_links');?>"><img src=" <?php echo $social_url;?>/images/linkedin-icon.png" alt=""></a></li>
-                                <li><a href="https://www.twitter.com/<?php echo get_theme_mod('twitter_social_links');?>"><img src="<?php echo $social_url;?>/images/twitter-icon.png" alt=""></a></li>
-                                <li><a href="https://www.instagram.com/<?php echo get_theme_mod('instagram_social_links');?>"><img src="<?php echo $social_url;?>/images/google-plus-icon.png" alt=""></a></li>
-                                <li><a href="https://www.facebook.com/<?php echo get_theme_mod('facebook_social_links');?>"><img src="<?php echo $social_url;?>/images/fb-icon.png" alt=""></a></li>
-                                
-                            </ul>
+                                        <li><a href="https://www.linkedin.com/in/<?php echo get_theme_mod('linkedin_social_links');?>"><img src=" <?php echo $social_url;?>/images/linkedin-icon.png" alt=""></a></li>
+                                        <li><a href="https://www.twitter.com/<?php echo get_theme_mod('twitter_social_links');?>"><img src="<?php echo $social_url;?>/images/twitter-icon.png" alt=""></a></li>
+                                        <li><a href="https://www.instagram.com/<?php echo get_theme_mod('instagram_social_links');?>"><img src="<?php echo $social_url;?>/images/google-plus-icon.png" alt=""></a></li>
+                                        <li><a href="https://www.facebook.com/<?php echo get_theme_mod('facebook_social_links');?>"><img src="<?php echo $social_url;?>/images/fb-icon.png" alt=""></a></li>
+                                    
+                                </ul>
                         </div>
                     </div>
                 </div>
