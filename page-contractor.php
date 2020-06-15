@@ -28,7 +28,7 @@
                         <p>
                             Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                         </p>
-                        <a href="#">Contact</a>
+                        <a href="<?php esc_html_e('contact','techflyte');?>">Contact</a>
                     </div>
                 </div>
             </div>

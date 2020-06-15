@@ -355,7 +355,7 @@ header .social-menu ul li {
     line-height: 35px;
     color: #000000;
     font-weight: 300;
-    margin-bottom: 125px;
+    /* margin-bottom: 125px;  */
 }
 
 .our-team .team-col {
@@ -1615,6 +1615,8 @@ footer a.download-btn:hover {
         font-size: 35px;
     }
 
+    /* .resume  */
+
     .resume {
         padding: 150px 50px 80px 100px;
     }
@@ -2501,12 +2503,15 @@ footer a.download-btn:hover {
         height: 70px;
         margin-bottom: 70px;
     }
-    .contact-us .contact-form button {
+    /* .contact-us .contact-form button  */
+     .contact-us .wpcf7-form-control .wpcf7-submit .form-control{
         line-height: 60px;
         padding: 0 30px;
         font-size: 20px;
         height: 60px;
         width: 210px;
+        background-color:green;
+        
     }
     .loyalty-program {
         padding: 90px 80px;
@@ -3285,4 +3290,142 @@ footer a.download-btn:hover {
     .loyalty-program h2 {
         font-size: 25px;
     }
+}
+
+
+/* contact form extraaaaaaaaaaaaaas */
+
+/* CONTACT */
+.contact-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px;
+}
+
+.contact-banner h2 {
+    font-weight: 300;
+}
+
+.contact-banner h2 span {
+    font-weight: 700;
+}
+
+.contact-us {
+    padding: 198px 230px 160px;
+}
+
+.contact-us h3 {
+    font-size: 70.73px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 600;
+    margin-bottom: 98px;
+    text-align: center;
+}
+
+.contact-us span {
+    color: #00d4e0;
+}
+
+.contact-us p {
+    font-size: 30.65px;
+    line-height: 1.5;
+    color: #131313;
+    font-weight: 300;
+    margin-bottom: 109px;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.contact-us p a {
+    color: #a714c6;
+}
+
+.contact-us .contact-form {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 130px 80px 100px;
+    box-shadow: 0 0 30px 1px #f5e5f9;
+}
+
+.contact-us .contact-form h4 {
+    font-size: 42px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact-us .contact-form label {
+    font-size: 28.05px;
+    line-height: 1.1;
+    color: #c8c8c8;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*  .contact-us .contact-form input.input-field  */
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"] {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight: 400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form textarea  */
+
+.wpcf7 textarea:focus {
+    box-shadow: none;
+}
+
+.contact-us .contact-form .wpcf7 textarea {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight: 400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 70px;
+    margin-bottom: 90px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form button  */
+ .contact-us input.wpcf7-form-control.wpcf7-submit {
+        background: #a714c6;
+        line-height: 67px;
+        padding: 0 40px;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+        color: #ffffff;
+        font-size: 22px;
+        letter-spacing: 1px;
+        height: 67px;
+        font-weight: 500;
+        width: 233px;
+        box-shadow: 0 20px 45px 0 #acb9c7;
+        display: flex;
+        align-items: center;
+        }
+}
+
+
+/* extras */
+
+
+ .wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #00c7b7;
+    color: white;
 }

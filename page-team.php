@@ -1,4 +1,3 @@
-
 <?php 
 $url = get_template_directory_uri(  ) . '/assets/images';
 
@@ -30,7 +29,7 @@ $url = get_template_directory_uri(  ) . '/assets/images';
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                   <?php get_template_part( 'partials/content', 'team' );?>
+                  <?php get_template_part( 'partials/content', 'team' );?> 
                 </div>
                 <div class="row mt-xl-5 mt-lg-4 mt-md-3">
                     <div class="col-lg-6">
@@ -76,4 +75,3 @@ $url = get_template_directory_uri(  ) . '/assets/images';
         </div>
 
 <?php get_footer(); ?>
-

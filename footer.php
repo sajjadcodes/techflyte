@@ -78,6 +78,11 @@
                                                 <li><a href="#">Lorem Ipsum</a></li>
                                             </ul>
                                         </div>
+                                         <div class="row">
+                                        <div class="col-12">
+                                            <a class="download-btn" href="<?php echo get_theme_mod('techflyte_profile');?>">Download Profile</a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +95,7 @@
                     <div class="row">
                         <div class="col-12">
                             <!-- <p>Copyright © 2020 Tech Flyte. All Rights Reserved.</p> -->
-                            <p> Copyright &copy;  <?php echo date("Y"); echo " "; echo bloginfo('name'); ?> All Rights Reserved.</p>
+                            <p> <?php _e('Copyright','techflyte');?> &copy;  <?php echo date("Y"); echo " "; echo bloginfo('name'); ?> <?php _e('All Rights Reserved.','techflyte');?></p>
                         </div>
                     </div>
                 </div>
