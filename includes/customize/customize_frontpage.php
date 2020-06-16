@@ -1,7 +1,7 @@
 <?php 
 
         $wp_customize->add_panel('techflyte_home_panel',array(
-        'title'                 => 'TechFlyte Homepage Settings',
+        'title'                 => 'Frontpage Settings',
         'Description'           =>'You can customize homepage like different section Title and subtitle',
         'priority'              =>190,
         ));
