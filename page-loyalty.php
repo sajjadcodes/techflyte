@@ -32,9 +32,9 @@
                                 </div>
                             </div>
                         </div>
-                        <h5>TECH FLYTE BENEFITS DETAIL</h5>
+                        <h5><?php _e('TECH FLYTE BENEFITS DETAIL','techflyte');?></h5>
                         <div class="row justify-content-center">
-                            <div class="col-xl-4 col-sm-6">
+                            <!-- <div class="col-xl-4 col-sm-6">
                                 <div class="benefits-col">
                                     <img class="img-fluid" src="<?php echo $url;?>images/bronze-img.png" alt="">
                                     <h6>BRONZE (2,000 LIFE HOURS COMPLETED)</h6>
@@ -88,7 +88,8 @@
                                         <li>$100 Safety Award for ZERO Incidents</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
+                            <?php get_template_part( 'partials/content','benefits' );?> 
                         </div>
                         <h4>Second Heading</h4>
                         <p>
