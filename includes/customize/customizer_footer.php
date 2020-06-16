@@ -2,7 +2,7 @@
 
 
 $wp_customize->add_panel('techflyte_footer_panel',array(
-        'title'             => 'TechFlyte Footer Settings',
+        'title'             => 'Footer Settings',
         'Description'       =>'You can customize footer of the theme, like logo, social media url etc',
         'priority'          =>200,
     ));

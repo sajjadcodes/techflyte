@@ -99,10 +99,10 @@
                             </p>
                             <div class="d-flex align-items-start">
                                 <img class="ratio-img" src="<?php echo $img_url;?>/images/ratio-img.png" alt="">
-                                <h6>Dolor sit amet, consectetur <span>adipiscing elit, sed do eiusmod tempor incididunt</span> ut labore et dolore</h6>
+                                <h6><?php _e('Dolor sit amet, consectetur','techflyte');?> <span><?php _e('Dolor sit amet, consectetur','techflyte');?></span> <?php _e('Dolor sit amet, consectetur','techflyte');?></h6>
                             </div>
                         </div>
-                        <img class="img-fluid pr-3 pr-lg-0" src="<?php echo $img_url;?>/images/service-img.png" alt="">
+                        <img class="img-fluid pr-3 pr-lg-0" src="<?php echo get_theme_mod('service_img');?>" alt="">
                     </div>
                     <div class="col-xl-5 col-lg-6 px-3 px-lg-0">
                         <div class="row">
@@ -129,7 +129,7 @@
                                     <img src="<?php echo $img_url;?>/images/visitor-img.png" alt="">
                                     <h5><?php _e('Visitor Mangement System','techflyte');?></h5>
                                     <p>
-                                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    <?php echo get_theme_mod('visitor_mangement_system');?>
                                     </p>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@
                                     <img src="<?php echo $img_url;?>/images/self-service.png" alt="">
                                     <h5>s<?php _e('Self Service Kisok','techflyte');?></h5>
                                     <p>
-                                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    <?php echo get_theme_mod('self_service_kisok');?>
                                     </p>
                                 </div>
                             </div>

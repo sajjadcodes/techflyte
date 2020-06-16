@@ -1,7 +1,7 @@
 <?php 
 
 $wp_customize->add_panel('techflyte_header_panel',array(
-        'title'             => 'TechFlyte Header Settings',
+        'title'             => 'Header Settings',
         'Description'       =>'You can customize header of the theme, like logo, social media url etc',
         'priority'          =>190,
     ));
