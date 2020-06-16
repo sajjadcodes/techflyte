@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><span>Loyalty Program</span></h2>
+                        <h2><span><?php _e('Loyalty Program','techflyte');?></span></h2>
                     </div>
                 </div>
             </div>
@@ -18,23 +18,17 @@
             <div class="row">
                 <div class="col-12">
                     <div class="inner-content-wrap">
-                        <h2>TechFlyte Loyalty Program</h2>
+                        <h2><?php _e('TechFlyte Loyalty Program ','techflyte');?></h2>
                         <div class="row">
                             <div class="col-lg-7">
-                                <h4>First Heading</h4>
+                                <h4><?php echo  get_theme_mod('loyalty_subtitle');?></h4>
                                 <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, job… and your next!
-                                </p>
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.
+                                   <?php echo get_theme_mod('loyalty_description'); ?> 
                                 </p>
                             </div>
                             <div class="col-lg-5">
                                 <div class="program-bnr">
-                                    <img class="img-fluid" src="<?php echo $url;?>images/program-img.png" alt="">
+                                    <img class="img-fluid" src="<?php echo get_theme_mod('loyalty_image');?>" alt="">
                                 </div>
                             </div>
                         </div>
