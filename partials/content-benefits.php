@@ -13,7 +13,7 @@
         ?>
         <div class="col-xl-4 col-sm-6">
           <div class="benefits-col">
-            <img class="img-fluid" src="<?php the_post_thumbnail();?>" alt="">
+            <?php the_post_thumbnail('post-thumbnail', ['class' =>'img-fluid']);?>
                 <h6><?php the_title();?></h6>
                                     
                     <?php if( have_rows('benefits_details') ){
@@ -34,4 +34,6 @@
 
     }
 }
+    }
+
         ?>

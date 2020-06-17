@@ -24,6 +24,10 @@ $wp_customize->add_setting('loyalty_image', array(
 
         ));
 
+$wp_customize->add_setting('loyalty_subtitle_two', array(
+
+));
+
 
 // section
 
@@ -43,6 +47,12 @@ $wp_customize->add_section( 'loyalty_image_section' , array(
             'priority'      => 175,
             'panel'         =>'techflyte_loyalty_panel',
         ) );
+$wp_customize->add_section('loyalty_subtitle_two_section', array(
+        'title'         =>__('loyalty Subtitle Two','techflyte'),
+        'priority'      =>175,
+        'panel'         =>'techflyte_loyalty_panel',
+));
+
 
 // controller
 
@@ -83,3 +93,16 @@ $wp_customize->add_section( 'loyalty_image_section' , array(
             'settings'   => 'loyalty_image',
         ) ) 
             );
+
+    
+    $wp_customize->add_control('loyalty_subtitle_two_controller', array(
+        'label'             =>__('Subtitle Two', 'techflyte'),
+        'section'           =>'loyalty_subtitle_two_section',
+        'settings'          =>'loyalty_subtitle_two',
+        'input_attrs'       =>array(
+            'placeholder'   => __(
+                'Subtitle', 'techflyte'
+            )
+        )
+
+    ));

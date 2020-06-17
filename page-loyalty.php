@@ -89,9 +89,10 @@
                                     </ul>
                                 </div>
                             </div> -->
-                            <?php get_template_part( 'partials/content','benefits' );?> 
+                            <?php get_template_part( 'partials/content','benefits');?>
+                            
                         </div>
-                        <h4>Second Heading</h4>
+                        <h4><?php echo get_theme_mod('loyalty_subtitle_two');?></h4>
                         <p>
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, job… and your next!
                         </p>
