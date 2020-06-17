@@ -1,5 +1,6 @@
 <?php 
 
+
 function tech_team_cpt_init() {
 
  $labels = array(

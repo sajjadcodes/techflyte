@@ -5,7 +5,6 @@ $url = get_template_directory_uri(  ) . '/assets/images';
 
 
 <?php get_header(); ?>
- 
 
       <div class="team-banner inner-page-bnr">
             <div class="container-fluid">
@@ -18,18 +17,19 @@ $url = get_template_directory_uri(  ) . '/assets/images';
         </div>
         <!-- Hero section End -->
         <!-- Team section -->
+      
         <div class="our-team">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-11 col-lg-12 m-auto text-center">
-                        <h2><b><?php bloginfo('name');?></b> Team</h2>
+                        <h2><b><?php bloginfo('description');?></b> Team</h2>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer to
                         </p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                  <?php get_template_part( 'partials/content','team' );?> 
+                  <?php get_template_part('partials/content','team');?>
                 </div>
                 <div class="row mt-xl-5 mt-lg-4 mt-md-3">
                     <div class="col-lg-6">

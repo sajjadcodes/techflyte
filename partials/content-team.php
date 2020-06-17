@@ -1,6 +1,6 @@
 
- <?php 
 
+<?php 
 $url = get_template_directory_uri(  ) . '/assets/images';
 
 
@@ -16,7 +16,7 @@ $url = get_template_directory_uri(  ) . '/assets/images';
         ?>
         <div class="col-lg-4 col-sm-6">
         <div class="team-col">
-            <img class="img-fluid" src="<?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail('post-thumbnail',['class'=>'img-fluid']); ?>
             <div class="team-caption text-center">
                 <h5><?php the_title();?></h5>
                 <span><?php the_excerpt(  );?></span>
