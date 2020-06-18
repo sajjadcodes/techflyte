@@ -17,7 +17,7 @@
         $wp_customize->add_setting( 'home_description' , array(
             
         ) );
-
+        
 
 // settings for Resume
         $wp_customize->add_setting('resume_title',array(
@@ -38,6 +38,17 @@
         $wp_customize->add_setting('why_description',array(
 
         ));
+        // experience_description
+
+          $wp_customize->add_setting( 'experience_description' , array(
+            
+        ) );
+         $wp_customize->add_setting( 'reputation_description' , array(
+            
+        ) );
+         $wp_customize->add_setting( 'solution_description' , array(
+            
+        ) );
         
 // customizer sections for Hero  Section
                    
@@ -92,7 +103,30 @@
         ));
 
 
+
+
+          $wp_customize->add_section('experience_description_section',array(
+          'title'                 => __('Experience description','techfylte'),
+          'priority'              =>212,
+          'panel'                 =>'techflyte_home_panel',
+        ));
+         $wp_customize->add_section('reputation_description_section',array(
+          'title'                 => __('Reputation description','techfylte'),
+          'priority'              =>212,
+          'panel'                 =>'techflyte_home_panel',
+        ));
+         $wp_customize->add_section('solution_description_section',array(
+          'title'                 => __('Solution description','techfylte'),
+          'priority'              =>212,
+          'panel'                 =>'techflyte_home_panel',
+        ));
+
+
+        
+
 // customizer control for Hero controller
+
+
                         
         $wp_customize->add_control('home_title_controller', array(
             'label'             => __( 'Header Title', 'techfylte' ),
@@ -176,4 +210,35 @@
 
         
 
-        
+   
+        $wp_customize->add_control('experience_description_controller', array(
+                'label'             => __( 'Experience Description', 'techfylte' ),
+                'type'              =>'textarea',
+                'section'           => 'experience_description_section',
+                'settings'          => 'experience_description',
+                'input_attrs'   => array(
+                        'placeholder' => __( 'Title', 'techflyte'),   
+                        )
+                ) );
+
+        $wp_customize->add_control('reputation_description_controller', array(
+                'label'             => __( 'Reputation Description', 'techfylte' ),
+                'type'              =>'textarea',
+                'section'           => 'reputation_description_section',
+                'settings'          => 'reputation_description',
+                'input_attrs'   => array(
+                        'placeholder' => __( 'Reputation Description', 'techflyte'),   
+                        )
+                ) );
+        $wp_customize->add_control('solution_description_controller', array(
+                'label'             => __('Solution Description', 'techfylte' ),
+                'type'              =>'textarea',
+                'section'           => 'solution_description_section',
+                'settings'          => 'solution_description',
+                'input_attrs'   => array(
+                        'placeholder' => __( 'Solution Description', 'techflyte'),   
+                        )
+                ) );
+
+
+

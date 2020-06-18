@@ -22,9 +22,9 @@ $url = get_template_directory_uri(  ) . '/assets/images';
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-11 col-lg-12 m-auto text-center">
-                        <h2><b><?php bloginfo('description');?></b> Team</h2>
+                        <h2><b><?php bloginfo('name');?></b> <?php _e('Team','techflyte');?></h2>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer to
+                        <?php echo get_theme_mod('team_description');?>
                         </p>
                     </div>
                 </div>
@@ -44,14 +44,12 @@ $url = get_template_directory_uri(  ) . '/assets/images';
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <p>
-                                    orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                <p>
-                                    orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                   <?php echo get_theme_mod('approach_description'); ?>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <p>
-                                    orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <?php echo get_theme_mod('method_description'); ?>
                                 </p>
                             </div>
                         </div>
