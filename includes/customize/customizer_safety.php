@@ -24,7 +24,13 @@
 
         ));
 // safety_subtitle_two
-        $wp_customize->add_setting('safety_subtitle_two', array(
+       
+
+        $wp_customize->add_setting('safety_description', array(
+
+        ));
+
+        $wp_customize->add_setting('safety_description_secondary', array(
 
         ));
 
@@ -39,21 +45,29 @@
 
         $wp_customize->add_section( 'safety_subtitle_section' , array(
             'title'         => __( 'Safety subtitle', 'techfylte' ),
-            'priority'      => 165,
+            'priority'      => 166,
             'panel'         =>'techflyte_safety_panel',
         ) );
 
          $wp_customize->add_section( 'safety_image_section' , array(
             'title'         => __( 'Safety image', 'techfylte' ),
-            'priority'      => 165,
+            'priority'      => 167,
             'panel'         =>'techflyte_safety_panel',
         ) );
-         $wp_customize->add_section( 'safety_subtitle_two_section' , array(
-            'title'         => __( 'Safety Subtitle Two', 'techfylte' ),
-            'priority'      => 165,
+        
+        $wp_customize->add_section( 'safety_description_section' , array(
+        'title'         => __( 'Safety Description', 'techfylte' ),
+        'priority'      => 168,
+        'panel'         =>'techflyte_safety_panel',
+        ) );
+
+         $wp_customize->add_section( 'safety_description_secondary_section' , array(
+            'title'         => __( 'safety Description Secondary', 'techfylte' ),
+            'priority'      => 169,
             'panel'         =>'techflyte_safety_panel',
         ) );
 
+        // safety_description
 
 
         // controller
@@ -97,10 +111,24 @@
     //safety_subtitle
 
 
-        $wp_customize->add_control('safety_subtitle_two_controller', array(
-                'label'             =>__('Main Description', 'techflyte'),
-                'section'           =>'safety_subtitle_two_section',
-                'settings'          =>'safety_subtitle_two',
+        
+        $wp_customize->add_control('safety_description_controller', array(
+        'label'             =>__('Safety Description', 'techflyte'),
+        'type'              =>'textarea',
+        'section'           =>'safety_description_section',
+        'settings'          =>'safety_description',
+        'input_attrs'       =>array(
+            'placeholder'   => __(
+                'safety description', 'techflyte'
+            )
+        )
+
+       ));
+       $wp_customize->add_control('safety_description_secondary_controller', array(
+                'label'             =>__('Secondary Description ', 'techflyte'),
+                'type'              =>'textarea',
+                'section'           =>'safety_description_secondary_section',
+                'settings'          =>'safety_description_secondary',
                 'input_attrs'       =>array(
                     'placeholder'   => __(
                         'safety subtitle Two', 'techflyte'

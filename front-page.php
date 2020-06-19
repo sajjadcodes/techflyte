@@ -31,8 +31,9 @@ get_header();
                 <div class="row">
                     <div class="col-md-6">
                         <h3>
-                        <?php echo get_theme_mod('resume_title');?>
+                            <?php echo get_theme_mod('resume_title');?>
                         </h3>
+                        
                         <p>
                            <?php echo get_theme_mod('resume_description');?></h3>
                         </p>

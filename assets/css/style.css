@@ -362,7 +362,7 @@ header .social-menu ul li {
     text-decoration: underline;
 }
 
-.techflyte a.contract-btn {
+.techflyte a.contract-btn .service-btn {
     font-size: 24.88px;
     background: #00d4e0;
     line-height: 82px;
@@ -3483,4 +3483,25 @@ div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing{
    border: 2px solid #00c7b7;
    color: white;
+}
+
+
+
+a.service-btn {
+    font-size: 36px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 300;
+    background: #a714c6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 44px;
+    margin-left: 20%;
+
+}
+
+a.service-btn:hover {
+    background:#00c7b7;
+
 }
