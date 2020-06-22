@@ -1,6 +1,6 @@
 
 <?php /* Template Name: Services */ ?>
-
+  
 
 <?php get_header(); ?>
 <?php $img_url = get_template_directory_uri(  ) . "/assets"; ?>
@@ -9,7 +9,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><?php wp_title(" ");?><span>Us</span></h2>
+                        <h2><?php wp_title(" ");?></h2>
                     </div>
                 </div>
             </div>
@@ -25,11 +25,13 @@
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="techy-caption-box">
-                        <h3><?php _e('TECHFLYTE','techflyte');?> <span><?php _e('Differnce','techflyte');?></span></h3>
+                        <h3><?php _e('Techflyte','techflyte');?> <span><?php _e('Difference','techflyte');?></span></h3>
                         <p>
                             <?php echo get_theme_mod('service_description');?>
+                           <a href="<?php esc_html_e('contact','techflyte');?>"><?php _e('here.','techflyte');?></a>
+                           
                         </p>
-                        
+                        <a class="service-btn" href="mailto:sales@techflyte.com "><?php _e('Contact Sales','techflyte');?></a>
                     </div>
                 </div>
             </div>
@@ -97,10 +99,7 @@
                             <p>
                             <?php echo get_theme_mod('service_description_two');?>
                             </p>
-                            <div class="d-flex align-items-start">
-                                <img class="ratio-img" src="<?php echo $img_url;?>/images/ratio-img.png" alt="">
-                                <h6><?php _e('Dolor sit amet, consectetur','techflyte');?> <span><?php _e('Dolor sit amet, consectetur','techflyte');?></span> <?php _e('Dolor sit amet, consectetur','techflyte');?></h6>
-                            </div>
+                            
                         </div>
                         <img class="img-fluid pr-3 pr-lg-0" src="<?php echo get_theme_mod('service_img');?>" alt="">
                     </div>
@@ -109,7 +108,7 @@
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
                                     <img src="<?php echo $img_url;?>/images/workforce-img.png" alt="">
-                                    <h5><?php _e('Pro Workforce','techflyte');?></h5>
+                                    <h5><?php _e('Cloud-Based Talent Relationship Marketing Platform','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('pro_workforce');?>
                                     </p>
@@ -118,7 +117,7 @@
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
                                     <img src="<?php echo $img_url;?>/images/queing-img.png" alt="">
-                                    <h5> <?php _e('Beyond Queing','techflyte');?></h5>
+                                    <h5> <?php _e('Candidate Marketing Team','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('beyond_queing');?>
                                     </p>
@@ -127,7 +126,7 @@
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
                                     <img src="<?php echo $img_url;?>/images/visitor-img.png" alt="">
-                                    <h5><?php _e('Visitor Mangement System','techflyte');?></h5>
+                                    <h5><?php _e('Call Center','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('visitor_mangement_system');?>
                                     </p>
@@ -136,7 +135,7 @@
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
                                     <img src="<?php echo $img_url;?>/images/self-service.png" alt="">
-                                    <h5>s<?php _e('Self Service Kisok','techflyte');?></h5>
+                                    <h5>s<?php _e('Offshore Recruiting','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('self_service_kisok');?>
                                     </p>

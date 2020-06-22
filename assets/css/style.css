@@ -65,6 +65,7 @@ header .nav-menu ul li ul.sub-menu {
     height: 0;
     visibility: hidden;
     opacity: 0;
+    z-index:999;
 }
 
 header .nav-menu ul li:hover ul {
@@ -222,7 +223,8 @@ header .social-menu ul li {
     margin-top: 296px;
 }
 
-.resume h3 {
+.resume h3 
+{
     font-size: 55.24px;
     color: #a714c6;
     text-transform: uppercase;
@@ -237,7 +239,47 @@ header .social-menu ul li {
     margin-bottom: 90px;
 }
 
-.resume a {
+/* testing */
+
+/* Style wrapping span as button */
+/*   */
+
+.btn-file {
+    position: relative;
+}
+.btn-file--upload {
+    position: absolute;
+    background: #a714c6;
+     min-width: 300px;
+     padding: 20px;
+     max-width: 100%;
+     height: 80px;
+     text-align: center;
+     color:white;
+     font-size: 30px;
+   
+}
+.btn-file .resume-file {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    opacity: 0;
+}
+.btn-file .resume-file:hover{
+    background-color:#450852;
+}
+.btn-file input[type=file] {
+    width: 300px;
+    height: 80px;
+}
+
+ /* .resume a */
+ /* 
+  {
+     content:"Upload Resume";
     background: #a714c6;
     padding: 29px 33px 15px;
     font-size: 30px;
@@ -245,7 +287,9 @@ header .social-menu ul li {
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
-}
+    outline: none;
+    border: none;
+} */
 
 .resume a:hover {
     opacity: .8;
@@ -3428,4 +3472,37 @@ footer a.download-btn:hover {
 div.wpcf7-acceptance-missing {
     border: 2px solid #00c7b7;
     color: white;
+}
+
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #00d4e0;
+    color: white;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing{
+   border: 2px solid #00c7b7;
+   color: white;
+}
+
+
+
+a.service-btn{
+    font-size: 36px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 300;
+    background: #a714c6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 44px;
+    margin-left: 20%;
+
+}
+
+a.service-btn:hover {
+    background:#00c7b7;
+
 }

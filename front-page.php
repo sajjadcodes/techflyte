@@ -16,8 +16,9 @@ get_header();
                         <h2><?php echo get_theme_mod('home_subtitle');?></h2>
                         <span><?php echo get_theme_mod('home_description');?></span>
                         <div class="bnr-btns">
-                            <a href="<?php esc_html_e('contractor','techflyte');?>"><?php _e('CONTRACTORS','techflyte');?></a>
-                            <a href="#"><?php _e('Clients','techflyte');?></a>
+                            <a href="https://jobs.techflyte.com/"><?php _e('Jobs','techflyte');?></a>
+                            <a href="<?php esc_html_e('services','techflyte');?>"><?php _e('Clients','techflyte');?></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -30,13 +31,15 @@ get_header();
                 <div class="row">
                     <div class="col-md-6">
                         <h3>
-                        <?php echo get_theme_mod('resume_title');?>
+                            <?php echo get_theme_mod('resume_title');?>
                         </h3>
+                        
                         <p>
                            <?php echo get_theme_mod('resume_description');?></h3>
                         </p>
-                        <?php $images_url = get_template_directory_uri( ) . '/assets' ?>
-                        <a href="<?php   do_shortcode( '[contact-form-7 id="1516" title="resume_upload"]' ); ?>">Upload Resume <img src="<?php echo $images_url;?>/images/upload-img.png" alt=""></a>
+                        
+                        <!-- <a href="#">Upload Resume <img src="/images/upload-img.png" alt=""></a> -->
+                        <?php  echo do_shortcode( '[contact-form-7 id="1516" title="resume_upload"]' ); ?>
                        
                             
                     </div>
@@ -65,37 +68,37 @@ get_header();
                             <div class="col-md-4">
                                 <div class="techflyte-box">
                                     <img class="img-fluid m-auto d-block" src="images/benefits-img.png" alt="">
-                                    <h4><?php _e('BENEFITS','techflyte'); ?></h4>
+                                    <h4><?php _e('Experience','techflyte'); ?></h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                        <?php echo get_theme_mod('experience_description');?>
                                     </p>
-                                    <a href="#">Read More...</a>
+                                   
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="techflyte-box">
                                     <img class="img-fluid m-auto d-block" src="images/safety-img.png" alt="">
-                                    <h4><?php _e('SAFETY ','techflyte'); ?></h4>
+                                    <h4><?php _e('Reputation','techflyte'); ?></h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                            <?php echo get_theme_mod('reputation_description');?>
                                     </p>
-                                    <a href="#">Read More...</a>
+                                   
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="techflyte-box">
                                     <img class="img-fluid m-auto d-block" src="images/comments-img.png" alt="">
-                                    <h4><?php _e('FAQ’S','techflyte'); ?></h4>
+                                    <h4><?php _e('Solutions','techflyte'); ?></h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                         <?php echo get_theme_mod('experience_description');?>
                                     </p>
-                                    <a href="#">Read More...</a>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <a class="contract-btn" href="<?php esc_html_e('contractor','techflyte');?>"><?php _e('CONTRACTORS','techflyte');?></a>
+                                <a class="contract-btn" href="<?php esc_html_e('contact','techflyte');?>"><?php _e('Lets Talk','techflyte');?></a>
                             </div>
                         </div>
                     </div>
@@ -105,6 +108,14 @@ get_header();
         <!-- Techflyte Section End -->
         <!-- Footer Section -->
       
+        <script>
+            if ($('#resume-file').val() !== '') {
+            e.preventDefault();
+            alert('Please upload File');
+      } else {
+          $("#wpcf7-f1516-o1").submit();
+      }
+        </script>
         <?php get_footer(); ?>
 
 
