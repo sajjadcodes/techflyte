@@ -18,7 +18,7 @@
 			add_action( 'init', 'tech_team_cpt_init');
 			add_action( 'init', 'tech_faq_cpt_init');
 			add_action( 'init','tech_benefits_cpt_init');
-
+			add_action('after_switch_theme','my_rewrite_flush');
 
 
 // Option page using ACF

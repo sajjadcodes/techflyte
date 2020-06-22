@@ -65,6 +65,7 @@ header .nav-menu ul li ul.sub-menu {
     height: 0;
     visibility: hidden;
     opacity: 0;
+    z-index:999;
 }
 
 header .nav-menu ul li:hover ul {
@@ -362,7 +363,7 @@ header .social-menu ul li {
     text-decoration: underline;
 }
 
-.techflyte a.contract-btn .service-btn {
+.techflyte a.contract-btn {
     font-size: 24.88px;
     background: #00d4e0;
     line-height: 82px;
@@ -3487,7 +3488,7 @@ div.wpcf7-acceptance-missing{
 
 
 
-a.service-btn {
+a.service-btn{
     font-size: 36px;
     line-height: 28px;
     color: #ffffff;

@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><span>Safety & Compliance</span></h2>
+                        <h2><span><?php _e('Safety & Compliance','techflyte');?></span></h2>
                     </div>
                 </div>
             </div>
@@ -36,29 +36,7 @@
                         </div>
                         
                         <p><?php echo get_theme_mod('safety_description_secondary');?></p>
-                        <!-- <ul>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                            </li>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-                            </li>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            </li>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                            </li>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing.
-                            </li>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard, 
-                            </li>
-                            <li>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                            </li>
-                        </ul> -->
+                    
                     </div>
                 </div>
             </div>

@@ -25,9 +25,17 @@ function tech_team_cpt_init() {
     'menu_position' => 5,
     'supports'      => array( 'title', 'thumbnail', 'excerpt'),
     'has_archive'   => true,
-    'menu_icon'     =>'dashicons-businessman'
+    'menu_icon'     =>'dashicons-businessman',
+    'rewrite'            => array( 'slug' => 'member' ),
   );
 
 
   register_post_type( 'team', $args ); 
+}
+
+
+
+function my_rewrite_flush() {
+    tech_team_cpt_init();
+    flush_rewrite_rules();
 }

@@ -10,13 +10,15 @@
 
         // settings
 
-    $wp_customize->add_setting('contract_description', array(
-
-    ));
 
        $wp_customize->add_setting('contract_image', array(
 
-    ));
+        ));
+
+     $wp_customize->add_setting('contract_description', array(
+
+        ));
+
 
 
     // section 
@@ -24,6 +26,13 @@
 
      $wp_customize->add_section( 'contract_image_section' , array(
         'title'         => __( 'Contractor Image', 'techfylte' ),
+        'priority'      => 165,
+        'panel'         =>'techflyte_contractor_panel',
+    ) );
+
+    
+     $wp_customize->add_section( 'contract_description_section' , array(
+        'title'         => __( 'Contractor Description', 'techfylte' ),
         'priority'      => 165,
         'panel'         =>'techflyte_contractor_panel',
     ) );

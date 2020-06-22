@@ -1,6 +1,6 @@
 
 <?php /* Template Name: Services */ ?>
-
+  
 
 <?php get_header(); ?>
 <?php $img_url = get_template_directory_uri(  ) . "/assets"; ?>
@@ -28,7 +28,7 @@
                         <h3><?php _e('Techflyte','techflyte');?> <span><?php _e('Difference','techflyte');?></span></h3>
                         <p>
                             <?php echo get_theme_mod('service_description');?>
-                           <a href="<?php esc_html_e('contact','techflyte');?>"><?php _e('here','techflyte');?></a>
+                           <a href="<?php esc_html_e('contact','techflyte');?>"><?php _e('here.','techflyte');?></a>
                            
                         </p>
                         <a class="service-btn" href="mailto:sales@techflyte.com "><?php _e('Contact Sales','techflyte');?></a>
