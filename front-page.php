@@ -38,8 +38,8 @@ get_header();
                            <?php echo get_theme_mod('resume_description');?></h3>
                         </p>
                         
-                        <!-- <a href="#">Upload Resume <img src="/images/upload-img.png" alt=""></a> -->
-                        <?php  echo do_shortcode( '[contact-form-7 id="1516" title="resume_upload"]' ); ?>
+                      <a href="<?php esc_html_e('resume','techflyte');?>">Upload Resume <img src=<?php echo  get_template_directory_uri(  );?>/assets/images/upload-img.png" alt=""></a>
+                        
                        
                             
                     </div>
@@ -108,14 +108,7 @@ get_header();
         <!-- Techflyte Section End -->
         <!-- Footer Section -->
       
-        <script>
-            if ($('#resume-file').val() !== '') {
-            e.preventDefault();
-            alert('Please upload File');
-      } else {
-          $("#wpcf7-f1516-o1").submit();
-      }
-        </script>
+    
         <?php get_footer(); ?>
 
 

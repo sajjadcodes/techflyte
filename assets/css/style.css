@@ -244,10 +244,10 @@ header .social-menu ul li {
 /* Style wrapping span as button */
 /*   */
 
-.btn-file {
+/* .btn-file {
     position: relative;
 }
-.btn-file--upload {
+ {
     position: absolute;
     background: #a714c6;
      min-width: 300px;
@@ -259,7 +259,7 @@ header .social-menu ul li {
      font-size: 30px;
    
 }
-.btn-file .resume-file {
+ {
     min-width: 300px;
     max-width: 100%;
     margin: 0px;
@@ -267,19 +267,17 @@ header .social-menu ul li {
     height: 80px;
     position: relative;
     opacity: 0;
-}
-.btn-file .resume-file:hover{
+} */
+/* .resume a:hover {
     background-color:#450852;
-}
-.btn-file input[type=file] {
-    width: 300px;
-    height: 80px;
-}
+} */
+/* .btn-file input[type=file] {
+width: 300px;
+height: 80px;
+} */
 
- /* .resume a */
- /* 
-  {
-     content:"Upload Resume";
+ .resume a{
+     /* content:"Upload Resume"; */
     background: #a714c6;
     padding: 29px 33px 15px;
     font-size: 30px;
@@ -289,7 +287,8 @@ header .social-menu ul li {
     text-decoration: none;
     outline: none;
     border: none;
-} */
+    height:80px;
+} 
 
 .resume a:hover {
     opacity: .8;
