@@ -1,0 +1,3535 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+
+/* Header */
+header {
+    background: url('../images/header-bg.png') no-repeat;
+    padding: 50px 50px 40px 69px;
+    background-size: cover;
+}
+
+header button.nav-menu-btn {
+    background: transparent;
+    border: 0;
+    outline: none;
+    display: none;
+}
+
+button.nav-menu-btn span {
+    display: block;
+    width: 33px;
+    height: 1.6px;
+    background: #a714c6;
+    margin-bottom: 5px;
+    transition: all 250ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+header .nav-menu ul li {
+    padding: 0 18px;
+    position: relative;
+}
+
+header .nav-menu ul li a {
+    font-size: 38.73px;
+    line-height: 28.11px;
+    color: #a714c6;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 17px 0;
+    display: block;
+    border-bottom: 1px solid transparent;
+}
+
+header .nav-menu ul li:hover a {
+    border-color: #a714c6;
+    color: #10d6e2;
+}
+
+header .nav-menu ul li a.active {
+    border-color: #a714c6;
+    color: #10d6e2;
+}
+
+header .nav-menu ul li ul.sub-menu {
+    position: absolute;
+    list-style-type: none;
+    padding: 37px 0 43px;
+    background: url('../images/sub-menu-bg.png') no-repeat;
+    background-size: cover;
+    min-width: 477px;
+    text-align: center;
+    margin-left: -20px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index:999;
+}
+
+header .nav-menu ul li:hover ul {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+header .nav-menu ul li ul.sub-menu li {
+    padding: 0;
+}
+
+header .nav-menu ul li ul.sub-menu li a {
+    color: #10d6e2;
+    font-weight: 300;
+    padding: 17px 0;
+    border: 0;
+}
+
+header .nav-menu ul li ul.sub-menu li a:hover {
+    background: #f1f1f1;
+    color: #a714c6;
+}
+
+header .search-bar {
+    padding-left: 18px;
+    position: relative;
+}
+
+header .search-bar button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+header .search-box {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+header .search-box {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all ease .5s;
+    z-index: 2;
+}
+
+header .search-bar.is-active .search-box {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+header .search-box form {
+    border: 2px solid #a714c6;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+header .search-box form input[type="search"] {
+    border: 0;
+    padding: 5px;
+    outline: none;
+}
+
+header .search-box button {
+    padding: 5px 10px;
+    background: #a714c6;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+header .social-menu ul li {
+    padding: 0 5px;
+}
+
+/* Banner */
+.banner {
+    background: url('../images/hero-bg.png') no-repeat;
+    background-size: cover;
+    padding: 354px 0 330px;
+}
+
+.banner h1 {
+    font-size: 113px;
+    line-height: 111px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.banner h2 {
+    font-size: 113px;
+    line-height: 111px;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 25px;
+}
+
+.banner span {
+    font-size: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0 0 138px;
+    display: block;
+}
+
+.banner .bnr-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bnr-btns a {
+    font-size: 37.19px;
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 24px 15px;
+    width: 50%;
+    background: #a714c6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 30px;
+    transition: all ease .5s;
+}
+
+.banner .bnr-btns a:hover {
+    color: #a714c6;
+    background: #ffffff;
+}
+
+.banner .bnr-btns a:last-child {
+    margin-right: 0;
+}
+
+.resume {
+    background: url('../images/resume-bg.png') no-repeat;
+    padding: 174px 60px 83px 160px;
+}
+
+
+.resume .resume-box {
+    margin-top: 296px;
+}
+
+.resume h3 
+{
+    font-size: 55.24px;
+    color: #a714c6;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.resume p {
+    font-size: 27.17px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+/* testing */
+
+/* Style wrapping span as button */
+/*   */
+
+/* .btn-file {
+    position: relative;
+}
+ {
+    position: absolute;
+    background: #a714c6;
+     min-width: 300px;
+     padding: 20px;
+     max-width: 100%;
+     height: 80px;
+     text-align: center;
+     color:white;
+     font-size: 30px;
+   
+}
+ {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    opacity: 0;
+} */
+/* .resume a:hover {
+    background-color:#450852;
+} */
+/* .btn-file input[type=file] {
+width: 300px;
+height: 80px;
+} */
+
+ .resume a{
+     /* content:"Upload Resume"; */
+    background: #a714c6;
+    padding: 29px 33px 15px;
+    font-size: 30px;
+    line-height: 28px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    height:80px;
+} 
+
+.resume a:hover {
+    opacity: .8;
+}
+
+.resume a img {
+    margin-left: 68px;
+}
+
+.techflyte {
+    background: url('../images/techyflyte-bg.png') no-repeat;
+    background-size: cover;
+    padding: 210px 0 196px;
+}
+
+.techflyte h2 {
+    font-size: 99.57px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.techflyte p {
+    font-size: 35px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 120px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.techflyte .techflyte-box {
+    background: #ffffff;
+    padding: 35px 60px 40px;
+    box-shadow: 0 0 15px 1px #e6e6e6;
+    margin-bottom: 145px;
+}
+
+.techflyte .techflyte-box h4 {
+    font-size: 35px;
+    line-height: .8;
+    color: #2f2f2f;
+    font-weight: 400;
+    margin: 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.techflyte .techflyte-box p {
+    font-size: 16.54px;
+    line-height: 21px;
+    color: #2f2f2f;
+    font-weight: 400;
+    margin-bottom: 45px;
+    text-align: left;
+    padding: 0;
+}
+
+.techflyte .techflyte-box a {
+    font-size: 24.88px;
+    line-height: 18.06px;
+    color: #00d4e0;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.techflyte .techflyte-box a:hover {
+    text-decoration: underline;
+}
+
+.techflyte a.contract-btn {
+    font-size: 24.88px;
+    background: #00d4e0;
+    line-height: 82px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 45px;
+    display: inline-block;
+}
+
+.techflyte a.contract-btn:hover {
+    opacity: .8;
+}
+
+
+/* OUR TEAM */
+.our-team {
+    padding: 162px 207px 113px;
+    background: #f6f4ef;
+}
+
+.our-team h2 {
+    font-size: 74.26px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+.our-team p {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 300;
+    /* margin-bottom: 125px;  */
+}
+
+.our-team .team-col {
+    position: relative;
+    margin-bottom: 90px;
+    box-shadow: 0 0 25px 5px #dad9d5;
+}
+.our-team .team-col img {
+	display: block;
+	margin: 0 auto;
+}
+
+.our-team .team-caption {
+    background: rgb(0, 212, 224, .7);
+    padding: 50px 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 123;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .5s;
+}
+.our-team .team-caption.active {
+	opacity: 1;
+    visibility: visible;
+}
+.our-team .team-col:hover .team-caption {
+	opacity: 1;
+    visibility: visible;
+}
+.our-team .team-caption h5 {
+    font-size: 40px;
+    line-height: 31px;
+    color: #a714c6;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.our-team .team-caption span {
+    font-size: 22px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 23px;
+    display: block;
+}
+
+.our-team .team-caption ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.our-team .team-caption ul li {
+    padding: 0 6px;
+}
+
+.our-team .team-detail h6 {
+	font-size: 31.46px;
+    line-height:38px;
+    color: #a714c6;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.our-team .team-detail p {
+	font-size: 22px;
+    line-height: 26px;
+    color: #232031;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.our-team .team-detail p:last-child {
+	margin-bottom: 0;
+}
+
+.our-team .nav-tabs .nav-link {
+	padding: 25px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	color: #2b2b2b;
+	font-weight: 400;
+	border: 0;
+}
+
+.our-team .nav-tabs {
+	border: 0;
+}
+
+.our-team .nav-tabs .nav-link img {
+	margin-right: 15px;
+}
+
+.our-team .tab-content {
+	padding: 25px 45px 25px;
+	background: #ffffff;
+}
+
+.our-team .tab-content p {
+	font-size: 20px;
+    line-height: 25px;
+    color: #aaaaaa;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.our-team .tab-content p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background: #282842;
+}
+
+footer .copy-rights {
+    background: #232031;
+    padding: 35px 0;
+    text-align: center;
+}
+
+footer .copy-rights p {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #00d4e0;
+    font-weight: 400;
+    margin: 0;
+}
+
+footer .ftr-main {
+    padding: 0 150px 0 120px;
+}
+
+footer .contact-form {
+    padding: 77px 47px 77px 40px;
+    background: #32324e;
+}
+
+footer .contact-form h5 {
+    font-size: 54.59px;
+    line-height: 43px;
+    color: #00d4e0;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer .contact-form form {
+    max-width: 433px;
+    margin: 0 auto 6px;
+}
+
+footer .contact-form form label {
+    font-size: 20px;
+    line-height: 13px;
+    color: #00d4e0;
+    font-weight: 400;
+    display: block;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+footer .contact-form form input.input-field {
+    width: 100%;
+    background: #282842;
+    color: #00d4e0;
+    font-size: 18px;
+    height: 47px;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+footer .contact-form form input.input-field:focus,
+footer .contact-form form textarea.input-field:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 40, 66, 0.67);
+}
+
+footer .contact-form form textarea.input-field {
+    width: 100%;
+    background: #282842;
+    color: #00d4e0;
+    font-size: 18px;
+    height: 123px;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 44px;
+    resize: none;
+}
+
+footer .contact-form form input[type="submit"] {
+    background: #00d4e0;
+    padding: 0 25px;
+    border-radius: 3px;
+    font-size: 18.89px;
+    color: #424357;
+    line-height: 37px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+footer .contact-form form input[type="submit"]:hover {
+    background: #282842;
+    color: #00d4e0;
+}
+
+footer .contact-icon {
+    width: 44px;
+    flex: 0 0 44px;
+}
+
+footer .contact-detail p {
+    font-size: 26px;
+    line-height: 1.2;
+    color: #00d4e0;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-left: 44px;
+}
+
+footer .ftr-right {
+    padding: 157px 0 109px 156px;
+}
+
+footer .social-detail {
+    padding-bottom: 95px;
+    border-bottom: 1px solid #424357;
+    margin-bottom: 70px;
+}
+
+footer .social-detail label {
+    font-size: 30px;
+    line-height: 24px;
+    color: #00d4e0;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 42px;
+    padding-left: 10px;
+}
+
+footer .social-detail ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .social-detail ul li {
+    margin-left: 10px;
+}
+
+footer .social-detail ul li:first-child {
+    margin-left: 0;
+}
+
+footer .subscriber input.input-subscribe {
+    width: 320px;
+    height: 50px;
+    background: #424357;
+    border: none;
+    outline: none;
+    color: #00d4e0;
+    font-size: 18px;
+    padding: 0 10px;
+    border-radius: 0;
+}
+
+footer .subscriber input.input-subscribe:focus {
+    box-shadow: 0 0 0 0.2rem rgba(66, 67, 87, 0.67843137);
+}
+
+footer .subscriber button.submit {
+    width: 120px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    background: #00d4e0;
+    cursor: pointer;
+}
+
+footer .ftr-menu h6 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #00d4e0;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+footer .ftr-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .ftr-menu ul li {
+    margin-bottom: 10px;
+}
+
+footer .ftr-menu ul li a {
+    font-size: 14.43px;
+    line-height: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    display: inline-block;
+}
+
+footer .ftr-menu ul li a:hover {
+    color: #00d4e0;
+}
+
+footer a.download-btn {
+    display: inline-block;
+    background: #00d4e0;
+    padding: 0 14px;
+    border-radius: 3px;
+    font-size: 14.63px;
+    color: #424357;
+    line-height: 44px;
+    text-decoration: none;
+}
+
+footer a.download-btn:hover {
+    background: #424357;
+    color: #00d4e0;
+}
+
+.chat-box {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.chat-box button {
+    border: none;
+    padding: 0;
+    outline: none;
+    background: transparent;
+}
+
+/* OUR TEAM */
+.team-banner {
+    background: url('../images/team-banner-bg.png') no-repeat;
+    background-size: cover;
+}
+.service-banner {
+	background: url('../images/team-banner-bg.png') no-repeat;
+    background-size: cover;
+}
+
+.inner-page-bnr {
+    padding: 131px 0 454px 88px;
+}
+
+.inner-page-bnr h2 {
+    font-size: 99.57px;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.inner-page-bnr h2 span {
+    color: #04d5e0;
+}
+/* OUR SERVICES */
+.techy-difference {
+	background: #f6f4ef;
+	padding:170px 170px 140px 0;
+}
+.sidebar-bnr {
+	box-shadow: 0 0 25px 5px #d6d5d0;
+}
+.sidebar-bnr img {
+	width: 100%;
+}
+.techy-caption-box {
+	background: #ffffff;
+	padding: 80px 40px 90px 54px;
+	box-shadow: 0 0 25px 5px #d6d5d0;
+	margin-left: -60px;
+    position: relative;
+    z-index: 1;
+}
+.techy-caption-box h3 { 
+	font-size: 54.05px;
+	line-height: .9;
+	color: #a714c6;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+.techy-caption-box h3 span { 
+	color: #04d5e1;
+	font-weight: 300;
+}
+
+.techy-caption-box p {
+	font-size: 26.88px;
+	line-height: 33px;
+	color: #181818;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.techy-caption-box p:last-child {
+	margin-bottom: 0;
+}
+
+.staff-firm {
+    background: url('../images/firm-bg.png') no-repeat;
+    background-size: cover;
+    padding:113px 125px 59px; 
+}
+.staff-firm h2 {
+    font-size: 74.26px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 700;
+    margin-bottom: 86px;
+}
+.staff-firm .firm-col .firm-col-head {
+    margin-bottom: 57px;
+}
+.staff-firm .firm-col .firm-col-head h4 {
+    font-size: 208.38px;
+    line-height: .8;
+    color: #25cad2;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.staff-firm .firm-col .firm-col-head span {
+    font-size: 39.93px;
+    line-height: 39px;
+    color: #a714c6;
+    font-weight: 700;
+}
+.staff-firm .firm-col .firm-col-head img {
+    margin-left: 22px;
+}
+.staff-firm .firm-col p {
+    font-size: 25.67px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 300;
+    padding-left: 25px;
+}
+.our-services {
+    padding: 120px 170px 110px 0;
+}
+.our-services .service-detail {
+    padding-left: 197px;
+    margin-bottom: 125px;
+    padding-right: 125px;
+}
+.our-services img.ratio-img {
+    width: 42px;
+    margin-right: 30px;
+}
+.our-services .service-detail h3 {
+    font-size: 88.92px;
+    line-height: .8;
+    color: #a714c6;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 100px;
+}
+.our-services .service-detail p {
+    font-size: 22px;
+    line-height: 27px;
+    color: #0f1923;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    margin-bottom: 55px;
+}
+.our-services .service-detail h6 {
+    font-size: 22px;
+    line-height: 27px;
+    color: #0f1923;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.our-services .service-detail h6 span {
+    color: #a714c6;
+}
+.our-services .service-col {
+    box-shadow: 0 10px 25px 1px #dddddd;
+    padding: 46px 10px 64px 13px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+.our-services .service-col img {
+    margin-bottom: 46px;
+}
+.our-services .service-col h5 {
+    font-size: 20.45px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 23px;
+}
+.our-services .service-col p {
+    font-size: 14.06px;
+    line-height: 17px;
+    color: #0f1923;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 0;
+}
+
+/* CONTRACTOR */
+.contractor-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+.contractors {
+    background: #f6f4ef;
+    padding:138px 104px 176px 0;
+}
+.contractor-caption-box {
+    padding-left: 102px;
+}
+.contractor-caption-box h3 {
+    font-size: 92.15px;
+    line-height: .8;
+    color: #04d5e1;
+    font-weight: 700;
+    margin-bottom: 88px;
+}
+.contractor-caption-box p {
+    font-size: 29.9px;
+    line-height: 36px;
+    color: #181818;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.contractor-caption-box a {
+    font-size: 38.62px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+    background: #a714c6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 77px;
+    border-radius: 44px;
+}
+
+.contractor-caption-box a:hover {
+    background: #04d5e1;
+}
+
+/* INFORMATION */
+.information {
+    background: #ffffff;
+    padding: 129px 80px 236px;
+}
+.information h6 {
+    font-size: 39.78px;
+    line-height:30px;
+    color: #a714c6;
+    font-weight:400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.information h2 {
+    font-size: 72px;
+    line-height:.9;
+    color: #00d4e0;
+    font-weight:300;
+    margin-bottom: 155px;
+}
+.information .card {
+    border:none;
+}
+
+.information .card-header {
+    border:none;
+    border-radius: 15px;
+    background: #f6f4ef;
+    padding:0;
+    margin-bottom: 12px;
+}
+.information .card-header button {
+    padding: 46px 50px 46px 100px;
+    outline: none;
+    border:none;
+    font-size: 28px;
+    color: #6f6f79;
+    font-weight:400;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+.controler-signs {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    z-index: 1;
+}
+.controler-signs span {
+    width: 40px;
+    height: 6px;
+    background: #cebc98;
+    border-radius: 3px;
+    display: block;
+    transition: all ease .5s;
+    
+}
+.card-header button.collapsed .controler-signs span { 
+    transform: rotate(90deg);
+}
+.card-header .controler-signs span:last-child {
+    position: relative;
+    top: -6px;
+}
+.card-header button.collapsed .controler-signs span:last-child {
+    transform: rotate(0deg);
+}
+.information .card-header button:focus {
+    box-shadow: none;
+    text-decoration: none;
+}
+.information .card-header button:hover {
+    text-decoration: none;
+}
+.information .card-body {
+    padding: 28px 70px 40px;
+    font-size: 25px;
+    line-height: 36px;
+    color: #6f6f79;
+    font-weight:400;
+    font-family: 'Rubik', sans-serif;
+}
+/* CONTACT */
+.contact-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+
+.contact-banner h2 { 
+    font-weight: 300;
+}
+.contact-banner h2 span { 
+    font-weight: 700;
+}
+.contact-us {
+    padding: 198px 230px 160px;
+}
+.contact-us h3 {
+    font-size: 70.73px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:600;
+    margin-bottom: 98px;
+    text-align: center;
+}
+.contact-us span {
+    color: #00d4e0;
+}
+.contact-us p {
+    font-size: 30.65px;
+    line-height: 1.5;
+    color: #131313;
+    font-weight:300;
+    margin-bottom: 109px;
+    padding: 0 150px;
+    text-align: center;
+}
+.contact-us p a {
+    color: #a714c6;
+}
+.contact-us .contact-form {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 130px 80px 100px;
+    box-shadow: 0 0 30px 1px #f5e5f9;
+}
+.contact-us .contact-form h4 {
+    font-size: 42px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:600;
+    margin-bottom: 40px;
+}
+.contact-us .contact-form label {
+    font-size: 28.05px;
+    line-height: 1.1;
+    color: #c8c8c8;
+    font-weight:400;
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-us .contact-form input.input-field {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight:400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+.contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form textarea {
+    box-shadow: none;
+}
+
+.contact-us .contact-form textarea {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight:400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 70px;
+    margin-bottom: 90px;
+    border-radius: 0;
+}
+.contact-us .contact-form button {
+    background:#a714c6;
+    line-height: 67px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    height: 67px;
+    font-weight: 500;
+    width: 233px;
+    box-shadow: 0 20px 45px 0 #acb9c7;
+    display: flex;
+    align-items: center;
+}
+.contact-us .contact-form button:hover {
+    background: #a714c6cf
+}
+
+.contact-us .contact-form button img {
+    margin-left: 25px;
+}
+
+/* LOYALTY PROGRAM */
+.loyalty-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+.loyalty-program {
+     background: url('../images/inner-content-bg.png');
+    padding: 137px 130px 164px;
+}
+.inner-content-wrap {
+    background: #ffffff;
+    padding: 123px 188px 147px 220px;
+    box-shadow: 0 0 20px -10px #b9b9b9;
+}
+.loyalty-program h2 {
+    font-size:92.15px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:700;
+    margin-bottom: 110px;
+    text-align: center;
+}
+.loyalty-program h4 {
+    font-size:32px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight:500;
+    margin-bottom: 30px;
+}
+.loyalty-program p {
+    font-size:22px;
+    line-height: 26px;
+    color: #000000;
+    font-weight:400;
+    margin-bottom: 32px;
+}
+.loyalty-program p:last-child {
+    margin-bottom: 0;
+}
+.program-bnr {
+    margin-top: 24px;
+}
+.loyalty-program h5 {
+    font-size:32px;
+    line-height: 1;
+    color: #a714c6;
+    font-weight:500;
+    margin: 77px 0 54px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.benefits-col {
+    margin-bottom: 70px;
+}
+
+.benefits-col img {
+    margin: 0 auto 23px;
+    display: block;
+}
+
+.benefits-col h6 {
+    font-size:18.23px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight:300;
+    margin-bottom: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.benefits-col ul {
+    list-style-type: none;
+    padding: 0 0 0 65px;
+    margin: 0;
+}
+.benefits-col ul li {
+    font-size:18.23px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight:300;
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 25px;
+}
+.benefits-col ul li::before {
+    content: "";
+    position: absolute;
+    background:#a714c6;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    border-radius: 50%;
+    top: 6px;
+}
+
+/* SAFETY COMPLIANCE */
+.safety-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px; 
+}
+
+.safety-compliance h3 {
+    font-size:44px;
+    line-height: 51px;
+    color: #a714c6;
+    font-weight:500;
+    margin-bottom: 60px;
+}
+.safety-compliance ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+.safety-compliance ul li {
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 300;
+    margin-bottom: 35px;
+    position: relative;
+    padding-left: 30px;
+}
+.safety-compliance ul li::before {
+    content: "";
+    position: absolute;
+    background: #a714c6;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    border-radius: 50%;
+    top: 6px;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 1875px) {
+    .banner h1 {
+        font-size: 100px;
+        line-height: 111px;
+        margin: 0 0 10px;
+    }
+
+    .banner h2 {
+        font-size: 99px;
+        line-height: 100px;
+        margin: 0 0 20px;
+    }
+
+    .banner span {
+        font-size: 55px;
+    }
+
+    .techy-caption-box h3 {
+	    font-size: 45px;
+	    margin-bottom: 45px;
+	}
+	.techy-caption-box p {
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 30px;
+	}
+    .contact-us {
+        padding: 150px 200px;
+    }
+    .contact-us h3 {
+        font-size: 65px;
+        margin-bottom: 90px;
+    }
+    .contact-us p {
+        font-size: 30px;
+        margin-bottom: 100px;
+        padding: 0 130px;
+    }
+    .inner-content-wrap {
+        padding: 120px 150px 140px 200px;
+    }
+    footer .ftr-main {
+        padding: 0 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    header {
+        padding: 40px 30px;
+    }
+
+    header .nav-menu ul li {
+        padding: 0 15px;
+    }
+
+    header .nav-menu ul li a {
+        font-size: 35px;
+        line-height: 25px;
+    }
+
+    header .nav-menu ul li ul.sub-menu {
+        min-width: 400px;
+    }
+
+    header .social-menu ul li img {
+        width: 46px;
+    }
+
+    .banner h1 {
+        font-size: 95px;
+        line-height: 100px;
+    }
+
+    .banner h2 {
+        font-size: 90px;
+        line-height: 95px;
+        margin: 0 0 10px;
+    }
+
+    .banner span {
+        font-size: 50px;
+    }
+
+    .techflyte {
+        background: url(../images/techyflyte-bg.png) no-repeat;
+        background-size: cover;
+        padding: 200px 0 150px;
+    }
+
+    .techflyte h2 {
+        font-size: 85px;
+        margin-bottom: 40px;
+    }
+
+    .techflyte p {
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+
+    .techflyte .techflyte-box {
+        padding: 30px 50px;
+        margin-bottom: 100px;
+    }
+
+    .inner-page-bnr {
+        padding: 130px 0 450px 60px;
+    }
+
+    .our-team {
+        padding: 160px 200px 110px;
+    }
+
+    .our-team h2 {
+        font-size: 70px;
+        margin-bottom: 75px;
+    }
+
+    .our-team p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
+
+    .techy-caption-box {
+	    padding: 60px 40px 70px 50px;
+	}	
+
+    .techy-caption-box h3 {
+	    font-size: 40px;
+	    margin-bottom: 40px;
+	}
+
+	.techy-caption-box p {
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-bottom: 25px;
+	}
+    .staff-firm h2 {
+        font-size: 65px;
+        margin-bottom: 80px;
+    }
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 170px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 36px;
+        line-height: 39px;
+        color: #a714c6;
+        font-weight: 700;
+    }
+    .staff-firm .firm-col p {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 25px;
+    }
+    .our-services {
+        padding: 120px 140px 110px 0;
+    }
+    .our-services .service-detail {
+        padding-left: 160px;
+        margin-bottom: 120px;
+        padding-right: 100px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 80px;
+        margin-bottom: 90px;
+    }
+    .our-services .service-detail p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+    .our-services .service-detail h6 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .our-services .service-col {
+        padding: 45px 10px 60px;
+    }
+    .our-services .service-col h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .contractors {
+        padding: 130px 90px 170px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 80px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 85px;
+        margin-bottom: 80px;
+    }
+    .contractor-caption-box p {
+        font-size: 29px;
+        line-height: 35px;
+        margin-bottom: 40px;
+    }
+    .information {
+        padding: 120px 70px 200px;
+    }
+    .information h6 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .information h2 {
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+    .information .card-header button {
+        padding: 40px 45px 40px 80px;
+        font-size: 25px;
+    }
+    .information .card-body {
+        padding: 25px 50px 30px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -5px;
+    }
+    .controler-signs span {
+        width: 35px;
+        height: 5px;
+    }
+    .contact-us {
+        padding: 140px 190px;
+    }
+    .contact-us h3 {
+        font-size: 55px;
+        margin-bottom: 80px;
+    }
+    .contact-us p {
+        font-size: 25px;
+        margin-bottom: 90px;
+        padding: 0 100px;
+    }
+    .loyalty-program {
+        padding: 130px 120px 150px;
+    }
+    .inner-content-wrap {
+        padding: 120px 120px;
+    }
+    .loyalty-program h2 {
+        font-size: 85px;
+        margin-bottom: 100px;
+    }
+    .loyalty-program p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .benefits-col h6 {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 28px;
+    }
+    .benefits-col ul li {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+    .safety-compliance h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+
+    footer .ftr-main {
+        padding: 0 90px;
+    }
+
+    footer .contact-form h5 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    footer .contact-detail p {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    footer .ftr-right {
+        padding: 150px 0 100px 100px;
+    }
+
+    footer .social-detail label {
+        font-size: 25px;
+        line-height: 20px;
+        margin-bottom: 35px;
+        padding-left: 5px;
+    }
+
+    footer .social-detail ul li img {
+        width: 50px;
+    }
+
+    .chat-box button img {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1550px) {
+    header {
+        padding: 40px 25px;
+    }
+
+    header .nav-menu ul li {
+        padding: 0 10px;
+    }
+
+    header .nav-menu ul li a {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    header .nav-menu ul li ul.sub-menu {
+        min-width: 350px;
+        padding: 30px 0 40px;
+    }
+
+    header .social-menu ul li img {
+        width: 40px;
+    }
+
+    header .search-bar button img {
+        width: 40px;
+    }
+
+    header .search-bar {
+        padding-left: 10px;
+    }
+
+    .banner {
+        padding: 300px 0;
+    }
+
+    .banner h1 {
+        font-size: 90px;
+        line-height: 95px;
+    }
+
+    .banner h2 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .banner span {
+        font-size: 45px;
+        margin-bottom: 100px;
+    }
+
+    .banner .bnr-btns a {
+        font-size: 35px;
+    }
+
+    /* .resume  */
+
+    .resume {
+        padding: 150px 50px 80px 100px;
+    }
+
+    .resume h3 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .resume p {
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .resume a {
+        padding: 20px 30px 15px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .resume .resume-box {
+        margin-top: 280px;
+    }
+
+    .techflyte {
+        padding: 150px 0;
+    }
+
+    .techflyte h2 {
+        font-size: 80px;
+        margin-bottom: 35px;
+    }
+
+    .techflyte p {
+        font-size: 25px;
+        margin-bottom: 80px;
+    }
+
+    .techflyte .techflyte-box {
+        padding: 30px 35px;
+        margin-bottom: 100px;
+    }
+
+    .techflyte .techflyte-box h4 {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .techflyte .techflyte-box p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .techflyte .techflyte-box a {
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    .techflyte a.contract-btn {
+        font-size: 20px;
+        line-height: 70px;
+        padding: 0 40px;
+    }
+
+    .our-team {
+        padding: 150px 150px 100px;
+    }
+
+    .our-team h2 {
+        font-size: 60px;
+        margin-bottom: 70px;
+    }
+
+    .our-team p {
+        font-size: 23px;
+        line-height: 27px;
+        margin-bottom: 90px;
+    }
+    .our-team .team-caption {
+	    padding: 30px 10px;
+	}
+	.our-team .team-caption h5 {
+	    font-size: 35px;
+	    line-height: 30px;
+	    margin-bottom: 20px;
+	}
+	.our-team .team-caption span {
+	    font-size: 20px;
+	    line-height: 16px;
+	    margin-bottom: 20px;
+	}
+	.our-team .team-col {
+	    margin-bottom: 70px;
+	}
+	.our-team .team-detail h6 {
+	    font-size: 30px;
+	    line-height: 35px;
+	    margin-bottom: 60px;
+	}
+	.our-team .team-detail p {
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-bottom: 30px;
+	}
+	.our-team .nav-tabs .nav-link {
+	    padding: 20px;
+	}
+
+	.techy-caption-box h3 {
+	    font-size: 35px;
+	    margin-bottom: 30px;
+	}	
+
+	.techy-caption-box p {
+	    font-size: 18px;
+		line-height: 23px;
+		margin-bottom: 20px;
+	}
+    .staff-firm .firm-col .firm-col-head {
+        margin-bottom: 50px;
+    }
+    .staff-firm .firm-col .firm-col-head img {
+        margin-left: 15px;
+        width: 65px;
+    }
+    .staff-firm .firm-col p {
+        font-size: 22px;
+        line-height: 28px;
+        padding-left: 20px;
+    }
+    .staff-firm h2 {
+        font-size: 55px;
+        margin-bottom: 70px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 150px;
+    }
+
+    .our-services {
+        padding: 120px 110px 110px 0;
+    }
+    .our-services .service-detail h3 {
+        font-size: 65px;
+        margin-bottom: 80px;
+    }
+    .our-services .service-detail p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-detail h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .contractors {
+        padding: 120px 70px 150px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 50px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 70px;
+        margin-bottom: 60px;
+    }
+    .contractor-caption-box p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .contractor-caption-box a {
+        font-size: 30px;
+        line-height: 25px;
+        padding: 25px 70px;
+    }
+    .information {
+        padding: 100px 50px 150px;
+    }
+    .information h6 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .information h2 {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+    .information .card-header button {
+        padding: 30px 40px 30px 50px;
+        font-size: 20px;
+    }
+    .information .card-body {
+        padding: 20px 40px 25px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -4px;
+    }
+    .controler-signs span {
+        width: 30px;
+        height: 4px;
+    }
+    .contact-us {
+        padding: 130px 150px;
+    }
+    .contact-us h3 {
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
+    .contact-us p {
+        margin-bottom: 80px;
+        padding: 0 90px;
+    }
+    .loyalty-program {
+        padding: 120px 100px;
+    }
+    .inner-content-wrap {
+        padding: 100px 100px;
+    }		
+    .loyalty-program h2 {
+        font-size: 75px;
+        margin-bottom: 90px;
+    }
+    .loyalty-program h4 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .loyalty-program p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .loyalty-program h5 {
+        font-size: 30px;
+        margin: 70px 0 50px;
+    }
+    .safety-compliance h3 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    .safety-compliance ul li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    footer .contact-form form {
+        max-width: 350px;
+        margin: 0 auto 6px;
+    }
+
+    footer .ftr-right {
+        padding: 150px 0 100px 50px;
+    }
+
+    footer .social-detail label {
+        font-size: 20px;
+        line-height: 15px;
+        margin-bottom: 25px;
+    }
+
+    footer .social-detail ul li img {
+        width: 45px;
+    }
+
+    footer .social-detail {
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    footer .ftr-menu h6 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .chat-box button img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    header {
+        padding: 35px 20px;
+    }
+
+    header .nav-menu ul li a {
+        font-size: 25px;
+        line-height: 18px;
+    }
+
+    header .nav-menu ul li ul.sub-menu {
+        min-width: 300px;
+        padding: 20px 0 30px;
+    }
+
+    header .social-menu ul li img {
+        width: 37px;
+    }
+
+    header .search-bar button img {
+        width: 35px;
+    }
+
+    header .search-bar {
+        padding-left: 5px;
+    }
+
+    .banner {
+        padding: 250px 0;
+    }
+
+    .banner h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .banner h2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .banner span {
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+
+    .banner .bnr-btns a {
+        font-size: 30px;
+    }
+
+    .inner-page-bnr {
+        padding: 100px 0 350px 50px;
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 85px;
+    }
+
+    .resume h3 {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+
+    .resume p {
+        font-size: 18px;
+        margin-bottom: 70px;
+    }
+
+    .resume a {
+        padding: 15px 30px;
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .resume a img {
+        margin-left: 50px;
+    }
+
+    .resume .resume-box {
+        margin-top: 230px;
+    }
+
+    .techflyte h2 {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    .techflyte p {
+        font-size: 23px;
+        margin-bottom: 70px;
+    }
+
+    .techflyte .techflyte-box {
+        padding: 30px 20px;
+        margin-bottom: 80px;
+    }
+
+    .techflyte .techflyte-box h4 {
+        font-size: 25px;
+        margin: 25px 0;
+    }
+
+    .techflyte .techflyte-box p {
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    .techflyte .techflyte-box a {
+        font-size: 18px;
+    }
+
+    .techflyte a.contract-btn {
+        font-size: 18px;
+        line-height: 60px;
+        padding: 0 35px;
+    }
+
+    .our-team {
+        padding: 130px 120px 100px;
+    }
+
+    .our-team h2 {
+        font-size: 50px;
+        margin-bottom: 65px;
+    }
+
+    .our-team p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 75px;
+    }
+    .our-team .team-caption h5 {
+	    font-size: 30px;
+	    line-height: 25px;
+	    margin-bottom: 15px;
+	}
+	.our-team .team-caption span {
+	    font-size: 18px;
+	    margin-bottom: 15px;
+	}
+	.our-team .team-caption ul li img {
+	    width: 25px;
+	}
+	.our-team .team-col {
+	    margin-bottom: 50px;
+	}
+	.our-team .nav-tabs .nav-link {
+	    padding: 16px;
+	}
+	.our-team .nav-tabs .nav-link img {
+	    margin-right: 10px;
+	}
+	.our-team .tab-content {
+	    padding: 20px 40px 20px;
+	}
+	.our-team .nav-tabs .nav-link {
+	    padding: 20px;
+	    font-size: 18px;
+	}
+	.our-team .tab-content p {
+	    font-size: 18px;
+	    line-height: 23px;
+	    margin-bottom: 20px;
+	}
+	.our-team .team-detail h6 {
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 50px;
+	}
+	.our-team .team-detail p {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin-bottom: 25px;
+	}
+
+	.techy-difference {
+	    padding: 150px 100px 130px 0;
+	}	
+	.techy-caption-box h3 {
+	    font-size: 30px;
+	}
+	.techy-caption-box {
+	    padding: 50px 40px;
+	}	
+	.techy-caption-box p {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-bottom: 15px;
+	}	
+    .staff-firm {
+        padding: 100px 100px 55px;
+    }
+    .staff-firm h2 {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .staff-firm .firm-col .firm-col-head img {
+        width: 50px;
+    }
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 120px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .staff-firm .firm-col p {
+        font-size: 20px;
+        line-height: 25px;
+        padding-left: 15px;
+    }
+    .our-services {
+        padding: 100px 80px 100px 0;
+    }
+    .our-services .service-detail {
+        padding-left: 130px;
+        margin-bottom: 100px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .our-services img.ratio-img {
+        width: 40px;
+        margin-right: 25px;
+    }
+    .our-services .service-col {
+        padding: 35px 10px 40px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-col img {
+        margin-bottom: 30px;
+    }
+    .contractors {
+        padding: 100px 50px 110px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 30px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .contractor-caption-box p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .contractor-caption-box a {
+        font-size: 25px;
+        line-height: 20px;
+        padding: 20px 50px;
+    }
+    .information {
+        padding: 90px 30px 120px;
+    }
+    .information h6 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .information h2 {
+        font-size: 35px;
+        margin-bottom: 55px;
+    }
+    .information .card-header button {
+        padding: 20px 30px 20px 40px;
+        font-size: 20px;
+    }
+    .information .card-body {
+        padding: 15px 30px 20px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .controler-signs {
+        right: 30px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -3px;
+    }
+    .controler-signs span {
+        width: 25px;
+        height: 3px;
+    }
+    .contact-us {
+        padding: 100px 120px;
+    }
+    .contact-us h3 {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .contact-us p {
+        font-size: 22px;
+        margin-bottom: 70px;
+        padding: 0 43px;
+    }
+    .loyalty-program {
+        padding: 100px 90px;
+    }
+    .inner-content-wrap {
+        padding: 90px;
+    }
+    .loyalty-program h2 {
+        font-size: 65px;
+        margin-bottom: 80px;
+    }
+    .loyalty-program h4 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .loyalty-program p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .loyalty-program h5 {
+        font-size: 28px;
+        margin: 50px 0 40px;
+    }
+    .safety-compliance h3 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .safety-compliance ul li {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    footer .contact-form h5 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    footer .contact-icon {
+        width: 35px;
+        flex: 0 0 35px;
+    }
+
+    footer .contact-detail p {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .chat-box button img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header .nav-menu ul li a {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    header .nav-menu ul li ul.sub-menu {
+        min-width: 250px;
+    }
+
+    header .social-menu ul li img {
+        width: 27px;
+    }
+
+    header .search-bar button img {
+        width: 25px;
+    }
+
+    header .social-menu ul li {
+        padding: 0 3px;
+    }
+
+    .banner {
+        padding: 200px 0;
+    }
+
+    .banner h1 {
+        font-size: 75px;
+        line-height: 80px;
+    }
+
+    .banner h2 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .banner span {
+        font-size: 35px;
+        margin-bottom: 50px;
+        line-height: 40px;
+    }
+
+    .banner .bnr-btns a {
+        font-size: 25px;
+        margin-right: 15px;
+        padding: 20px 10px;
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 75px;
+    }
+
+    .resume {
+        padding: 100px 40px 70px 70px;
+    }
+
+    .resume h3 {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    .resume p {
+        font-size: 15px;
+        margin-bottom: 55px;
+    }
+
+    .resume a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    .resume a img {
+        margin-left: 35px;
+        width: 30px;
+    }
+
+    .resume .resume-box {
+        margin-top: 200px;
+    }
+
+    .chat-box button img {
+        width: 120px;
+    }
+
+    .our-team {
+        padding: 120px 100px 100px;
+    }
+
+    .our-team h2 {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .our-team .team-caption {
+	    padding: 20px 10px;
+	}
+	.our-team .team-caption h5 {
+	    font-size: 25px;
+	    margin-bottom: 10px;
+	}
+	.our-team .team-caption ul li img {
+	    width: 20px;
+	}
+	.our-team .team-caption span {
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	}
+	.our-team .team-caption ul li {
+	    padding: 0 5px;
+	}
+	.our-team .team-col {
+	    margin-bottom: 40px;
+	}
+	.our-team .team-detail h6 {
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-bottom: 30px;
+	}
+    .techy-difference {
+        padding: 100px 70px;
+    }
+    .techy-caption-box {
+        padding: 45px 30px;
+    }
+    .techy-caption-box h3 {
+        margin-bottom: 25px;
+    }
+    .staff-firm {
+        padding: 80px 80px 50px;
+    }
+    .staff-firm h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .staff-firm .firm-col .firm-col-head h4 {
+        font-size: 100px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .staff-firm .firm-col .firm-col-head img {
+        width: 35px;
+    }
+    .staff-firm .firm-col .firm-col-head span {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .staff-firm .firm-col p {
+        font-size: 18px;
+    }
+    .our-services {
+        padding: 90px 20px 90px 0;
+    }
+    .our-services .service-detail {
+        padding: 0 25px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-detail p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .contractors {
+        padding: 90px 30px 100px 0;
+    }
+    .contractor-caption-box {
+        padding-left: 10px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .contractor-caption-box p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .contractor-caption-box a {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 15px 40px;
+    }
+    .information {
+        padding: 80px 20px 90px;
+    }
+    .information .card-header button {
+        padding: 15px 20px 15px 30px;
+        font-size: 18px;
+    }
+    .information .card-body {
+        padding: 15px 20px 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .controler-signs {
+        right: 20px;
+    }
+    .card-header .controler-signs span:last-child {
+        top: -3px;
+    }
+    .controler-signs span {
+        width: 20px;
+        height: 3px;
+    }
+    .contact-us {
+        padding: 90px 70px;
+    }
+    .contact-us h3 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .contact-us p {
+        margin-bottom: 60px;
+        padding: 0 40px;
+    }
+    .contact-us .contact-form {
+        max-width: 100%;
+        padding: 100px 50px;
+    }
+    .contact-us .contact-form h4 {
+        font-size: 35px;
+    }
+    .contact-us .contact-form label {
+        font-size: 25px;
+    }
+    .contact-us .contact-form input.input-field {
+        font-size: 25px;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    .contact-us .contact-form {
+        max-width: 100%;
+        padding: 70px 30px;
+    }
+    .contact-us .contact-form label {
+        font-size: 20px;
+    }
+    .contact-us .contact-form input.input-field {
+        font-size: 20px;
+        height: 35px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #c8c8c8;
+    }
+    .contact-us .contact-form textarea {
+        font-size: 25px;
+        height: 70px;
+        margin-bottom: 70px;
+    }
+    /* .contact-us .contact-form button  */
+     .contact-us .wpcf7-form-control .wpcf7-submit .form-control{
+        line-height: 60px;
+        padding: 0 30px;
+        font-size: 20px;
+        height: 60px;
+        width: 210px;
+        /* background-color:green; */
+        
+    }
+    .loyalty-program {
+        padding: 90px 80px;
+    }
+    .inner-content-wrap {
+        padding: 80px;
+    }
+    .loyalty-program h2 {
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
+
+}
+/* 404 page */
+.page-404 {
+    padding: 140px 0 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-404 {
+    font-size: 27.29px;
+    display: inline-block;
+    color: #00d4e0;
+    font-weight: 400;
+    padding: 5px 62px;
+    background: #a713c5;
+    border-radius: 22px;
+    margin-top: 80px;
+    text-decoration: none;
+}
+
+.btn-404:hover {
+    color: #a713c5;
+    background: #00d4e0;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header .nav-menu ul li {
+        padding: 0 7px;
+    }
+
+    header .nav-menu ul li a {
+        font-size: 17px;
+    }
+
+    header .nav-menu ul li ul.sub-menu {
+        min-width: 200px;
+        padding: 20px 0;
+    }
+
+    header .nav-menu ul li ul.sub-menu li a {
+        padding: 15px 0;
+    }
+
+    .banner {
+        padding: 150px 0;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .banner h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .banner span {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .banner .bnr-btns a {
+        font-size: 20px;
+    }
+
+    .resume {
+        padding: 100px 14px 70px 30px;
+    }
+
+    .resume h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .resume p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .resume a {
+        padding: 12px 20px 10px;
+        font-size: 18px;
+    }
+
+    .resume .resume-box {
+        margin-top: 170px;
+    }
+
+    .techflyte {
+        padding: 70px 0;
+    }
+
+    .techflyte h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .techflyte p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .techflyte .techflyte-box img {
+        width: 120px;
+    }
+
+    .chat-box button img {
+        width: 110px;
+    }
+
+    .our-team h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .our-team p {
+        margin-bottom: 50px;
+    }
+    .our-team .team-col {
+	    margin-bottom: 30px;
+	}
+	.team-detail {
+	    margin-top: 40px;
+	}
+    .techy-caption-box {
+        margin-left: 0;
+    }
+    .staff-firm {
+        padding: 75px 50px 50px;
+    }
+    .staff-firm {
+        padding: 75px 0 50px;
+    }
+    .staff-firm h2 {
+        font-size: 30px;
+    }
+    .our-services {
+        padding: 80px 0;
+    }
+    .our-services .service-detail {
+        padding: 0 25px;
+        margin-bottom: 40px;
+    }
+    .our-services .service-col {
+        padding: 35px 10px 40px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .contractors {
+        padding: 100px 70px;
+    }
+    .contractor-caption-box {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .information {
+        padding: 75px 15px 80px;
+    }
+    .information h6 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .information h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .information .card-header button {
+        padding: 13px 10px 13px 20px;
+        font-size: 16px;
+    }
+    .information .card-body {
+        padding: 10px 10px 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .contact-us {
+        padding: 80px 50px;
+    }
+    .contact-us h3 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .contact-us p {
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    .loyalty-program {
+        padding: 80px 70px;
+    }
+    .inner-content-wrap {
+        padding: 70px;
+    }
+    .loyalty-program h2 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .program-bnr, .safety-bnr {
+        margin-top: 40px;
+    }
+    .program-bnr, .safety-bnr img {
+        display: block;
+        margin: 0 auto;
+    }
+    .benefits-col img {
+        max-width: 180px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 15px;
+    }
+    footer .ftr-right {
+        padding: 100px 0 90px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 85px;
+        padding: 20px 0;
+    }
+
+    header .nav-menu ul {
+        display: block !important;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 85px;
+        z-index: 1;
+        transition: all ease .5s;
+        padding: 15px !important;
+    }
+
+    header button.nav-menu-btn {
+        display: block;
+    }
+
+    header.is-active .nav-menu ul {
+        height: calc(100vh - 104px);
+        opacity: 1;
+        visibility: visible;
+        background: #a714c6eb;
+    }
+
+    header.is-active button.nav-menu-btn span:nth-child(1) {
+        margin: 0;
+        transform: translateY(0.7vw) rotate(45deg);
+    }
+
+    header.is-active button.nav-menu-btn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    header.is-active button.nav-menu-btn span:nth-child(3) {
+        margin: 0;
+        transform: translateY(-0.6vw) rotate(-45deg);
+    }
+
+    header .nav-menu ul li {
+        border-bottom: 1px solid #fff;
+    }
+
+    header .nav-menu ul li a {
+        font-size: 20px;
+        border: 0;
+        color: #ffffff;
+        padding: 15px 0;
+        line-height: 20px;
+    }
+
+    header .nav-menu ul li ul.sub-menu {
+        margin-left: 0;
+        top: 52px;
+        min-width: 100%;
+        width: 100%;
+        padding: 20px 0 !important;
+    }
+
+    header .search-bar.is-active .search-box {
+        transform: translate(40%, -20%);
+    }
+
+    .banner {
+        padding: 70px 0;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .banner h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .banner span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner .bnr-btns a {
+        font-size: 15px;
+        padding: 15px 10px;
+    }
+
+    .inner-page-bnr {
+        padding: 100px 0 250px;
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 65px;
+    }
+
+    .resume {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .resume .resume-box {
+        margin-top: 70px;
+    }
+
+    .techflyte h2 {
+        font-size: 40px;
+    }
+
+    .techflyte .techflyte-box {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 40px 100px;
+    }
+
+    .techflyte .techflyte-box p {
+        text-align: center;
+    }
+
+    .techflyte a.contract-btn {
+        font-size: 15px;
+        line-height: 40px;
+        padding: 0 20px;
+    }
+
+    .techflyte p {
+        font-size: 17px;
+        margin-bottom: 35px;
+        line-height: 1.2;
+    }
+
+    .our-team {
+        padding: 70px 0;
+    }
+
+    .our-team h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .our-team .nav-tabs .nav-link {
+	    padding: 15px;
+	    font-size: 14px;
+	}
+	.our-team .tab-content {
+	    padding: 20px;
+	}
+	.our-team .nav-tabs .nav-link img {
+	    margin-right: 5px;
+	}
+	.our-team .tab-content p {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-bottom: 15px;
+	}
+	.our-team .team-detail p {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-bottom: 20px;
+	}
+    .techy-difference {
+        padding: 70px 50px;
+    }
+    .staff-firm {
+        padding: 70px 0px;
+    }
+    .staff-firm h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .firm-col {
+        margin-bottom: 40px;
+    }
+    .staff-firm .firm-col .firm-col-head {
+        margin-bottom: 50px;
+        justify-content: center !important;
+    }
+    .staff-firm .firm-col p {
+        text-align: center;
+    }
+
+    .our-services {
+        padding: 70px 0;
+    }
+    .contractors {
+        padding: 70px 50px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .our-services .service-col {
+        text-align: center;
+    }
+    .information {
+        padding: 70px 0;
+    }
+    .controler-signs {
+        right: 10px;
+    }
+    .contact-us {
+        padding: 70px 0;
+    }
+    .contact-us h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .contact-us p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .contact-us .contact-form button img {
+        margin-left: 20px;
+    }
+    .loyalty-program {
+        padding: 70px 15px;
+    }
+    .inner-content-wrap {
+        padding: 50px 30px;
+    }
+    .loyalty-program h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .loyalty-program h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .loyalty-program p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .loyalty-program h5 {
+        font-size: 25px;
+    }
+    .benefits-col img {
+        max-width: 150px;
+    }
+    .safety-compliance h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .safety-compliance ul li {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 20px;
+    }
+    footer .copy-rights {
+        padding: 30px 0;
+    }
+
+    footer .copy-rights p {
+        font-size: 20px;
+    }
+
+    footer .contact-form {
+        padding: 50px 40px;
+    }
+
+    footer .ftr-main {
+        padding: 30px 0 0;
+    }
+
+    footer .contact-form form {
+        max-width: 100%;
+    }
+
+    footer .contact-form form label {
+        font-size: 18px;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+
+    footer .contact-form h5 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer .contact-form form textarea.input-field {
+        margin-bottom: 30px;
+    }
+
+    footer .contact-detail p {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    footer .contact-icon {
+        width: 30px;
+        flex: 0 0 30px;
+    }
+
+    footer .social-detail label {
+        text-align: center;
+    }
+
+    footer .social-detail ul {
+        margin: 0 0 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .subscriber form {
+        justify-content: center !important;
+    }
+
+    footer .ftr-menu {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    footer .ftr-menu .ftr-nav-col {
+        margin-bottom: 30px;
+    }
+
+    footer .social-detail {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    footer .ftr-right {
+        padding: 50px 0 0px;
+    }
+
+    footer .contact-form form input.input-field {
+        font-size: 16px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    footer .contact-form form input[type="submit"] {
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    footer a.download-btn {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .chat-box button img {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .banner h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .banner h2 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+
+    .banner span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .banner .bnr-btns a {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 60px;
+    }
+
+    .techflyte .techflyte-box {
+        padding: 35px 30px;
+    }
+
+    .our-team h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .our-team p {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .techy-difference {
+        padding: 70px 30px;
+    }
+    .staff-firm h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    .our-services .service-detail {
+        padding: 0 15px;
+    }
+    .our-services .service-detail h3 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .contractors {
+        padding: 70px 30px;
+    }
+    .contractor-caption-box h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .contractor-caption-box p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .contractor-caption-box a {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+    .information h6 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .information h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .contact-us h3 {
+        font-size: 20px;
+    }
+    .contact-us p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .benefits-col {
+        margin-bottom: 50px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 85px;
+    }
+    .benefits-col h6 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .benefits-col ul li {
+        font-size: 16px;
+    }
+    footer .copy-rights p {
+        font-size: 16px;
+    }
+
+    footer .contact-form {
+        padding: 50px 20px;
+    }
+
+    footer .subscriber input.input-subscribe {
+        width: 300px;
+        height: 45px;
+    }
+
+    footer .subscriber button.submit {
+        width: 100px;
+        height: 45px;
+    }
+
+    footer .subscriber button.submit img {
+        width: 25px;
+    }
+
+    footer .social-detail ul li img {
+        width: 35px;
+    }
+
+    footer .contact-form form textarea.input-field {
+        margin-bottom: 20px;
+    }
+
+    .chat-box button img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    button.nav-menu-btn span {
+        width: 25px;
+        margin-bottom: 4px;
+    }
+
+    header .social-menu ul li img {
+        width: 20px;
+    }
+
+    header.is-active button.nav-menu-btn span:nth-child(1) {
+        transform: translateY(0.6vw) rotate(45deg);
+    }
+
+    header.is-active button.nav-menu-btn span:nth-child(3) {
+        transform: translateY(-1.5vw) rotate(-45deg);
+    }
+
+    .inner-page-bnr h2 {
+        font-size: 35px;
+    }
+
+    .techflyte h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .techflyte .techflyte-box {
+        padding: 35px 20px;
+    }
+
+    .our-team p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .techy-difference {
+        padding: 70px 15px;
+    }
+    .techy-caption-box {
+        padding: 40px 25px;
+    }
+    .techy-caption-box h3 {
+        font-size: 25px;
+    }
+    .techy-caption-box p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contractors {
+        padding: 70px 15px;
+    }
+    .information .card-header button {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .benefits-col {
+        margin-bottom: 40px;
+    }
+    footer .subscriber .subscribe {
+        width: 200px;
+    }
+
+    .chat-box button img {
+        width: 80px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 35px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .inner-content-wrap {
+        padding: 40px 15px;
+    }
+    .loyalty-program h5 {
+        font-size: 22px;
+    }
+    .benefits-col ul {
+        padding: 0 0 0 10px;
+    }
+    .loyalty-program h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* contact form extraaaaaaaaaaaaaas */
+
+/* CONTACT */
+.contact-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px;
+}
+
+.contact-banner h2 {
+    font-weight: 300;
+}
+
+.contact-banner h2 span {
+    font-weight: 700;
+}
+
+.contact-us {
+    padding: 198px 230px 160px;
+}
+
+.contact-us h3 {
+    font-size: 70.73px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 600;
+    margin-bottom: 98px;
+    text-align: center;
+}
+
+.contact-us span {
+    color: #00d4e0;
+}
+
+.contact-us p {
+    font-size: 30.65px;
+    line-height: 1.5;
+    color: #131313;
+    font-weight: 300;
+    margin-bottom: 109px;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.contact-us p a {
+    color: #a714c6;
+}
+
+.contact-us .contact-form {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 130px 80px 100px;
+    box-shadow: 0 0 30px 1px #f5e5f9;
+}
+
+.contact-us .contact-form h4 {
+    font-size: 42px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact-us .contact-form label {
+    font-size: 28.05px;
+    line-height: 1.1;
+    color: #c8c8c8;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*  .contact-us .contact-form input.input-field  */
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"] {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight: 400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form textarea  */
+
+.wpcf7 textarea:focus {
+    box-shadow: none;
+}
+
+.contact-us .contact-form .wpcf7 textarea {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight: 400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 70px;
+    margin-bottom: 90px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form button  */
+ .contact-us input.wpcf7-form-control.wpcf7-submit {
+        background: #a714c6;
+        line-height: 67px;
+        padding: 0 40px;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+        color: #ffffff;
+        font-size: 22px;
+        letter-spacing: 1px;
+        height: 67px;
+        font-weight: 500;
+        width: 233px;
+        box-shadow: 0 20px 45px 0 #acb9c7;
+        display: flex;
+        align-items: center;
+        }
+}
+
+
+/* extras */
+
+
+ .wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #00c7b7;
+    color: white;
+}
+
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #00d4e0;
+    color: white;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing{
+   border: 2px solid #00c7b7;
+   color: white;
+}
+
+
+
+a.service-btn{
+    font-size: 36px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 300;
+    background: #a714c6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 44px;
+    margin-left: 20%;
+
+}
+
+a.service-btn:hover {
+    background:#00c7b7;
+
+}
+
+
+
