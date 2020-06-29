@@ -38,7 +38,7 @@ get_header();
                            <?php echo get_theme_mod('resume_description');?></h3>
                         </p>
                         
-                      <a href="<?php esc_html_e('resume','techflyte');?>">Upload Resume <img src=<?php echo  get_template_directory_uri(  );?>/assets/images/upload-img.png" alt=""></a>
+                      <a href="<?php esc_html_e('resume','techflyte');?>"><?php echo _e('Upload Resume ','techflyte'); ?><img src=<?php echo  get_template_directory_uri(  );?>/assets/images/upload-img.png" alt=""></a>
                         
                        
                             

@@ -57,14 +57,11 @@ $url = get_template_directory_uri(  ) . '/assets/images';
                     <div class="col-lg-6">
                         <div class="team-detail">
                             <h6>
-                                We bring a crafted and inspired approach to every
-                                project we work on.
+                        
+                                <?php echo get_theme_mod('team_secondary_title');?>
                             </h6>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                             <?php   echo get_theme_mod('team_secondary_description');?>
                             </p>
                         </div>
                     </div>

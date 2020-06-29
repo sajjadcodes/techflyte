@@ -9,6 +9,7 @@
 		    include(get_theme_file_path('includes/cpts/team/team-cpt.php'));
 			include(get_theme_file_path('includes/cpts/faq/faq-cpt.php'));
 			include(get_theme_file_path('includes/cpts/benefits/benefits-cpt.php'));
+			include(get_theme_file_path('includes/cpts/partner/partner-cpt.php'));
 
 
 // hooks
@@ -18,6 +19,7 @@
 			add_action( 'init', 'tech_team_cpt_init');
 			add_action( 'init', 'tech_faq_cpt_init');
 			add_action( 'init','tech_benefits_cpt_init');
+			add_action( 'init','tech_partner_cpt_init');
 			add_action('after_switch_theme','my_rewrite_flush');
 
 

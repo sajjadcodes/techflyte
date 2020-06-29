@@ -21,9 +21,6 @@ $url = get_template_directory_uri(  ) . '/assets/images';
                 <h5><?php the_title();?></h5>
                 <span><?php the_excerpt(  );?></span>
 
-
-              
-                    
                 </ul>
             
             </div>
