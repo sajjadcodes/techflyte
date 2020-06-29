@@ -21,29 +21,6 @@ $url = get_template_directory_uri(  ) . '/assets/images';
                 <h5><?php the_title();?></h5>
                 <span><?php the_excerpt(  );?></span>
 
-
-                <?php if( have_rows('social_media_links') ){
-                    ?>
-                    <ul class="d-flex justify-content-center">
-
-                <?php while( have_rows('social_media_links')){
-                    the_row();
-
-                    ?>
-
-                    <li><a href="<?php echo get_sub_field('facebook_url');?>"><img src="<?php echo $url;?>/facebook-img.png" alt=""></a></li>
-                    <li><a href="<?php echo get_sub_field('instagram_url');?>"><img src="<?php echo $url;?>/instagram-img.png" alt=""></a></li>
-                    <li><a href="<?php echo get_sub_field('twitter_url');?>"><img src="<?php echo $url;?>/twitter.png" alt=""></a></li>
-                    <li><a href="<?php echo get_sub_field('linkedin_url');?>"><img src="<?php echo $url;?>/linkedin.png" alt=""></a></li>
-        
-                    <?php 
-
-                }
-
-                }
-
-                    ?>
-                    
                 </ul>
             
             </div>

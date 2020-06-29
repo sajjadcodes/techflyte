@@ -65,6 +65,7 @@ header .nav-menu ul li ul.sub-menu {
     height: 0;
     visibility: hidden;
     opacity: 0;
+    z-index:999;
 }
 
 header .nav-menu ul li:hover ul {
@@ -222,7 +223,8 @@ header .social-menu ul li {
     margin-top: 296px;
 }
 
-.resume h3 {
+.resume h3 
+{
     font-size: 55.24px;
     color: #a714c6;
     text-transform: uppercase;
@@ -237,7 +239,44 @@ header .social-menu ul li {
     margin-bottom: 90px;
 }
 
-.resume a {
+/* testing */
+
+/* Style wrapping span as button */
+/*   */
+
+/* .btn-file {
+    position: relative;
+}
+ {
+    position: absolute;
+    background: #a714c6;
+     min-width: 300px;
+     padding: 20px;
+     max-width: 100%;
+     height: 80px;
+     text-align: center;
+     color:white;
+     font-size: 30px;
+   
+}
+ {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    opacity: 0;
+} */
+/* .resume a:hover {
+    background-color:#450852;
+} */
+/* .btn-file input[type=file] {
+width: 300px;
+height: 80px;
+} */
+
+ .resume a{
     background: #a714c6;
     padding: 29px 33px 15px;
     font-size: 30px;
@@ -245,7 +284,10 @@ header .social-menu ul li {
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
-}
+    outline: none;
+    border: none;
+    height:80px;
+} 
 
 .resume a:hover {
     opacity: .8;
@@ -355,7 +397,7 @@ header .social-menu ul li {
     line-height: 35px;
     color: #000000;
     font-weight: 300;
-    margin-bottom: 125px;
+    /* margin-bottom: 125px;  */
 }
 
 .our-team .team-col {
@@ -1096,7 +1138,7 @@ footer a.download-btn:hover {
     border-radius: 0;
 }
 .contact-us .contact-form button {
-    background:#a714c6;
+    background: #a714c6;
     line-height: 67px;
     padding: 0 40px;
     border: none;
@@ -1114,6 +1156,7 @@ footer a.download-btn:hover {
     position: relative;
     justify-content: center;
 }
+
 .contact-us .contact-form button input[type="file"] {
     position: absolute;
     width: 100%;
@@ -1265,44 +1308,7 @@ footer a.download-btn:hover {
     top: 6px;
 }
 
-/* 404 page */
-.page-404 {
-    padding: 140px 0 97px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page-404 a {
-    font-size: 27.29px;
-    display: inline-block;
-    color: #00d4e0;
-    font-weight: 400;
-    padding: 5px 62px;
-    background: #a713c5;
-    border-radius: 22px;
-    margin-top: 80px;
-    text-decoration: none;
-    box-shadow: 0 0 20px 1px #f5e5f9;
-} 
-.page-404 a:hover {
-    color: #a713c5;
-    background: #00d4e0;
-} 
 
-
-/* OUR PARTNER */
-.ourPartner-banner {
-    background: url('../images/contractor-bnr.png') center center no-repeat;
-    background-size: cover;
-    padding: 115px 15px 515px 80px; 
-}
-.our-partner p {
-    font-size: 26.68px;
-    line-height: 33px;
-    text-align: center;
-    padding: 0 40px;
-    margin-bottom: 80px;
-}
 
 /* Responsive */
 @media screen and (max-width: 1875px) {
@@ -1345,9 +1351,6 @@ footer a.download-btn:hover {
     }
     .inner-content-wrap {
         padding: 120px 150px 140px 200px;
-    }
-    .page-404 {
-        padding: 120px 0 90px;
     }
     footer .ftr-main {
         padding: 0 100px 0 100px;
@@ -1576,9 +1579,7 @@ footer a.download-btn:hover {
         line-height: 50px;
         margin-bottom: 50px;
     }
-    .page-404 {
-        padding: 100px 0 80px;
-    }
+
     footer .ftr-main {
         padding: 0 90px;
     }
@@ -1667,6 +1668,8 @@ footer a.download-btn:hover {
     .banner .bnr-btns a {
         font-size: 35px;
     }
+
+    /* .resume  */
 
     .resume {
         padding: 150px 50px 80px 100px;
@@ -1917,14 +1920,6 @@ footer a.download-btn:hover {
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 30px;
-    }
-    .page-404 {
-        padding: 80px 0;
-    }
-    .page-404 a {
-        font-size: 25px;
-        padding: 5px 60px;
-        margin-top: 50px;
     }
     footer .contact-form form {
         max-width: 350px;
@@ -2562,12 +2557,15 @@ footer a.download-btn:hover {
         height: 70px;
         margin-bottom: 70px;
     }
-    .contact-us .contact-form button {
+    /* .contact-us .contact-form button  */
+     .contact-us .wpcf7-form-control .wpcf7-submit .form-control{
         line-height: 60px;
         padding: 0 30px;
         font-size: 20px;
         height: 60px;
         width: 210px;
+        /* background-color:green; */
+        
     }
     .loyalty-program {
         padding: 90px 80px;
@@ -2580,6 +2578,31 @@ footer a.download-btn:hover {
         margin-bottom: 70px;
     }
 
+}
+/* 404 page */
+.page-404 {
+    padding: 140px 0 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-404 {
+    font-size: 27.29px;
+    display: inline-block;
+    color: #00d4e0;
+    font-weight: 400;
+    padding: 5px 62px;
+    background: #a713c5;
+    border-radius: 22px;
+    margin-top: 80px;
+    text-decoration: none;
+}
+
+.btn-404:hover {
+    color: #a713c5;
+    background: #00d4e0;
 }
 
 @media screen and (max-width: 991px) {
@@ -2770,9 +2793,6 @@ footer a.download-btn:hover {
     }
     .benefits-col ul {
         padding: 0 0 0 15px;
-    }
-    .our-partner p {
-        padding: 0;
     }
     footer .ftr-right {
         padding: 100px 0 90px 0px;
@@ -3033,11 +3053,6 @@ footer a.download-btn:hover {
         line-height: 20px;
         padding-left: 20px;
     }
-    .page-404 a {
-        font-size: 20px;
-        padding: 5px 50px;
-        margin-top: 40px;
-    }
     footer .copy-rights {
         padding: 30px 0;
     }
@@ -3236,11 +3251,6 @@ footer a.download-btn:hover {
     .benefits-col ul li {
         font-size: 16px;
     }
-    .page-404 a {
-        font-size: 18px;
-        padding: 5px 40px;
-        margin-top: 30px;
-    }
     footer .copy-rights p {
         font-size: 16px;
     }
@@ -3360,3 +3370,177 @@ footer a.download-btn:hover {
         font-size: 25px;
     }
 }
+
+
+/* contact form extraaaaaaaaaaaaaas */
+
+/* CONTACT */
+.contact-banner {
+    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background-size: cover;
+    padding: 115px 15px 515px 80px;
+}
+
+.contact-banner h2 {
+    font-weight: 300;
+}
+
+.contact-banner h2 span {
+    font-weight: 700;
+}
+
+.contact-us {
+    padding: 198px 230px 160px;
+}
+
+.contact-us h3 {
+    font-size: 70.73px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 600;
+    margin-bottom: 98px;
+    text-align: center;
+}
+
+.contact-us span {
+    color: #00d4e0;
+}
+
+.contact-us p {
+    font-size: 30.65px;
+    line-height: 1.5;
+    color: #131313;
+    font-weight: 300;
+    margin-bottom: 109px;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.contact-us p a {
+    color: #a714c6;
+}
+
+.contact-us .contact-form {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 130px 80px 100px;
+    box-shadow: 0 0 30px 1px #f5e5f9;
+}
+
+.contact-us .contact-form h4 {
+    font-size: 42px;
+    line-height: 1.1;
+    color: #a714c6;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact-us .contact-form label {
+    font-size: 28.05px;
+    line-height: 1.1;
+    color: #c8c8c8;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*  .contact-us .contact-form input.input-field  */
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"] {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight: 400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form textarea  */
+
+.wpcf7 textarea:focus {
+    box-shadow: none;
+}
+
+.contact-us .contact-form .wpcf7 textarea {
+    font-size: 28.05px;
+    color: #c8c8c8;
+    font-weight: 400;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #c8c8c8;
+    height: 70px;
+    margin-bottom: 90px;
+    border-radius: 0;
+}
+
+/* .contact-us .contact-form button  */
+ .contact-us input.wpcf7-form-control.wpcf7-submit {
+        background: #a714c6;
+        line-height: 67px;
+        padding: 0 40px;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+        color: #ffffff;
+        font-size: 22px;
+        letter-spacing: 1px;
+        height: 67px;
+        font-weight: 500;
+        width: 233px;
+        box-shadow: 0 20px 45px 0 #acb9c7;
+        display: flex;
+        align-items: center;
+        }
+}
+
+
+/* extras */
+
+
+ .wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #00c7b7;
+    color: white;
+}
+
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #00d4e0;
+    color: white;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing{
+   border: 2px solid #00c7b7;
+   color: white;
+}
+
+
+
+a.service-btn{
+    font-size: 36px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 300;
+    background: #a714c6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 44px;
+    margin-left: 20%;
+
+}
+
+a.service-btn:hover {
+    background:#00c7b7;
+
+}
+
+
+
