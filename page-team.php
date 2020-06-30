@@ -22,7 +22,7 @@ $url = get_template_directory_uri(  ) . '/assets/images';
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-11 col-lg-12 m-auto text-center">
-                        <h2><?php _e('Team','techflyte');?><b><?php bloginfo('name');?></b></h2>
+                        <h2><?php _e('Team ','techflyte');?><b><?php bloginfo('name');?></b></h2>
                         <p>
                         <?php echo get_theme_mod('team_description');?>
                         </p>

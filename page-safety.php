@@ -8,6 +8,7 @@
                     <div class="col-12 m-auto">
                         <h2><span><?php _e('Safety & Compliance','techflyte');?></span></h2>
                     </div>
+                   
                 </div>
             </div>
         </div>
@@ -21,6 +22,7 @@
                         <p>
                             <?php echo get_theme_mod('safety_text_one');?>
                         </p>
+                                                
                         <div class="row">
                             <div class="col-xl-6 mt-md-4 col-lg-7">
                                 <h3><?php echo get_theme_mod('safety_subtitle');?></h3>
@@ -30,7 +32,11 @@
                             </div>
                             <div class="col-xl-5 offset-xl-1 col-lg-5">
                                 <div class="safety-bnr">
-                                    <img class="img-fluid" src="<?php  echo get_theme_mod('safety_image');?>" alt="">
+                                 
+                                    <?php 
+                                                    $video_file = get_template_directory_uri() . "/videos/pepper.mp4";
+                                                    echo do_shortcode('[video mp4=' . $video_file .' width = 520 height = 340]');
+                                                ?>
                                 </div>
                             </div>
                         </div>

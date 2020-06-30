@@ -33,8 +33,6 @@
                                             <label><?php _e('Follow Us','techflyte');?></label>
                                             <ul>
                                                 <li><a href="https://www.linkedin.com/in/<?php echo get_theme_mod('footer_linkedin');?>"><img src="<?php echo $social_url;?>/images/linkedin-img.png" alt=""></a></li>
-                                                <li><a href="https://www.twiiter.com/<?php echo get_theme_mod('footer_twitter');?>"><img src="<?php echo $social_url;?>/images/twitter-img.png" alt=""></a></li>
-                                                <li><a href="https://www.instagram.com/<?php echo get_theme_mod('footer_instagram');?>"><img src="<?php echo $social_url;?>/images/google-plus-img.png" alt=""></a></li>
                                                 <li><a href="https://www.facebook.com/<?php echo get_theme_mod('footer_facebook');?>"><img src="<?php echo $social_url;?>/images/fb-img.png" alt=""></a></li>
                                             </ul>
                                         </div>
@@ -54,28 +52,28 @@
                                         <div class="col-md-4">
                                             <h6><?php _e('About','techflyte');?></h6>
                                             <ul>
-                                                <li><a href="#">Lorem Ipsum</a></li>
+                                                <!-- <li><a href="#">Lorem Ipsum</a></li>
                                                 <li><a href="#">Lorem IpsumLorem </a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li>
+                                                <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li> -->
                                             </ul>
                                         </div>
                                         <div class="col-md-4">
                                             <h6><?php _e('Jobs','techflyte');?></h6>
                                             <ul>
-                                                <li><a href="#">Lorem Ipsum</a></li>
+                                                <!-- <li><a href="#">Lorem Ipsum</a></li>
                                                 <li><a href="#">Lorem IpsumLorem </a></li>
                                                 <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem</a></li>
+                                                <li><a href="#">Lorem Ipsum Lorem</a></li> -->
                                             </ul>
                                         </div>
                                         <div class="col-md-4">
                                             <h6><?php _e('Contractor','techflyte');?></h6>
                                             <ul>
-                                                <li><a href="#">Lorem Ipsum</a></li>
+                                                <!-- <li><a href="#">Lorem Ipsum</a></li>
                                                 <li><a href="#">Lorem IpsumLorem </a></li>
                                                 <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li>
                                                 <li><a href="#">Lorem Ipsum Lorem</a></li>
-                                                <li><a href="#">Lorem Ipsum</a></li>
+                                                <li><a href="#">Lorem Ipsum</a></li> -->
                                             </ul>
                                         </div>
                                          <div class="row">

@@ -5,7 +5,7 @@
     <div class="search-box">
         <form class="d-flex" action="/" method ="get">
             <input type="search" name="s" placeholder="Search Here..." value="<?php the_search_query();?>">
-            <button type="submit">Submit</button>
+            <button type="submit">Search</button>
         </form>
     </div>
 </div>

@@ -18,10 +18,9 @@
                     <div class="col-12">
                         <h3><?php _e('DOT Verification','techflyte');?> | <span><?php _e('Employement Verification','techflyte');?></span></h3>
                         <p>
-                           <?php  _e('For any payroll related questions send us an email at','techflyte');?> <a href="mailto:payroll@techflyte.com"><?php _e('payroll@techflyte.com','techflyte');?></a>
+                          <?php  _e('For any payroll related questions send us an email at','techflyte');?> <a href="mailto:payroll@techflyte.com"><strong><?php _e('payroll@techflyte.com','techflyte');?></strong></a>
                             <br><br>
-                            <?php _e('Looking to join the TechFlyte crew? Email us for Employment Opportunities
-                            at','techflyte');?> <a href="mailto:careers@techflyte.com"><?php _e('careers@techflyte.com','techflyte'); ?></a>
+                       <?php _e('Looking to join the TechFlyte crew? email us for employment opportunities','techflyte');?> <a href="mailto:apply@techflyte.com"><strong><?php _e('apply@techflyte.com','techflyte'); ?></strong></a>
                             
                         </p>
                         <div class="contact-form">
