@@ -24,7 +24,8 @@ function tech_benefits_cpt_init() {
     'menu_position' => 5,
     'supports'      => array( 'title','thumbnail'),
     'has_archive'   => true,
-    'menu_icon'     =>'dashicons-awards'
+    'menu_icon'     =>'dashicons-awards',
+    'order'         =>'DESC'
   );
 
 

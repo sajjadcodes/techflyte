@@ -9,7 +9,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><?php wp_title(" ");?></h2>
+                        <h2><?php _e('Our'); ?> <span><?php wp_title(" "); ?></span></h2>
                     </div>
                 </div>
             </div>
