@@ -3507,6 +3507,20 @@ a.service-btn:hover {
     background:#00c7b7;
 
 }
+.team-qoute{
+    color:white !important;
+    font-style:italic;
+    font-size:18px !important;
+
+}
+.team-designation{
+    color: #a714c6 !important;
+    
+}
 
 
+.our-services .service-col img {
+    width: 80px;
+    height: 80px;
+}
 

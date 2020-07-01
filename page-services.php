@@ -107,7 +107,7 @@
                         <div class="row">
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
-                                    <img src="<?php echo $img_url;?>/images/workforce-img.png" alt="">
+                                    <img src="<?php echo $img_url;?>/images/data-center.svg" alt="">
                                     <h5><?php _e('Cloud-Based Talent Relationship Marketing Platform','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('pro_workforce');?>
@@ -116,7 +116,7 @@
                             </div>
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
-                                    <img src="<?php echo $img_url;?>/images/queing-img.png" alt="">
+                                    <img src="<?php echo $img_url;?>/images/marketing.svg" alt="">
                                     <h5> <?php _e('Candidate Marketing Team','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('beyond_queing');?>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
-                                    <img src="<?php echo $img_url;?>/images/visitor-img.png" alt="">
+                                    <img src="<?php echo $img_url;?>/images/support.svg" alt="">
                                     <h5><?php _e('Call Center','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('visitor_mangement_system');?>
@@ -134,7 +134,7 @@
                             </div>
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
-                                    <img src="<?php echo $img_url;?>/images/self-service.png" alt="">
+                                    <img src="<?php echo $img_url;?>/images/recruitment.svg" alt="">
                                     <h5>s<?php _e('Offshore Recruiting','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('self_service_kisok');?>

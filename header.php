@@ -99,7 +99,7 @@
                                     
             
                                         <li><a href="https://www.linkedin.com/in/<?php echo get_theme_mod('linkedin_social_links');?>"><img src=" <?php echo $social_url;?>/images/linkedin-icon.png" alt=""></a></li>
-                                        <li><a href="https://www.facebook.com/<?php echo get_theme_mod('facebook_social_links');?>"><img src="<?php echo $social_url;?>/images/fb-icon.png" alt=""></a></li>
+                                        <li><a href="https://www.facebook.com/<?php echo get_theme_mod('facebook_social_links');?>"><img src="<?php echo $social_url;?>/images/fb_icon.png" alt=""></a></li>
                                     
                                 </ul>
                         </div>
