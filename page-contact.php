@@ -24,7 +24,7 @@
                             
                         </p>
                         <div class="contact-form">
-                            <h4><?php _e('Get in Touch','techflyte');?></h4>
+                            <h4><?php _e('Get in touch','techflyte');?></h4>
                             <?php echo do_shortcode('[contact-form-7 id="1515" title="main_contact"]');?>
                         </div>    
                     </div>

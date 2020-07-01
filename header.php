@@ -1,20 +1,21 @@
-
-
+<?php 
+defined('ABSPATH') || exit;
+?>
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <title>TECHFLYTE</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <title><?php bloginfo('name');?></title>
+  
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    
    
     <?php  wp_head();?>
 </head>
 
-<body>
+<body <?php body_class();?>>
     <div class="wrapper">
         <!-- Header -->
         <header>

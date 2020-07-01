@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-xl-7">
                             <div class="ftr-right">
-                                <div class="social-detail">
+                                <div class="social-detail"> 
                                     <div class="row">
                                         <div class="col-md-5">
                                             <label><?php _e('Follow Us','techflyte');?></label>
@@ -67,7 +67,7 @@
                                             </ul>
                                         </div>
                                         <div class="col-md-4">
-                                            <h6><?php _e('Contractor','techflyte');?></h6>
+                                            <h6><?php _e('Contractors','techflyte');?></h6>
                                             <ul>
                                                 <!-- <li><a href="#">Lorem Ipsum</a></li>
                                                 <li><a href="#">Lorem IpsumLorem </a></li>
