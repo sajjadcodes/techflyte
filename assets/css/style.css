@@ -205,8 +205,8 @@ header .social-menu ul li {
 }
 
 .banner .bnr-btns a:hover {
-    color: #a714c6;
-    background: #ffffff;
+    color:#ffffff;
+    background:#00d4e0;
 }
 
 .banner .bnr-btns a:last-child {
@@ -242,7 +242,7 @@ header .social-menu ul li {
 
  .resume a{
     background: #a714c6;
-    padding: 29px 33px 15px;
+    padding:22px 33px 25px;
     font-size: 30px;
     line-height: 28px;
     color: #ffffff;
@@ -254,7 +254,8 @@ header .social-menu ul li {
 } 
 
 .resume a:hover {
-    opacity: .8;
+    /* opacity: .8; */
+    background:#00d4e0;
 }
 
 .resume a img {
@@ -339,7 +340,8 @@ header .social-menu ul li {
 }
 
 .techflyte a.contract-btn:hover {
-    opacity: .8;
+    /* opacity: .8; */
+    background:#a714c6;
 }
 
 
@@ -3529,3 +3531,13 @@ a.service-btn:hover {
     height: 80px;
 }
 
+footer .ftr-menu ul li a {
+    font-size: 24px;
+    color:#00d4e0;
+}
+
+.wp-video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+}

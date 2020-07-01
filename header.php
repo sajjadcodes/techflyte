@@ -75,7 +75,7 @@ defined('ABSPATH') || exit;
                                 wp_nav_menu(
                                     array(
                                         'theme_location '       =>'primary',
-                                        'container'     => '',
+                                        'container'              => '',
                                         'menu_class'             =>'list-unstyled p-0 m-0 d-flex justify-content-start align-items-center',
                                         
                                     )
