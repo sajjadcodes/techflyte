@@ -21,8 +21,21 @@ $url = get_template_directory_uri(  ) . '/assets/images';
                 <h5><?php the_title();?></h5>
                 <span><?php the_excerpt(  );?></span>
 
-                </ul>
-            
+              <?php if( have_rows('profile_details') ){
+                    ?>
+                    <!-- <ul class="d-flex justify-content-center"> -->
+
+                <?php while( have_rows('profile_details')){
+                    the_row();
+                    ?>
+                <p class="team-designation"><?php echo get_sub_field('job_description');?></p>
+                 <p class="team-qoute"><?php echo get_sub_field('qoute');?></p>
+                   
+                    <?php
+                }
+
+               }
+                ?>
             </div>
         </div>
     </div>

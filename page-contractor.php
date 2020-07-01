@@ -25,7 +25,7 @@
                         <p>
                           <?php echo  get_theme_mod('contract_description');?>
                         </p>
-                        <a href="mailto:apply@techflyte.com"><?php _e('Contact','techflyte');?></a>
+                        <a href="mailto:apply@techflyte.com"><?php _e('Jumpstart Your Career','techflyte');?></a>
                     </div>
                 </div>
             </div>

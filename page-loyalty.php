@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="inner-content-wrap">
-                        <h2><?php _e('TechFlyte Loyalty Program ','techflyte');?></h2>
+                        <h2><?php _e('TechFlyte Rewards Program','techflyte');?></h2>
                         <div class="row">
                             <div class="col-lg-7">
                                 <h4><?php echo  get_theme_mod('loyalty_subtitle');?></h4>

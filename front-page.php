@@ -98,7 +98,7 @@ get_header();
                         </div>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <a class="contract-btn" href="<?php esc_html_e('contact','techflyte');?>"><?php _e('Lets Talk','techflyte');?></a>
+                                <a class="contract-btn" href="<?php esc_html_e('contact','techflyte');?>"><?php _e('Let\'s Talk','techflyte');?></a>
                             </div>
                         </div>
                     </div>
