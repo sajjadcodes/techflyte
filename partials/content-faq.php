@@ -21,7 +21,7 @@
                 <div class="card">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#<?php echo $post->post_name;?>" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#<?php echo $post->post_name;?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?php the_title(); ?>
                         <div class="controler-signs">
                             <span></span>

@@ -13,10 +13,9 @@ function tech_setup_theme(){
 
     register_nav_menus(array(
 
-        'primary'         => 'Main Primary Menu for Techflyte',
+        'primary'           => 'Main Primary Menu for Techflyte',
+        
 
     ));
-
-
-
+    
 }

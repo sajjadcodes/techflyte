@@ -205,8 +205,8 @@ header .social-menu ul li {
 }
 
 .banner .bnr-btns a:hover {
-    color: #a714c6;
-    background: #ffffff;
+    color:#ffffff;
+    background:#00d4e0;
 }
 
 .banner .bnr-btns a:last-child {
@@ -242,7 +242,7 @@ header .social-menu ul li {
 
  .resume a{
     background: #a714c6;
-    padding: 29px 33px 15px;
+    padding:22px 33px 25px;
     font-size: 30px;
     line-height: 28px;
     color: #ffffff;
@@ -254,7 +254,8 @@ header .social-menu ul li {
 } 
 
 .resume a:hover {
-    opacity: .8;
+    /* opacity: .8; */
+    background:#00d4e0;
 }
 
 .resume a img {
@@ -339,7 +340,8 @@ header .social-menu ul li {
 }
 
 .techflyte a.contract-btn:hover {
-    opacity: .8;
+    /* opacity: .8; */
+    background:#a714c6;
 }
 
 
@@ -807,7 +809,7 @@ footer a.download-btn:hover {
     margin-bottom: 0;
 }
 .staff-firm .firm-col .firm-col-head span {
-    font-size: 39.93px;
+    font-size: 27px;
     line-height: 39px;
     color: #a714c6;
     font-weight: 700;
@@ -868,6 +870,7 @@ footer a.download-btn:hover {
     padding: 46px 10px 64px 13px;
     margin-bottom: 60px;
     border-radius: 10px;
+    height:85%;
 }
 .our-services .service-col img {
     margin-bottom: 46px;
@@ -918,15 +921,16 @@ footer a.download-btn:hover {
 }
 
 .contractor-caption-box a {
-    font-size: 38.62px;
+    font-size: 28px;
     line-height: 28px;
     color: #ffffff;
     font-weight: 400;
     background: #a714c6;
     text-decoration: none;
     display: inline-block;
-    padding: 30px 77px;
+    padding: 21px 77px;
     border-radius: 44px;
+    margin-left: 10%;
 }
 
 .contractor-caption-box a:hover {
@@ -976,7 +980,7 @@ footer a.download-btn:hover {
 }
 .controler-signs {
     position: absolute;
-    right: 40px;
+    right: 10px;
     top: 50%;
     z-index: 1;
 }
@@ -1421,7 +1425,7 @@ footer a.download-btn:hover {
         font-size: 170px;
     }
     .staff-firm .firm-col .firm-col-head span {
-        font-size: 36px;
+        font-size: 27px;
         line-height: 39px;
         color: #a714c6;
         font-weight: 700;
@@ -3499,7 +3503,7 @@ a.service-btn{
     display: inline-block;
     padding: 20px 20px;
     border-radius: 44px;
-    margin-left: 15%;
+    margin-left: 20%;
 
 }
 
@@ -3529,3 +3533,16 @@ a.service-btn:hover {
     height: 80px;
 }
 
+footer .ftr-menu ul li a {
+    font-size: 24px;
+    color:#00d4e0;
+}
+
+.wp-video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.our-services .service-col ul {
+    text-align: left;
+}

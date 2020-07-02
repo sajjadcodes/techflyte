@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-xl-7">
                             <div class="ftr-right">
-                                <div class="social-detail">
+                                <div class="social-detail"> 
                                     <div class="row">
                                         <div class="col-md-5">
                                             <label><?php _e('Follow Us','techflyte');?></label>
@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="col-md-7">
                                             <div class="subscriber">
-                                                <label><?php _e('Subscribe To Us','techflyte');?></label>
+                                                <label><?php _e('Sign up for our Newslette','techflyte');?></label>
                                                 <form class="d-flex justify-content-start align-items-center">
                                                     <input class="input-subscribe" type="text" name="">
                                                     <button class="submit" type="submit"><img src="<?php echo $social_url;?>/images/subscribe-img.png" alt=""></button>
@@ -52,28 +52,27 @@
                                         <div class="col-md-4">
                                             <h6><?php _e('About','techflyte');?></h6>
                                             <ul>
-                                                <!-- <li><a href="#">Lorem Ipsum</a></li>
-                                                <li><a href="#">Lorem IpsumLorem </a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li> -->
+                                                <li><a href="<?php esc_html_e('team','techflyte');?>"><?php _e('Our Team','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('services','techflyte');?>"><?php _e('Our Services','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('partner','techflyte');?>"><?php _e('Our Partners','techflyte');?></a></li>
+                                            
+                                          
+                                        
                                             </ul>
                                         </div>
                                         <div class="col-md-4">
                                             <h6><?php _e('Jobs','techflyte');?></h6>
                                             <ul>
-                                                <!-- <li><a href="#">Lorem Ipsum</a></li>
-                                                <li><a href="#">Lorem IpsumLorem </a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem</a></li> -->
+                                                <li><a href="https://jobs.techflyte.com/"><?php _e('Jobs','techflyte');?></a></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-4">
-                                            <h6><?php _e('Contractor','techflyte');?></h6>
+                                            <h6><?php _e('Contractors','techflyte');?></h6>
                                             <ul>
-                                                <!-- <li><a href="#">Lorem Ipsum</a></li>
-                                                <li><a href="#">Lorem IpsumLorem </a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem Ipsum</a></li>
-                                                <li><a href="#">Lorem Ipsum Lorem</a></li>
-                                                <li><a href="#">Lorem Ipsum</a></li> -->
+                                            <li><a href="<?php esc_html_e('contractor','techflyte');?>"><?php _e('FAQ','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('loyalty','techflyte');?>"><?php _e('Rewards','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('safety','techflyte');?>"><?php _e('Safety','techflyte');?></a></li>
+                                                 
                                             </ul>
                                         </div>
                                          <div class="row">
@@ -90,7 +89,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <!-- <p>Copyright © 2020 Tech Flyte. All Rights Reserved.</p> -->
+                       
                             <p> <?php _e('Copyright','techflyte');?> &copy;  <?php echo date("Y"); echo " "; echo bloginfo('name'); ?> <?php _e('All Rights Reserved.','techflyte');?></p>
                         </div>
                     </div>

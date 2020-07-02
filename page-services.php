@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="techy-caption-box">
-                        <h3><?php _e('Techflyte','techflyte');?> <span><?php _e('Difference','techflyte');?></span></h3>
+                        <h3><?php _e('TechFlyte','techflyte');?> <span><?php _e('Difference','techflyte');?></span></h3>
                         <p>
                             <?php echo get_theme_mod('service_description');?>
                            <a href="<?php esc_html_e('contact','techflyte');?>"><?php _e('here.','techflyte');?></a>
@@ -135,7 +135,7 @@
                             <div class="col-xl-6 col-sm-6">
                                 <div class="service-col">
                                     <img src="<?php echo $img_url;?>/images/recruitment.svg" alt="">
-                                    <h5>s<?php _e('Offshore Recruiting','techflyte');?></h5>
+                                    <h5><?php _e('Offshore Recruiting','techflyte');?></h5>
                                     <p>
                                     <?php echo get_theme_mod('self_service_kisok');?>
                                     </p>
