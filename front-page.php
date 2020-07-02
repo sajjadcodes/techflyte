@@ -90,7 +90,7 @@ get_header();
                                     <img class="img-fluid m-auto d-block" src="images/comments-img.png" alt="">
                                     <h4><?php _e('Solutions','techflyte'); ?></h4>
                                     <p>
-                                         <?php echo get_theme_mod('experience_description');?>
+                                         <?php echo get_theme_mod('solution_description');?>
                                     </p>
                                     
                                 </div>

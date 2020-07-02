@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-5">
                     <div class="contractor-caption-box">
-                        <h3><?php wp_title(" ");?></h3>
+                        <h3><?php wp_title(" ");?> </h3>
                         <p>
                           <?php echo  get_theme_mod('contract_description');?>
                         </p>
@@ -33,7 +33,7 @@
         <!-- Contractors section End -->
  
        <!-- Staff Firm section -->
-        <div class="staff-firm">
+        <div class="staff-firm contractor-process">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -47,11 +47,11 @@
                         <div class="firm-col">
                             <div class="firm-col-head d-flex align-items-baseline justify-content-start">
                                 <h4><?php _e('1','techflyte');?></h4>
-                                <span><?php _e('Experience','techflyte');?></span>
+                                <span><?php _e(' You Come First','techflyte');?></span>
                                 <img class="img-fluid" src="<?php echo $img_url;?>/images/experience-img.png" alt="">
                             </div>
                             <p>
-                            <?php echo  get_theme_mod('service_experience_description');?>
+                            <?php echo  get_theme_mod('constractor_step_one');?>
                             </p>
                         </div>
                     </div>
@@ -59,11 +59,11 @@
                         <div class="firm-col">
                             <div class="firm-col-head d-flex align-items-baseline justify-content-start">
                                 <h4><?php _e('2','techflyte');?></h4>
-                                <span><?php _e('Reputation','techflyte');?></span>
+                                <span><?php _e(' Peace of Mind Promise','techflyte');?></span>
                                 <img class="img-fluid" src="<?php echo $img_url;?>/images/reputation-img.png" alt="">
                             </div>
                             <p>
-                            <?php echo  get_theme_mod('service_reputation_description');?>
+                            <?php echo  get_theme_mod('constractor_step_two');?>
                             </p>
                         </div>
                     </div>
@@ -71,11 +71,11 @@
                         <div class="firm-col">
                             <div class="firm-col-head d-flex align-items-baseline justify-content-start">
                                 <h4><?php _e('3','techflyte');?></h4>
-                                <span><?php _e('Price','techflyte');?></span>
+                                <span><?php _e('Recruiting Professionals','techflyte');?></span>
                                 <img class="img-fluid" src="<?php echo $img_url;?>/images/price-img.png" alt="">
                             </div>
                             <p>
-                            <?php echo  get_theme_mod('service_price_description');?>
+                            <?php echo  get_theme_mod('constractor_step_three');?>
                             </p>
                         </div>
                     </div>

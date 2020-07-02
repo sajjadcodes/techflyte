@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="col-md-7">
                                             <div class="subscriber">
-                                                <label><?php _e('Subscribe To Us','techflyte');?></label>
+                                                <label><?php _e('Sign up for our Newslette','techflyte');?></label>
                                                 <form class="d-flex justify-content-start align-items-center">
                                                     <input class="input-subscribe" type="text" name="">
                                                     <button class="submit" type="submit"><img src="<?php echo $social_url;?>/images/subscribe-img.png" alt=""></button>
@@ -71,7 +71,7 @@
                                             <ul>
                                             <li><a href="<?php esc_html_e('contractor','techflyte');?>"><?php _e('FAQ','techflyte');?></a></li>
                                                 <li><a href="<?php esc_html_e('loyalty','techflyte');?>"><?php _e('Rewards','techflyte');?></a></li>
-                                                <li><a href="<?php esc_html_e('safety','techflyte');?>"><?php _e('safety','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('safety','techflyte');?>"><?php _e('Safety','techflyte');?></a></li>
                                                  
                                             </ul>
                                         </div>
