@@ -70,7 +70,7 @@
                                             <h6><?php _e('Contractors','techflyte');?></h6>
                                             <ul>
                                             <li><a href="<?php esc_html_e('contractor','techflyte');?>"><?php _e('FAQ','techflyte');?></a></li>
-                                                <li><a href="<?php esc_html_e('loyalty','techflyte');?>"><?php _e('Rewards','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('loyalty','techflyte');?>"><?php _e('Flyers Plus','techflyte');?></a></li>
                                                 <li><a href="<?php esc_html_e('safety','techflyte');?>"><?php _e('Safety','techflyte');?></a></li>
                                                  
                                             </ul>

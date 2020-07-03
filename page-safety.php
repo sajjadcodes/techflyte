@@ -18,17 +18,15 @@
             <div class="row">
                 <div class="col-12">
                     <div class="inner-content-wrap">
-                        <h2><?php _e('SAFETY AND COMPLIANCE','techflyte');?></h2>
+                        <h2><?php _e('TechFlyte Safety and Compliance','techflyte');?></h2>
                         <p>
                             <?php echo get_theme_mod('safety_text_one');?>
                         </p>
                                                 
                         <div class="row">
                             <div class="col-xl-6 mt-md-4 col-lg-7">
-                                <h3><?php echo get_theme_mod('safety_subtitle');?></h3>
-                                <p>
-                                <?php  echo get_theme_mod('safety_description');?>
-                                </p>
+                                <p><?php  echo get_theme_mod('safety_description');?></p>
+                                
                             </div>
                             <div class="col-xl-5 offset-xl-1 col-lg-5">
                                 <div class="safety-bnr">
@@ -40,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <h3><?php echo get_theme_mod('safety_subtitle');?></h3>
                         <p><?php echo get_theme_mod('safety_description_secondary');?></p>
                     
                     </div>

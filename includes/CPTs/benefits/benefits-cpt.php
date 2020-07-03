@@ -22,7 +22,7 @@ function tech_benefits_cpt_init() {
     'description'   => 'Techflyte Loyalty Benefit portion',
     'public'        => true,
     'menu_position' => 5,
-    'supports'      => array( 'title','thumbnail'),
+    'supports'      => array( 'title','thumbnail','editor'),
     'has_archive'   => true,
     'menu_icon'     =>'dashicons-awards',
     
