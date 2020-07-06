@@ -34,10 +34,13 @@
                         </div>
                         <h5><?php _e('Flyers Plus Program Details','techflyte');?></h5>
                         <div class="row justify-content-center">
-                         
-                            <?php get_template_part( 'partials/content','benefits');?>
-                            
-                            <p><span><?php _e('Have questions regarding the program? Reach out to your TechFlyte recruiter or email HR@techflyte.com','techflyte');?></span></p>
+                            <?php get_template_part( 'partials/content','loyalty');?>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                 <p><?php echo get_theme_mod('loyalty_description_secondary');?></p>
+                                <p><span><?php _e('Have questions regarding the program? Reach out to your TechFlyte recruiter or email HR@techflyte.com','techflyte');?></span></p>
+                            </div>
                         </div>
                     
                     </div>
