@@ -799,7 +799,7 @@ footer a.download-btn:hover {
     margin-bottom: 86px;
 }
 .staff-firm .firm-col .firm-col-head {
-    margin-bottom: 57px;
+    margin-bottom: 30px;
 }
 .staff-firm .firm-col .firm-col-head h4 {
     font-size: 208.38px;
@@ -809,7 +809,7 @@ footer a.download-btn:hover {
     margin-bottom: 0;
 }
 .staff-firm .firm-col .firm-col-head span {
-    font-size: 27px;
+    font-size: 23px;
     line-height: 39px;
     color: #a714c6;
     font-weight: 700;
@@ -3551,4 +3551,11 @@ footer .ftr-menu ul li a {
 .loyalty-program p:last-child{
     font-size:21px;
     font-weight: 500;
+}
+
+a.contact-dot-verfication {
+    color: #a714c6;
+}
+a.employ-ver {
+    color: #04d5e0;
 }
