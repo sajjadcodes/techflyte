@@ -7,7 +7,7 @@ $url = get_template_directory_uri(  ) . '/assets/images';
 
     $args= array(
         'post_type'         =>'team',
-        'posts_per_page'    =>10,
+        'posts_per_page'    =>21,
     );
 
     $loop = new WP_Query($args);

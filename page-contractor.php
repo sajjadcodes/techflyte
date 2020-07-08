@@ -60,7 +60,7 @@
                             <div class="firm-col-head d-flex align-items-baseline justify-content-start">
                                 <h4><?php _e('2','techflyte');?></h4>
                                 <span><?php _e(' Peace of Mind Promise','techflyte');?></span>
-                                <img class="img-fluid" src="<?php echo $img_url;?>/images/reputation-img.png" alt="">
+                                <img class="img-fluid" src="<?php echo $img_url;?>/images/hand-shaker.png" alt="">
                             </div>
                             <p>
                             <?php echo  get_theme_mod('constractor_step_two');?>
@@ -72,7 +72,7 @@
                             <div class="firm-col-head d-flex align-items-baseline justify-content-start">
                                 <h4><?php _e('3','techflyte');?></h4>
                                 <span><?php _e('Recruiting Professionals','techflyte');?></span>
-                                <img class="img-fluid" src="<?php echo $img_url;?>/images/price-img.png" alt="">
+                                <img class="img-fluid" src="<?php echo $img_url;?>/images/Professionals.png" alt="">
                             </div>
                             <p>
                             <?php echo  get_theme_mod('constractor_step_three');?>
