@@ -1,51 +1,44 @@
 <?php 
 
 
-// includes
-			include(get_theme_file_path('/setup.php'));
-			include(get_theme_file_path( '/includes/front/enqueue.php' ));
-			include(get_theme_file_path('/includes/customizer.php'));
-			// CPTs
-		    include(get_theme_file_path('includes/cpts/team/team-cpt.php'));
-			include(get_theme_file_path('includes/cpts/faq/faq-cpt.php'));
-			include(get_theme_file_path('includes/cpts/benefits/benefits-cpt.php'));
-			include(get_theme_file_path('includes/cpts/partner/partner-cpt.php'));
 
+// Exit if accessed directly
+			defined('ABSPATH') || exit;
 
-// hooks
-			add_action( 'wp_enqueue_scripts', 'tech_enqueue_files' );
-			add_action( 'after_setup_theme', 'tech_setup_theme');
-			add_action( 'customize_register', 'mytheme_customize_register'); 
-			add_action( 'init', 'tech_team_cpt_init');
-			add_action( 'init', 'tech_faq_cpt_init');
-			add_action( 'init','tech_benefits_cpt_init');
-			add_action( 'init','tech_partner_cpt_init');
-			add_action('after_switch_theme','my_rewrite_flush');
+	// includes
+			$techflyte_includes = array(
+				'/setup.php',
+				'/includes/front/enqueue.php',
+				'/includes/customizer.php',
+				'includes/cpts/team/team-cpt.php',
+				'includes/cpts/benefits/benefits-cpt.php',
+				'includes/cpts/partner/partner-cpt.php',
+			);
+			foreach($techflyte_includes as $file){
+				require_once get_theme_file_path($file);
 
-
-// Option page using ACF
-			if( function_exists('acf_add_options_page') ) {
-				
-				acf_add_options_page(array(
-					'page_title' 	=> 'Techflyte Theme General  Settings',
-					'menu_title'	=> 'TechFlyte Settings',
-					'menu_slug' 	=> 'theme-general-settings',
-					'capability'	=> 'edit_posts',
-					'redirect'		=> false
-				));
-				
 			}
 
 
-// fliter for excerpt length
-function new_excerpt_length($length) {
-    return 20;
-}
-add_filter('excerpt_length', 'new_excerpt_length');
 
-// filter for eslipse in excerpts
+// hook
+			$techflyte_init_hooks = array(
+				'tech_team_cpt_init',
+				'tech_faq_cpt_init',
+				'tech_benefits_cpt_init',
+				'tech_partner_cpt_init',
 
-function new_excerpt_more( $more ) {
-    return '';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
+			);
+
+		foreach($techflyte_init_hooks as $flyte_hooks){
+
+			add_action('init','$flyte_hooks');
+		}
+
+ 
+		add_action( 'wp_enqueue_scripts', 'tech_enqueue_files' );
+		add_action( 'after_setup_theme', 'tech_setup_theme');
+		add_action( 'customize_register', 'mytheme_customize_register'); 
+		add_action('after_switch_theme','my_rewrite_flush');
+
+

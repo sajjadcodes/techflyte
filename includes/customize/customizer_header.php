@@ -35,14 +35,7 @@ $wp_customize->add_panel('techflyte_header_panel',array(
                     'panel'         =>'techflyte_header_panel',
                 ) );
 
-                $wp_customize->add_section('title_tagline',array(
-                     'title'            =>'Site Identity',
-                    'prirority'          =>170,
-                     'panel'            =>'techflyte_header_panel',
-                   
-                )
-                        
-               );
+            
 
                $wp_customize->add_section('nav_menus',array(
                      'title'            =>'menu',
