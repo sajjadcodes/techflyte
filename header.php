@@ -6,9 +6,10 @@
                                         
     $linkedIn_url="https://www.linkedin.com/in/";
     $fb_url="https://www.facebook.com/";
-
+    $social_url = get_template_directory_uri( ) . '/assets'
+                                        
     ?>
-
+   
 
 
 <!doctype html>
@@ -16,7 +17,6 @@
 
 <head>
     <title><?php bloginfo('name');?></title>
-  
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php  wp_head();?>
@@ -77,19 +77,11 @@
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4 d-flex justify-content-end">
                         <div class="social-menu d-flex">
                                 <ul class="list-unstyled p-0 m-0 d-flex justify-content-start align-items-center">
-
-
-                                        <?php 
-
-                                        $social_url = get_template_directory_uri( ) . '/assets'
-                                        ?>
-                                     
-                                        <li><a href="<?php echo $linkedIn_url;?><?php echo get_theme_mod('linkedin_social_links');?>"><img src=" <?php echo $social_url;?>/images/linkedin-icon.png" alt=""></a></li>
-                                        <li><a href="<?php echo $fb_url;?><?php echo get_theme_mod('facebook_social_links');?>"><img src="<?php echo $social_url;?>/images/fb_icon.png" alt=""></a></li>
-                                    
+                                    <li><a href="<?php echo $linkedIn_url;?><?php echo get_theme_mod('linkedin_social_links');?>"><img src=" <?php echo $social_url;?>/images/linkedin-icon.png" alt=""></a></li>
+                                    <li><a href="<?php echo $fb_url;?><?php echo get_theme_mod('facebook_social_links');?>"><img src="<?php echo $social_url;?>/images/facebook.png" alt=""></a></li>
                                 </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+     </header>

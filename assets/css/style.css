@@ -7,7 +7,7 @@ body {
 /* Header */
 header {
     background: url('../images/header-bg.png') no-repeat;
-    padding: 50px 50px 40px 69px;
+    padding: 30px 50px 30px 69px;
     background-size: cover;
 }
 
@@ -155,7 +155,7 @@ header .social-menu ul li {
 .banner {
     background: url('../images/hero-bg.png') no-repeat;
     background-size: cover;
-    padding: 354px 0 330px;
+    padding: 100px 0 100px;
 }
 
 .banner h1 {
