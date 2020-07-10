@@ -1,25 +1,12 @@
 <?php get_header();?>
 
-
-  <!-- Header End -->
-        <!-- Hero section -->
-        <div class="contact-banner inner-page-bnr">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 m-auto">
-                        <h2><span><?php _e('SUBMIT','techflyte');?></span> <?php wp_title(" ");?></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hero section End -->
         <!-- Contact section -->
         <div class="contact-us">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-form">
-                            <h4><?php _e('Submit your CV', 'techflyte');?></h4>
+                            <h4><?php _e('Submit your Resume', 'techflyte');?></h4>
                             <div class="row">
                                 <!-- <div class="col-md-6">
                                     <label>First Name*</label>
