@@ -31,7 +31,7 @@
                            <a href="<?php esc_html_e('contact','techflyte');?>"><?php _e('here.','techflyte');?></a>
                            
                         </p>
-                        <a class="service-btn" href="mailto:sales@techflyte.com "><?php _e('Sales Query','techflyte');?></a>
+                        <a class="service-btn" href="mailto:sales@techflyte.com?subject=Sale Query "><?php _e('Contact Sales','techflyte');?></a>
                     </div>
                 </div>
             </div>

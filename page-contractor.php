@@ -5,7 +5,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><span><?php wp_title(" ");?></span></h2>
+                        <h2><?php wp_title(" ");?></h2>
+                        <h2><span><?php _e('Information','techflyte');?></span></h2>
                     </div>
                 </div>
             </div>
@@ -22,6 +23,7 @@
                 <div class="col-xl-5 col-lg-5">
                     <div class="contractor-caption-box">
                         <h3><?php wp_title(" ");?> </h3>
+                        
                         <p>
                           <?php echo  get_theme_mod('contract_description');?>
                         </p>

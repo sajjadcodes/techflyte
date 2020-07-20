@@ -159,6 +159,7 @@ header .social-menu ul li {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 100px;
+    background-position: center;
     
     
 }
@@ -494,7 +495,7 @@ footer {
 
 footer .copy-rights {
     background: #232031;
-    padding: 35px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -1042,6 +1043,7 @@ footer a.download-btn:hover {
     font-weight: 700;
 }
 .contact-us {
+    background: url(../images/resume-bg.png) no-repeat;
     padding: 198px 230px 160px;
 }
 .contact-us h3 {
@@ -1572,6 +1574,7 @@ footer a.download-btn:hover {
         line-height: 40px;
     }
 
+   
     footer .contact-detail p {
         font-size: 20px;
         padding-left: 30px;
@@ -3001,6 +3004,8 @@ footer a.download-btn:hover {
         margin-bottom: 40px;
         padding: 0;
     }
+
+
     .contact-us .contact-form button img {
         margin-left: 20px;
     }
@@ -3038,7 +3043,7 @@ footer a.download-btn:hover {
         padding-left: 20px;
     }
     footer .copy-rights {
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     footer .copy-rights p {
@@ -3215,6 +3220,7 @@ footer a.download-btn:hover {
         font-size: 25px;
         margin-bottom: 30px;
     }
+    
     .contact-us h3 {
         font-size: 20px;
     }
@@ -3480,6 +3486,7 @@ footer a.download-btn:hover {
         box-shadow: 0 20px 45px 0 #acb9c7;
         display: flex;
         align-items: center;
+        justify-content: center;  
         }
 }
 
@@ -3568,7 +3575,18 @@ footer .ftr-menu ul li a {
 
 a.contact-dot-verfication {
     color: #a714c6;
+    font-size: 21px;
+
 }
 a.employ-ver {
     color: #04d5e0;
+    font-size:20px;
 }
+
+ .contact-detail {
+     margin-top: 25px;
+ }
+ .submit-center {
+     display: flex;
+     justify-content: center;
+ }
