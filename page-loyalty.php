@@ -7,7 +7,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><span><?php _e('TechFlyte Flyers Plus Program','techflyte');?></span></h2>
+                        <h2><?php _e('TechFlyte','techflyte');?></h2>
+                        <h2><span><?php _e('Flyers Plus Program','techflyte');?></span></h2>
                     </div>
                 </div>
             </div>

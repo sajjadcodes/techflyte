@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 m-auto">
-                        <h2><span><?php _e('Safety & Compliance','techflyte');?></span></h2>
+                        <h2><?php _e('Safety','techflyte');?><span><?php _e('& Compliance','techflyte');?></span></h2>
                     </div>
                    
                 </div>
@@ -33,7 +33,7 @@
                                  
                                     <?php 
                                                     $video_file = get_template_directory_uri() . "/videos/pepper.mp4";
-                                                    echo do_shortcode('[video mp4=' . $video_file .' width = 520 height = 340]');
+                                                    echo do_shortcode('[embeddoc url="https://techflyte.com/wp-content/uploads/2020/07/TechFlyte-Drug-and-Alcohol-PP-3.pdf" viewer="browser"]');
                                                 ?>
                                 </div>
                             </div>

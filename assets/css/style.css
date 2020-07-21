@@ -7,7 +7,7 @@ body {
 /* Header */
 header {
     background: url('../images/header-bg.png') no-repeat;
-    padding: 50px 50px 40px 69px;
+    padding: 30px 50px 30px 69px;
     background-size: cover;
 }
 
@@ -153,22 +153,29 @@ header .social-menu ul li {
 
 /* Banner */
 .banner {
-    background: url('../images/hero-bg.png') no-repeat;
+    
+    background-image:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url('../images/home_banner.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 354px 0 330px;
+    padding: 100px 0 100px;
+    background-position: center;
+    
+    
 }
 
 .banner h1 {
-    font-size: 113px;
-    line-height: 111px;
+    font-size: 80px;
+    line-height: 100px;
     color: #ffffff;
     font-weight: bold;
     margin: 0 0 20px;
+
 }
 
 .banner h2 {
-    font-size: 113px;
-    line-height: 111px;
+    font-size: 80px;
+    line-height: 100px;
     color: #ffffff;
     font-weight: 300;
     margin: 0 0 25px;
@@ -195,8 +202,8 @@ header .social-menu ul li {
     font-weight: 300;
     text-decoration: none;
     display: block;
-    padding: 24px 15px;
-    width: 50%;
+    padding: 15px 15px;
+    width: 30%;
     background: #a714c6;
     text-align: center;
     text-transform: uppercase;
@@ -488,7 +495,7 @@ footer {
 
 footer .copy-rights {
     background: #232031;
-    padding: 35px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -725,7 +732,8 @@ footer a.download-btn:hover {
     background-size: cover;
 }
 .service-banner {
-	background: url('../images/team-banner-bg.png') no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+	url('../images/services_banner.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -894,9 +902,11 @@ footer a.download-btn:hover {
 
 /* CONTRACTOR */
 .contractor-banner {
-    background: url('../images/contractor-bnr.png') center center no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url('../images/contractor_banner.jpg') center center no-repeat;
+    background-size:;
     padding: 115px 15px 515px 80px; 
+    
 }
 .contractors {
     background: #f6f4ef;
@@ -1020,7 +1030,8 @@ footer a.download-btn:hover {
 }
 /* CONTACT */
 .contact-banner {
-    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url('../images/contact_banner.jpg') center center no-repeat;
     background-size: cover;
     padding: 115px 15px 515px 80px; 
 }
@@ -1032,6 +1043,7 @@ footer a.download-btn:hover {
     font-weight: 700;
 }
 .contact-us {
+    background: url(../images/resume-bg.png) no-repeat;
     padding: 198px 230px 160px;
 }
 .contact-us h3 {
@@ -1051,7 +1063,7 @@ footer a.download-btn:hover {
     color: #131313;
     font-weight:300;
     margin-bottom: 109px;
-    padding: 0 150px;
+    /* padding: 0 150px; */
     text-align: center;
 }
 .contact-us p a {
@@ -1060,7 +1072,7 @@ footer a.download-btn:hover {
 .contact-us .contact-form {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 130px 80px 100px;
+    /* padding: 130px 80px 100px; */
     box-shadow: 0 0 30px 1px #f5e5f9;
 }
 .contact-us .contact-form h4 {
@@ -1145,7 +1157,8 @@ footer a.download-btn:hover {
 
 /* LOYALTY PROGRAM */
 .loyalty-banner {
-    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url('../images/Flyer_banner.jpg') center center no-repeat;
     background-size: cover;
     padding: 115px 15px 515px 80px; 
 }
@@ -1242,9 +1255,11 @@ footer a.download-btn:hover {
 
 /* SAFETY COMPLIANCE */
 .safety-banner {
-    background: url('../images/contractor-bnr.png') center center no-repeat;
+    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url('../images/safety_banner.jpg') center center no-repeat;
     background-size: cover;
     padding: 115px 15px 515px 80px; 
+    
 }
 
 .safety-compliance h3 {
@@ -1559,6 +1574,7 @@ footer a.download-btn:hover {
         line-height: 40px;
     }
 
+   
     footer .contact-detail p {
         font-size: 20px;
         padding-left: 30px;
@@ -2636,7 +2652,7 @@ footer a.download-btn:hover {
     }
 
     .resume a {
-        padding: 12px 20px 10px;
+        padding: 25px 20px 10px;
         font-size: 18px;
     }
 
@@ -2988,6 +3004,8 @@ footer a.download-btn:hover {
         margin-bottom: 40px;
         padding: 0;
     }
+
+
     .contact-us .contact-form button img {
         margin-left: 20px;
     }
@@ -3025,7 +3043,7 @@ footer a.download-btn:hover {
         padding-left: 20px;
     }
     footer .copy-rights {
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     footer .copy-rights p {
@@ -3202,6 +3220,7 @@ footer a.download-btn:hover {
         font-size: 25px;
         margin-bottom: 30px;
     }
+    
     .contact-us h3 {
         font-size: 20px;
     }
@@ -3347,7 +3366,7 @@ footer a.download-btn:hover {
 
 /* CONTACT */
 .contact-banner {
-    background: url('../images/contractor-bnr.png') center center no-repeat;
+    
     background-size: cover;
     padding: 115px 15px 515px 80px;
 }
@@ -3383,7 +3402,7 @@ footer a.download-btn:hover {
     color: #131313;
     font-weight: 300;
     margin-bottom: 109px;
-    padding: 0 150px;
+    /* padding: 0 150px; */
     text-align: center;
 }
 
@@ -3394,7 +3413,7 @@ footer a.download-btn:hover {
 .contact-us .contact-form {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 130px 80px 100px;
+    /* padding: 130px 80px 100px; */
     box-shadow: 0 0 30px 1px #f5e5f9;
 }
 
@@ -3467,6 +3486,7 @@ footer a.download-btn:hover {
         box-shadow: 0 20px 45px 0 #acb9c7;
         display: flex;
         align-items: center;
+        justify-content: center;  
         }
 }
 
@@ -3555,7 +3575,18 @@ footer .ftr-menu ul li a {
 
 a.contact-dot-verfication {
     color: #a714c6;
+    font-size: 21px;
+
 }
 a.employ-ver {
     color: #04d5e0;
+    font-size:20px;
 }
+
+ .contact-detail {
+     margin-top: 25px;
+ }
+ .submit-center {
+     display: flex;
+     justify-content: center;
+ }

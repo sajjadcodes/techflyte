@@ -15,11 +15,11 @@
 				'includes/cpts/partner/partner-cpt.php',
 			);
 			foreach($techflyte_includes as $file){
-				require_once get_theme_file_path($file);
+				include(get_theme_file_path($file)); 
 
 			}
 
-
+			
 
 // hook
 			$techflyte_init_hooks = array(
@@ -32,7 +32,7 @@
 
 		foreach($techflyte_init_hooks as $flyte_hooks){
 
-			add_action('init','$flyte_hooks');
+			add_action('init',$flyte_hooks);
 		}
 
  

@@ -16,7 +16,7 @@
                              <?php the_post_thumbnail('post-thumbnail', ['class' =>'img-fluid']);?>
                              <h6><?php the_title();?></h6>
                               <?php the_excerpt(  ); ?>
-                                 <a href="<?php the_permalink(  );?>">read More</a>
+                                 <a href="<?php the_permalink(  );?>"><?php _e('read More','techflyte');?></a>
                                
                             
                          </div>
