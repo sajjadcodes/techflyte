@@ -34,20 +34,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                        <div class="contact-detail">
-                                    <div class="d-flex justify-content-start align-items-center mb-4">
-                                        <div class="contact-icon">
-                                           <img class="img-fluid" src="<?php echo $social_url;?>/images/phone-icon.png" alt=""> 
-                                        </div>
-                                        <p><?php echo get_theme_mod('footer_contact');?></p>
-                                    </div>
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <div class="contact-icon">
-                                           <img class="img-fluid" src="<?php echo $social_url;?>/images/marker-icon.png" alt=""> 
-                                        </div>
-                                        <p><?php echo get_theme_mod('footer_address');?></p>
-                                    </div>
-                                </div>
+                                
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +44,7 @@
                                         <div class="col-md-4">
                                             <h6><?php _e('Help','techflyte');?></h6>
                                             <ul>
-                                                <li><a href="<?php esc_html_e('team','techflyte');?>"><?php _e('Private Policy','techflyte');?></a></li>
+                                                <li><a href="<?php esc_html_e('policy','techflyte');?>"><?php _e('Private Policy','techflyte');?></a></li>
                                                 <li><a href="<?php esc_html_e('services','techflyte');?>"><?php _e('Terms & Conditions','techflyte');?></a></li>
                                             
                                             </ul>
@@ -82,7 +69,25 @@
                                                  
                                             </ul>
                                         </div>
-                                     
+                              
+                                
+                                     </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                      <div class="contact-detail">
+                                    <div class="d-flex justify-content-start align-items-center mb-4">
+                                        <div class="contact-icon">
+                                           <img class="img-fluid" src="<?php echo $social_url;?>/images/phone-icon.png" alt=""> 
+                                        </div>
+                                        <p><?php echo get_theme_mod('footer_contact');?></p>
+                                        <div class="contact-icon">
+                                           <img class="img-fluid" src="<?php echo $social_url;?>/images/marker-icon.png" alt=""> 
+                                        </div>
+                                        <p><?php echo get_theme_mod('footer_address');?></p>
+                                    </div>
+                                   
+                                </div>
                                     </div>
                                 </div>
                             </div>

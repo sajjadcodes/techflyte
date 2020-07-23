@@ -65,7 +65,7 @@ header .nav-menu ul li ul.sub-menu {
     height: 0;
     visibility: hidden;
     opacity: 0;
-    z-index:999;
+    z-index: 999;
 }
 
 header .nav-menu ul li:hover ul {
@@ -153,15 +153,15 @@ header .social-menu ul li {
 
 /* Banner */
 .banner {
-    
-    background-image:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url('../images/home_banner.jpg');
+
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url('../images/home_banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 100px;
     background-position: center;
-    
-    
+
+
 }
 
 .banner h1 {
@@ -212,8 +212,8 @@ header .social-menu ul li {
 }
 
 .banner .bnr-btns a:hover {
-    color:#ffffff;
-    background:#00d4e0;
+    color: #ffffff;
+    background: #00d4e0;
 }
 
 .banner .bnr-btns a:last-child {
@@ -230,8 +230,7 @@ header .social-menu ul li {
     margin-top: 296px;
 }
 
-.resume h3 
-{
+.resume h3 {
     font-size: 55.24px;
     color: #a714c6;
     text-transform: uppercase;
@@ -247,9 +246,9 @@ header .social-menu ul li {
 }
 
 
- .resume a{
+.resume a {
     background: #a714c6;
-    padding:22px 33px 25px;
+    padding: 22px 33px 25px;
     font-size: 30px;
     line-height: 28px;
     color: #ffffff;
@@ -257,12 +256,12 @@ header .social-menu ul li {
     text-decoration: none;
     outline: none;
     border: none;
-    height:80px;
-} 
+    height: 80px;
+}
 
 .resume a:hover {
     /* opacity: .8; */
-    background:#00d4e0;
+    background: #00d4e0;
 }
 
 .resume a img {
@@ -299,7 +298,7 @@ header .social-menu ul li {
     padding: 35px 60px 40px;
     box-shadow: 0 0 15px 1px #e6e6e6;
     margin-bottom: 145px;
-    height:75%;
+    height: 75%;
 }
 
 .techflyte .techflyte-box h4 {
@@ -348,7 +347,7 @@ header .social-menu ul li {
 
 .techflyte a.contract-btn:hover {
     /* opacity: .8; */
-    background:#a714c6;
+    background: #a714c6;
 }
 
 
@@ -379,9 +378,10 @@ header .social-menu ul li {
     margin-bottom: 90px;
     box-shadow: 0 0 25px 5px #dad9d5;
 }
+
 .our-team .team-col img {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .our-team .team-caption {
@@ -397,14 +397,17 @@ header .social-menu ul li {
     visibility: hidden;
     transition: all ease .5s;
 }
+
 .our-team .team-caption.active {
-	opacity: 1;
+    opacity: 1;
     visibility: visible;
 }
+
 .our-team .team-col:hover .team-caption {
-	opacity: 1;
+    opacity: 1;
     visibility: visible;
 }
+
 .our-team .team-caption h5 {
     font-size: 40px;
     line-height: 31px;
@@ -433,15 +436,15 @@ header .social-menu ul li {
 }
 
 .our-team .team-detail h6 {
-	font-size: 31.46px;
-    line-height:38px;
+    font-size: 31.46px;
+    line-height: 38px;
     color: #a714c6;
     font-weight: 400;
     margin-bottom: 80px;
 }
 
 .our-team .team-detail p {
-	font-size: 22px;
+    font-size: 22px;
     line-height: 26px;
     color: #232031;
     font-weight: 300;
@@ -449,36 +452,36 @@ header .social-menu ul li {
 }
 
 .our-team .team-detail p:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .our-team .nav-tabs .nav-link {
-	padding: 25px;
-	text-transform: uppercase;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 20px;
-	color: #2b2b2b;
-	font-weight: 400;
-	border: 0;
+    padding: 25px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #2b2b2b;
+    font-weight: 400;
+    border: 0;
 }
 
 .our-team .nav-tabs {
-	border: 0;
+    border: 0;
 }
 
 .our-team .nav-tabs .nav-link img {
-	margin-right: 15px;
+    margin-right: 15px;
 }
 
 .our-team .tab-content {
-	padding: 25px 45px 25px;
-	background: #ffffff;
+    padding: 25px 45px 25px;
+    background: #ffffff;
 }
 
 .our-team .tab-content p {
-	font-size: 20px;
+    font-size: 20px;
     line-height: 25px;
     color: #aaaaaa;
     font-weight: 300;
@@ -605,13 +608,13 @@ footer .contact-detail p {
 }
 
 footer .ftr-right {
-    padding: 157px 0 109px 156px;
+    padding: 103px 0 46px 89px;
 }
 
 footer .social-detail {
     padding-bottom: 95px;
     border-bottom: 1px solid #424357;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 footer .social-detail label {
@@ -731,9 +734,10 @@ footer a.download-btn:hover {
     background: url('../images/team-banner-bg.png') no-repeat;
     background-size: cover;
 }
+
 .service-banner {
-	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-	url('../images/services_banner.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url('../images/services_banner.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -752,53 +756,61 @@ footer a.download-btn:hover {
 .inner-page-bnr h2 span {
     color: #04d5e0;
 }
+
 /* OUR SERVICES */
 .techy-difference {
-	background: #f6f4ef;
-	padding:170px 170px 140px 0;
+    background: #f6f4ef;
+    padding: 170px 170px 140px 0;
 }
+
 .sidebar-bnr {
-	box-shadow: 0 0 25px 5px #d6d5d0;
+    box-shadow: 0 0 25px 5px #d6d5d0;
 }
+
 .sidebar-bnr img {
-	width: 100%;
+    width: 100%;
 }
+
 .techy-caption-box {
-	background: #ffffff;
-	padding: 80px 40px 90px 54px;
-	box-shadow: 0 0 25px 5px #d6d5d0;
-	margin-left: -60px;
+    background: #ffffff;
+    padding: 80px 40px 90px 54px;
+    box-shadow: 0 0 25px 5px #d6d5d0;
+    margin-left: -60px;
     position: relative;
     z-index: 1;
 }
-.techy-caption-box h3 { 
-	font-size: 54.05px;
-	line-height: .9;
-	color: #a714c6;
-	font-weight: 700;
-	margin-bottom: 50px;
+
+.techy-caption-box h3 {
+    font-size: 54.05px;
+    line-height: .9;
+    color: #a714c6;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
-.techy-caption-box h3 span { 
-	color: #04d5e1;
-	font-weight: 300;
+
+.techy-caption-box h3 span {
+    color: #04d5e1;
+    font-weight: 300;
 }
 
 .techy-caption-box p {
-	font-size: 26.88px;
-	line-height: 33px;
-	color: #181818;
-	font-weight: 400;
-	margin-bottom: 40px;
+    font-size: 26.88px;
+    line-height: 33px;
+    color: #181818;
+    font-weight: 400;
+    margin-bottom: 40px;
 }
+
 .techy-caption-box p:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .staff-firm {
     background: url('../images/firm-bg.png') no-repeat;
     background-size: cover;
-    padding:113px 125px 59px; 
+    padding: 113px 125px 59px;
 }
+
 .staff-firm h2 {
     font-size: 74.26px;
     line-height: .8;
@@ -806,9 +818,11 @@ footer a.download-btn:hover {
     font-weight: 700;
     margin-bottom: 86px;
 }
+
 .staff-firm .firm-col .firm-col-head {
     margin-bottom: 30px;
 }
+
 .staff-firm .firm-col .firm-col-head h4 {
     font-size: 208.38px;
     line-height: .8;
@@ -816,15 +830,18 @@ footer a.download-btn:hover {
     font-weight: 400;
     margin-bottom: 0;
 }
+
 .staff-firm .firm-col .firm-col-head span {
     font-size: 23px;
     line-height: 39px;
     color: #a714c6;
     font-weight: 700;
 }
+
 .staff-firm .firm-col .firm-col-head img {
     margin-left: 22px;
 }
+
 .staff-firm .firm-col p {
     font-size: 25.67px;
     line-height: 31px;
@@ -832,18 +849,22 @@ footer a.download-btn:hover {
     font-weight: 300;
     padding-left: 25px;
 }
+
 .our-services {
     padding: 120px 170px 110px 0;
 }
+
 .our-services .service-detail {
     padding-left: 197px;
     margin-bottom: 125px;
     padding-right: 125px;
 }
+
 .our-services img.ratio-img {
     width: 42px;
     margin-right: 30px;
 }
+
 .our-services .service-detail h3 {
     font-size: 88.92px;
     line-height: .8;
@@ -852,6 +873,7 @@ footer a.download-btn:hover {
     font-family: 'Rubik', sans-serif;
     margin-bottom: 100px;
 }
+
 .our-services .service-detail p {
     font-size: 22px;
     line-height: 27px;
@@ -861,6 +883,7 @@ footer a.download-btn:hover {
     text-align: justify;
     margin-bottom: 55px;
 }
+
 .our-services .service-detail h6 {
     font-size: 22px;
     line-height: 27px;
@@ -870,19 +893,23 @@ footer a.download-btn:hover {
     text-align: justify;
     margin-bottom: 0;
 }
+
 .our-services .service-detail h6 span {
     color: #a714c6;
 }
+
 .our-services .service-col {
     box-shadow: 0 10px 25px 1px #dddddd;
     padding: 46px 10px 64px 13px;
     margin-bottom: 60px;
     border-radius: 10px;
-    height:85%;
+    height: 85%;
 }
+
 .our-services .service-col img {
     margin-bottom: 46px;
 }
+
 .our-services .service-col h5 {
     font-size: 20.45px;
     line-height: 1.1;
@@ -891,6 +918,7 @@ footer a.download-btn:hover {
     font-family: 'Rubik', sans-serif;
     margin-bottom: 23px;
 }
+
 .our-services .service-col p {
     font-size: 14.06px;
     line-height: 17px;
@@ -903,18 +931,22 @@ footer a.download-btn:hover {
 /* CONTRACTOR */
 .contractor-banner {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url('../images/contractor_banner.jpg') center center no-repeat;
-    background-size:;
-    padding: 115px 15px 515px 80px; 
-    
+        url('../images/contractor_banner.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
 }
+
 .contractors {
     background: #f6f4ef;
-    padding:138px 104px 176px 0;
+    padding: 138px 104px 176px 0;
 }
+
 .contractor-caption-box {
     padding-left: 102px;
 }
+
 .contractor-caption-box h3 {
     font-size: 92.15px;
     line-height: .8;
@@ -922,6 +954,7 @@ footer a.download-btn:hover {
     font-weight: 700;
     margin-bottom: 88px;
 }
+
 .contractor-caption-box p {
     font-size: 29.9px;
     line-height: 36px;
@@ -952,48 +985,54 @@ footer a.download-btn:hover {
     background: #ffffff;
     padding: 129px 80px 236px;
 }
+
 .information h6 {
     font-size: 39.78px;
-    line-height:30px;
+    line-height: 30px;
     color: #a714c6;
-    font-weight:400;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
+
 .information h2 {
     font-size: 72px;
-    line-height:.9;
+    line-height: .9;
     color: #00d4e0;
-    font-weight:300;
+    font-weight: 300;
     margin-bottom: 155px;
 }
+
 .information .card {
-    border:none;
+    border: none;
 }
 
 .information .card-header {
-    border:none;
+    border: none;
     border-radius: 15px;
     background: #f6f4ef;
-    padding:0;
+    padding: 0;
     margin-bottom: 12px;
 }
+
 .information .card-header button {
     padding: 46px 50px 46px 100px;
     outline: none;
-    border:none;
+    border: none;
     font-size: 28px;
     color: #6f6f79;
-    font-weight:400;
+    font-weight: 400;
     font-family: 'Rubik', sans-serif;
     position: relative;
 }
+
 .controler-signs {
     position: absolute;
     right: 10px;
     top: 50%;
     z-index: 1;
 }
+
 .controler-signs span {
     width: 40px;
     height: 6px;
@@ -1001,99 +1040,116 @@ footer a.download-btn:hover {
     border-radius: 3px;
     display: block;
     transition: all ease .5s;
-    
+
 }
-.card-header button.collapsed .controler-signs span { 
+
+.card-header button.collapsed .controler-signs span {
     transform: rotate(90deg);
 }
+
 .card-header .controler-signs span:last-child {
     position: relative;
     top: -6px;
 }
+
 .card-header button.collapsed .controler-signs span:last-child {
     transform: rotate(0deg);
 }
+
 .information .card-header button:focus {
     box-shadow: none;
     text-decoration: none;
 }
+
 .information .card-header button:hover {
     text-decoration: none;
 }
+
 .information .card-body {
     padding: 28px 70px 40px;
     font-size: 25px;
     line-height: 36px;
     color: #6f6f79;
-    font-weight:400;
+    font-weight: 400;
     font-family: 'Rubik', sans-serif;
 }
+
 /* CONTACT */
 .contact-banner {
-    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url('../images/contact_banner.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url('../images/contact_banner.jpg') center center no-repeat;
     background-size: cover;
-    padding: 115px 15px 515px 80px; 
+    padding: 115px 15px 515px 80px;
 }
 
-.contact-banner h2 { 
+.contact-banner h2 {
     font-weight: 300;
 }
-.contact-banner h2 span { 
+
+.contact-banner h2 span {
     font-weight: 700;
 }
+
 .contact-us {
     background: url(../images/resume-bg.png) no-repeat;
     padding: 198px 230px 160px;
 }
+
 .contact-us h3 {
     font-size: 70.73px;
     line-height: 1.1;
     color: #a714c6;
-    font-weight:600;
+    font-weight: 600;
     margin-bottom: 98px;
     text-align: center;
 }
+
 .contact-us span {
     color: #00d4e0;
 }
+
 .contact-us p {
     font-size: 30.65px;
     line-height: 1.5;
     color: #131313;
-    font-weight:300;
+    font-weight: 300;
     margin-bottom: 109px;
     /* padding: 0 150px; */
     text-align: center;
 }
+
 .contact-us p a {
     color: #a714c6;
 }
+
 .contact-us .contact-form {
     max-width: 1050px;
     margin: 0 auto;
-    /* padding: 130px 80px 100px; */
+     padding: 130px 80px 100px;
     box-shadow: 0 0 30px 1px #f5e5f9;
 }
+
 .contact-us .contact-form h4 {
     font-size: 42px;
     line-height: 1.1;
     color: #a714c6;
-    font-weight:600;
+    font-weight: 600;
     margin-bottom: 40px;
 }
+
 .contact-us .contact-form label {
     font-size: 28.05px;
     line-height: 1.1;
     color: #c8c8c8;
-    font-weight:400;
+    font-weight: 400;
     margin-bottom: 10px;
     display: block;
 }
+
 .contact-us .contact-form input.input-field {
     font-size: 28.05px;
     color: #c8c8c8;
-    font-weight:400;
+    font-weight: 400;
     width: 100%;
     border: 0;
     border-bottom: 1.5px solid #c8c8c8;
@@ -1102,7 +1158,7 @@ footer a.download-btn:hover {
     border-radius: 0;
 }
 
-.contact-us .contact-form input.input-field:focus, 
+.contact-us .contact-form input.input-field:focus,
 .contact-us .contact-form textarea {
     box-shadow: none;
 }
@@ -1110,7 +1166,7 @@ footer a.download-btn:hover {
 .contact-us .contact-form textarea {
     font-size: 28.05px;
     color: #c8c8c8;
-    font-weight:400;
+    font-weight: 400;
     width: 100%;
     border: 0;
     border-bottom: 1.5px solid #c8c8c8;
@@ -1118,6 +1174,7 @@ footer a.download-btn:hover {
     margin-bottom: 90px;
     border-radius: 0;
 }
+
 .contact-us .contact-form button {
     background: #a714c6;
     line-height: 67px;
@@ -1147,6 +1204,7 @@ footer a.download-btn:hover {
     background: none;
     opacity: 0;
 }
+
 .contact-us .contact-form button:hover {
     background: #a714c6cf
 }
@@ -1157,53 +1215,61 @@ footer a.download-btn:hover {
 
 /* LOYALTY PROGRAM */
 .loyalty-banner {
-    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url('../images/Flyer_banner.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url('../images/Flyer_banner.jpg') center center no-repeat;
     background-size: cover;
-    padding: 115px 15px 515px 80px; 
+    padding: 115px 15px 515px 80px;
 }
+
 .loyalty-program {
-     background: url('../images/inner-content-bg.png');
+    background: url('../images/inner-content-bg.png');
     padding: 137px 130px 164px;
 }
+
 .inner-content-wrap {
     background: #ffffff;
     padding: 123px 188px 147px 220px;
     box-shadow: 0 0 20px -10px #b9b9b9;
 }
+
 .loyalty-program h2 {
-    font-size:82px;
+    font-size: 82px;
     line-height: 1.1;
     color: #a714c6;
-    font-weight:700;
+    font-weight: 700;
     margin-bottom: 110px;
     text-align: center;
 }
+
 .loyalty-program h4 {
-    font-size:32px;
+    font-size: 32px;
     line-height: 1.1;
     color: #a714c6;
-    font-weight:500;
+    font-weight: 500;
     margin-bottom: 30px;
 }
+
 .loyalty-program p {
-    font-size:22px;
+    font-size: 22px;
     line-height: 26px;
     color: #000000;
-    font-weight:400;
+    font-weight: 400;
     margin-bottom: 32px;
 }
+
 .loyalty-program p:last-child {
     margin-bottom: 0;
 }
+
 .program-bnr {
     margin-top: 24px;
 }
+
 .loyalty-program h5 {
-    font-size:32px;
+    font-size: 32px;
     line-height: 1;
     color: #a714c6;
-    font-weight:500;
+    font-weight: 500;
     margin: 77px 0 54px;
     text-align: center;
     text-transform: uppercase;
@@ -1211,7 +1277,7 @@ footer a.download-btn:hover {
 
 .benefits-col {
     margin-bottom: 70px;
-   
+
 }
 
 .benefits-col img {
@@ -1220,32 +1286,35 @@ footer a.download-btn:hover {
 }
 
 .benefits-col h6 {
-    font-size:18.23px;
+    font-size: 18.23px;
     line-height: 1.1;
     color: #000000;
-    font-weight:300;
+    font-weight: 300;
     margin-bottom: 28px;
     text-align: center;
     text-transform: uppercase;
 }
+
 .benefits-col ul {
     list-style-type: none;
     padding: 0 0 0 65px;
     margin: 0;
 }
+
 .benefits-col ul li {
-    font-size:18.23px;
+    font-size: 18.23px;
     line-height: 1.1;
     color: #000000;
-    font-weight:300;
+    font-weight: 300;
     margin-bottom: 7px;
     position: relative;
     padding-left: 25px;
 }
+
 .benefits-col ul li::before {
     content: "";
     position: absolute;
-    background:#a714c6;
+    background: #a714c6;
     width: 8px;
     height: 8px;
     left: 0;
@@ -1255,24 +1324,26 @@ footer a.download-btn:hover {
 
 /* SAFETY COMPLIANCE */
 .safety-banner {
-    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url('../images/safety_banner.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url('../images/safety_banner.jpg') center center no-repeat;
     background-size: cover;
-    padding: 115px 15px 515px 80px; 
-    
+    padding: 115px 15px 515px 80px;
+
 }
 
 .safety-compliance h3 {
-    font-size:44px;
+    font-size: 44px;
     line-height: 51px;
     color: #a714c6;
-    font-weight:500;
+    font-weight: 500;
     margin-bottom: 60px;
 }
+
 .safety-compliance ul {
     padding-left: 15px;
     list-style-type: none;
 }
+
 .safety-compliance ul li {
     font-size: 22px;
     line-height: 25px;
@@ -1282,6 +1353,7 @@ footer a.download-btn:hover {
     position: relative;
     padding-left: 30px;
 }
+
 .safety-compliance ul li::before {
     content: "";
     position: absolute;
@@ -1314,29 +1386,35 @@ footer a.download-btn:hover {
     }
 
     .techy-caption-box h3 {
-	    font-size: 45px;
-	    margin-bottom: 45px;
-	}
-	.techy-caption-box p {
-	    font-size: 25px;
-	    line-height: 30px;
-	    margin-bottom: 30px;
-	}
+        font-size: 45px;
+        margin-bottom: 45px;
+    }
+
+    .techy-caption-box p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
     .contact-us {
         padding: 150px 200px;
     }
+
     .contact-us h3 {
         font-size: 65px;
         margin-bottom: 90px;
     }
+
     .contact-us p {
         font-size: 30px;
         margin-bottom: 100px;
         padding: 0 130px;
     }
+
     .inner-content-wrap {
         padding: 120px 150px 140px 200px;
     }
+
     footer .ftr-main {
         padding: 0 100px 0 100px;
     }
@@ -1420,145 +1498,178 @@ footer a.download-btn:hover {
     }
 
     .techy-caption-box {
-	    padding: 60px 40px 70px 50px;
-	}	
+        padding: 60px 40px 70px 50px;
+    }
 
     .techy-caption-box h3 {
-	    font-size: 40px;
-	    margin-bottom: 40px;
-	}
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
 
-	.techy-caption-box p {
-	    font-size: 20px;
-	    line-height: 25px;
-	    margin-bottom: 25px;
-	}
+    .techy-caption-box p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
     .staff-firm h2 {
         font-size: 65px;
         margin-bottom: 80px;
     }
+
     .staff-firm .firm-col .firm-col-head h4 {
         font-size: 170px;
     }
+
     .staff-firm .firm-col .firm-col-head span {
         font-size: 27px;
         line-height: 39px;
         color: #a714c6;
         font-weight: 700;
     }
+
     .staff-firm .firm-col p {
         font-size: 25px;
         line-height: 30px;
         padding-left: 25px;
     }
+
     .our-services {
         padding: 120px 140px 110px 0;
     }
+
     .our-services .service-detail {
         padding-left: 160px;
         margin-bottom: 120px;
         padding-right: 100px;
     }
+
     .our-services .service-detail h3 {
         font-size: 80px;
         margin-bottom: 90px;
     }
+
     .our-services .service-detail p {
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 50px;
     }
+
     .our-services .service-detail h6 {
         font-size: 18px;
         line-height: 25px;
     }
+
     .our-services .service-col {
         padding: 45px 10px 60px;
     }
+
     .our-services .service-col h5 {
         font-size: 18px;
         margin-bottom: 20px;
     }
+
     .contractors {
         padding: 130px 90px 170px 0;
     }
+
     .contractor-caption-box {
         padding-left: 80px;
     }
+
     .contractor-caption-box h3 {
         font-size: 85px;
         margin-bottom: 80px;
     }
+
     .contractor-caption-box p {
         font-size: 29px;
         line-height: 35px;
         margin-bottom: 40px;
     }
+
     .information {
         padding: 120px 70px 200px;
     }
+
     .information h6 {
         font-size: 35px;
         margin-bottom: 30px;
     }
+
     .information h2 {
         font-size: 60px;
         margin-bottom: 100px;
     }
+
     .information .card-header button {
         padding: 40px 45px 40px 80px;
         font-size: 25px;
     }
+
     .information .card-body {
         padding: 25px 50px 30px;
         font-size: 22px;
         line-height: 30px;
     }
+
     .card-header .controler-signs span:last-child {
         top: -5px;
     }
+
     .controler-signs span {
         width: 35px;
         height: 5px;
     }
+
     .contact-us {
         padding: 140px 190px;
     }
+
     .contact-us h3 {
         font-size: 55px;
         margin-bottom: 80px;
     }
+
     .contact-us p {
         font-size: 25px;
         margin-bottom: 90px;
         padding: 0 100px;
     }
+
     .loyalty-program {
         padding: 130px 120px 150px;
     }
+
     .inner-content-wrap {
         padding: 120px 120px;
     }
+
     .loyalty-program h2 {
         font-size: 85px;
         margin-bottom: 100px;
     }
+
     .loyalty-program p {
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 30px;
     }
+
     .benefits-col h6 {
         font-size: 17px;
         margin-bottom: 25px;
     }
+
     .benefits-col ul {
         padding: 0 0 0 28px;
     }
+
     .benefits-col ul li {
         font-size: 17px;
         padding-left: 20px;
     }
+
     .safety-compliance h3 {
         font-size: 40px;
         line-height: 50px;
@@ -1574,7 +1685,7 @@ footer a.download-btn:hover {
         line-height: 40px;
     }
 
-   
+
     footer .contact-detail p {
         font-size: 20px;
         padding-left: 30px;
@@ -1698,7 +1809,7 @@ footer a.download-btn:hover {
     .techflyte .techflyte-box {
         padding: 30px 35px;
         margin-bottom: 100px;
-        height:75%;
+        height: 75%;
     }
 
     .techflyte .techflyte-box h4 {
@@ -1737,62 +1848,74 @@ footer a.download-btn:hover {
         line-height: 27px;
         margin-bottom: 90px;
     }
+
     .our-team .team-caption {
-	    padding: 30px 10px;
-	}
-	.our-team .team-caption h5 {
-	    font-size: 35px;
-	    line-height: 30px;
-	    margin-bottom: 20px;
-	}
-	.our-team .team-caption span {
-	    font-size: 20px;
-	    line-height: 16px;
-	    margin-bottom: 20px;
-	}
-	.our-team .team-col {
-	    margin-bottom: 70px;
-	}
-	.our-team .team-detail h6 {
-	    font-size: 30px;
-	    line-height: 35px;
-	    margin-bottom: 60px;
-	}
-	.our-team .team-detail p {
-	    font-size: 20px;
-	    line-height: 25px;
-	    margin-bottom: 30px;
-	}
-	.our-team .nav-tabs .nav-link {
-	    padding: 20px;
-	}
+        padding: 30px 10px;
+    }
 
-	.techy-caption-box h3 {
-	    font-size: 35px;
-	    margin-bottom: 30px;
-	}	
+    .our-team .team-caption h5 {
+        font-size: 35px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
 
-	.techy-caption-box p {
-	    font-size: 18px;
-		line-height: 23px;
-		margin-bottom: 20px;
-	}
+    .our-team .team-caption span {
+        font-size: 20px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .our-team .team-col {
+        margin-bottom: 70px;
+    }
+
+    .our-team .team-detail h6 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 60px;
+    }
+
+    .our-team .team-detail p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .our-team .nav-tabs .nav-link {
+        padding: 20px;
+    }
+
+    .techy-caption-box h3 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .techy-caption-box p {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
     .staff-firm .firm-col .firm-col-head {
         margin-bottom: 50px;
     }
+
     .staff-firm .firm-col .firm-col-head img {
         margin-left: 15px;
         width: 65px;
     }
+
     .staff-firm .firm-col p {
         font-size: 22px;
         line-height: 28px;
         padding-left: 20px;
     }
+
     .staff-firm h2 {
         font-size: 55px;
         margin-bottom: 70px;
     }
+
     .staff-firm .firm-col .firm-col-head span {
         font-size: 28px;
         line-height: 35px;
@@ -1805,116 +1928,143 @@ footer a.download-btn:hover {
     .our-services {
         padding: 120px 110px 110px 0;
     }
+
     .our-services .service-detail h3 {
         font-size: 65px;
         margin-bottom: 80px;
     }
+
     .our-services .service-detail p {
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 40px;
     }
+
     .our-services .service-detail h6 {
         font-size: 16px;
         line-height: 22px;
     }
+
     .contractors {
         padding: 120px 70px 150px 0;
     }
+
     .contractor-caption-box {
         padding-left: 50px;
     }
+
     .contractor-caption-box h3 {
         font-size: 70px;
         margin-bottom: 60px;
     }
+
     .contractor-caption-box p {
         font-size: 25px;
         line-height: 30px;
         margin-bottom: 30px;
     }
+
     .contractor-caption-box a {
         font-size: 30px;
         line-height: 25px;
         padding: 25px 70px;
     }
+
     .information {
         padding: 100px 50px 150px;
     }
+
     .information h6 {
         font-size: 30px;
         margin-bottom: 25px;
     }
+
     .information h2 {
         font-size: 50px;
         margin-bottom: 80px;
     }
+
     .information .card-header button {
         padding: 30px 40px 30px 50px;
         font-size: 20px;
     }
+
     .information .card-body {
         padding: 20px 40px 25px;
         font-size: 20px;
         line-height: 28px;
     }
+
     .card-header .controler-signs span:last-child {
         top: -4px;
     }
+
     .controler-signs span {
         width: 30px;
         height: 4px;
     }
+
     .contact-us {
         padding: 130px 150px;
     }
+
     .contact-us h3 {
         font-size: 50px;
         margin-bottom: 70px;
     }
+
     .contact-us p {
         margin-bottom: 80px;
         padding: 0 90px;
     }
+
     .loyalty-program {
         padding: 120px 100px;
     }
+
     .inner-content-wrap {
         padding: 100px 100px;
-    }		
+    }
+
     .loyalty-program h2 {
         font-size: 75px;
         margin-bottom: 90px;
     }
+
     .loyalty-program h4 {
         font-size: 30px;
         margin-bottom: 25px;
     }
+
     .loyalty-program p {
         font-size: 18px;
         margin-bottom: 25px;
     }
+
     .loyalty-program h5 {
         font-size: 30px;
         margin: 70px 0 50px;
     }
+
     .safety-compliance h3 {
         font-size: 35px;
         line-height: 40px;
         margin-bottom: 40px;
     }
+
     .safety-compliance ul li {
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 30px;
     }
+
     footer .contact-form form {
         max-width: 350px;
         margin: 0 auto 6px;
     }
 
     footer .ftr-right {
-        padding: 150px 0 100px 50px;
+        padding:86px 0 100px 50px;
     }
 
     footer .social-detail label {
@@ -2073,202 +2223,253 @@ footer a.download-btn:hover {
         line-height: 25px;
         margin-bottom: 75px;
     }
-    .our-team .team-caption h5 {
-	    font-size: 30px;
-	    line-height: 25px;
-	    margin-bottom: 15px;
-	}
-	.our-team .team-caption span {
-	    font-size: 18px;
-	    margin-bottom: 15px;
-	}
-	.our-team .team-caption ul li img {
-	    width: 25px;
-	}
-	.our-team .team-col {
-	    margin-bottom: 50px;
-	}
-	.our-team .nav-tabs .nav-link {
-	    padding: 16px;
-	}
-	.our-team .nav-tabs .nav-link img {
-	    margin-right: 10px;
-	}
-	.our-team .tab-content {
-	    padding: 20px 40px 20px;
-	}
-	.our-team .nav-tabs .nav-link {
-	    padding: 20px;
-	    font-size: 18px;
-	}
-	.our-team .tab-content p {
-	    font-size: 18px;
-	    line-height: 23px;
-	    margin-bottom: 20px;
-	}
-	.our-team .team-detail h6 {
-	    font-size: 25px;
-	    line-height: 30px;
-	    margin-bottom: 50px;
-	}
-	.our-team .team-detail p {
-	    font-size: 18px;
-	    line-height: 22px;
-	    margin-bottom: 25px;
-	}
 
-	.techy-difference {
-	    padding: 150px 100px 130px 0;
-	}	
-	.techy-caption-box h3 {
-	    font-size: 30px;
-	}
-	.techy-caption-box {
-	    padding: 50px 40px;
-	}	
-	.techy-caption-box p {
-	    font-size: 16px;
-	    line-height: 20px;
-	    margin-bottom: 15px;
-	}	
+    .our-team .team-caption h5 {
+        font-size: 30px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .our-team .team-caption span {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .our-team .team-caption ul li img {
+        width: 25px;
+    }
+
+    .our-team .team-col {
+        margin-bottom: 50px;
+    }
+
+    .our-team .nav-tabs .nav-link {
+        padding: 16px;
+    }
+
+    .our-team .nav-tabs .nav-link img {
+        margin-right: 10px;
+    }
+
+    .our-team .tab-content {
+        padding: 20px 40px 20px;
+    }
+
+    .our-team .nav-tabs .nav-link {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .our-team .tab-content p {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    .our-team .team-detail h6 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .our-team .team-detail p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    .techy-difference {
+        padding: 150px 100px 130px 0;
+    }
+
+    .techy-caption-box h3 {
+        font-size: 30px;
+    }
+
+    .techy-caption-box {
+        padding: 50px 40px;
+    }
+
+    .techy-caption-box p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
     .staff-firm {
         padding: 100px 100px 55px;
     }
+
     .staff-firm h2 {
         font-size: 45px;
         margin-bottom: 60px;
     }
+
     .staff-firm .firm-col .firm-col-head img {
         width: 50px;
     }
+
     .staff-firm .firm-col .firm-col-head h4 {
         font-size: 120px;
     }
+
     .staff-firm .firm-col .firm-col-head span {
         font-size: 25px;
         line-height: 30px;
     }
+
     .staff-firm .firm-col p {
         font-size: 20px;
         line-height: 25px;
         padding-left: 15px;
     }
+
     .our-services {
         padding: 100px 80px 100px 0;
     }
+
     .our-services .service-detail {
         padding-left: 130px;
         margin-bottom: 100px;
     }
+
     .our-services .service-detail h3 {
         font-size: 60px;
         margin-bottom: 50px;
     }
+
     .our-services img.ratio-img {
         width: 40px;
         margin-right: 25px;
     }
+
     .our-services .service-col {
         padding: 35px 10px 40px;
         margin-bottom: 40px;
     }
+
     .our-services .service-col img {
         margin-bottom: 30px;
     }
+
     .contractors {
         padding: 100px 50px 110px 0;
     }
+
     .contractor-caption-box {
         padding-left: 30px;
     }
+
     .contractor-caption-box h3 {
         font-size: 60px;
         margin-bottom: 40px;
     }
+
     .contractor-caption-box p {
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 25px;
     }
+
     .contractor-caption-box a {
         font-size: 25px;
         line-height: 20px;
         padding: 20px 50px;
     }
+
     .information {
         padding: 90px 30px 120px;
     }
+
     .information h6 {
         font-size: 25px;
         margin-bottom: 20px;
     }
+
     .information h2 {
         font-size: 35px;
         margin-bottom: 55px;
     }
+
     .information .card-header button {
         padding: 20px 30px 20px 40px;
         font-size: 20px;
     }
+
     .information .card-body {
         padding: 15px 30px 20px;
         font-size: 18px;
         line-height: 25px;
     }
+
     .controler-signs {
         right: 30px;
     }
+
     .card-header .controler-signs span:last-child {
         top: -3px;
     }
+
     .controler-signs span {
         width: 25px;
         height: 3px;
     }
+
     .contact-us {
         padding: 100px 120px;
     }
+
     .contact-us h3 {
         font-size: 45px;
         margin-bottom: 60px;
     }
+
     .contact-us p {
         font-size: 22px;
         margin-bottom: 70px;
         padding: 0 43px;
     }
+
     .loyalty-program {
         padding: 100px 90px;
     }
+
     .inner-content-wrap {
         padding: 90px;
     }
+
     .loyalty-program h2 {
         font-size: 65px;
         margin-bottom: 80px;
     }
+
     .loyalty-program h4 {
         font-size: 25px;
         margin-bottom: 20px;
     }
+
     .loyalty-program p {
         font-size: 16px;
         margin-bottom: 20px;
     }
+
     .loyalty-program h5 {
         font-size: 28px;
         margin: 50px 0 40px;
     }
+
     .safety-compliance h3 {
         font-size: 28px;
         line-height: 35px;
         margin-bottom: 30px;
     }
+
     .safety-compliance ul li {
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 25px;
     }
+
     footer .contact-form h5 {
         font-size: 40px;
         line-height: 35px;
@@ -2286,6 +2487,15 @@ footer a.download-btn:hover {
 
     .chat-box button img {
         width: 130px;
+    }
+    .contact-us h3{
+        font-size:38px;
+    }
+    a.contact-dot-verfication {
+        font-size: 38px;
+    }
+    a.employ-ver{
+        font-size:38px;
     }
 }
 
@@ -2385,187 +2595,235 @@ footer a.download-btn:hover {
         font-size: 45px;
         margin-bottom: 60px;
     }
+
     .our-team .team-caption {
-	    padding: 20px 10px;
-	}
-	.our-team .team-caption h5 {
-	    font-size: 25px;
-	    margin-bottom: 10px;
-	}
-	.our-team .team-caption ul li img {
-	    width: 20px;
-	}
-	.our-team .team-caption span {
-	    font-size: 16px;
-	    margin-bottom: 10px;
-	}
-	.our-team .team-caption ul li {
-	    padding: 0 5px;
-	}
-	.our-team .team-col {
-	    margin-bottom: 40px;
-	}
-	.our-team .team-detail h6 {
-	    font-size: 20px;
-	    line-height: 25px;
-	    margin-bottom: 30px;
-	}
+        padding: 20px 10px;
+    }
+
+    .our-team .team-caption h5 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .our-team .team-caption ul li img {
+        width: 20px;
+    }
+
+    .our-team .team-caption span {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .our-team .team-caption ul li {
+        padding: 0 5px;
+    }
+
+    .our-team .team-col {
+        margin-bottom: 40px;
+    }
+
+    .our-team .team-detail h6 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
     .techy-difference {
         padding: 100px 70px;
     }
+
     .techy-caption-box {
         padding: 45px 30px;
     }
+
     .techy-caption-box h3 {
         margin-bottom: 25px;
     }
+
     .staff-firm {
         padding: 80px 80px 50px;
     }
+
     .staff-firm h2 {
         font-size: 40px;
         margin-bottom: 50px;
     }
+
     .staff-firm .firm-col .firm-col-head h4 {
         font-size: 100px;
     }
+
     .staff-firm .firm-col .firm-col-head span {
         font-size: 20px;
         line-height: 25px;
     }
+
     .staff-firm .firm-col .firm-col-head img {
         width: 35px;
     }
+
     .staff-firm .firm-col .firm-col-head span {
         font-size: 18px;
         line-height: 20px;
     }
+
     .staff-firm .firm-col p {
         font-size: 18px;
     }
+
     .our-services {
         padding: 90px 20px 90px 0;
     }
+
     .our-services .service-detail {
         padding: 0 25px;
     }
+
     .our-services .service-detail h3 {
         font-size: 45px;
         margin-bottom: 40px;
     }
+
     .our-services .service-detail p {
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 30px;
     }
+
     .contractors {
         padding: 90px 30px 100px 0;
     }
+
     .contractor-caption-box {
         padding-left: 10px;
     }
+
     .contractor-caption-box h3 {
         font-size: 50px;
         margin-bottom: 30px;
     }
+
     .contractor-caption-box p {
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 20px;
     }
+
     .contractor-caption-box a {
         font-size: 20px;
         line-height: 20px;
         padding: 15px 40px;
     }
+
     .information {
         padding: 80px 20px 90px;
     }
+
     .information .card-header button {
         padding: 15px 20px 15px 30px;
         font-size: 18px;
     }
+
     .information .card-body {
         padding: 15px 20px 20px;
         font-size: 16px;
         line-height: 22px;
     }
+
     .controler-signs {
         right: 20px;
     }
+
     .card-header .controler-signs span:last-child {
         top: -3px;
     }
+
     .controler-signs span {
         width: 20px;
         height: 3px;
     }
+
     .contact-us {
         padding: 90px 70px;
     }
+
     .contact-us h3 {
         font-size: 40px;
         margin-bottom: 50px;
     }
+
     .contact-us p {
         margin-bottom: 60px;
         padding: 0 40px;
     }
+
     .contact-us .contact-form {
         max-width: 100%;
         padding: 100px 50px;
     }
+
     .contact-us .contact-form h4 {
         font-size: 35px;
     }
+
     .contact-us .contact-form label {
         font-size: 25px;
     }
+
     .contact-us .contact-form input.input-field {
         font-size: 25px;
         height: 40px;
         margin-bottom: 40px;
     }
+
     .contact-us .contact-form {
         max-width: 100%;
         padding: 70px 30px;
     }
+
     .contact-us .contact-form label {
         font-size: 20px;
     }
+
     .contact-us .contact-form input.input-field {
         font-size: 20px;
         height: 35px;
         margin-bottom: 30px;
         border-bottom: 1px solid #c8c8c8;
     }
+
     .contact-us .contact-form textarea {
         font-size: 25px;
         height: 70px;
         margin-bottom: 70px;
     }
+
     /* .contact-us .contact-form button  */
-     .contact-us .wpcf7-form-control .wpcf7-submit .form-control{
+    .contact-us .wpcf7-form-control .wpcf7-submit .form-control {
         line-height: 60px;
         padding: 0 30px;
         font-size: 20px;
         height: 60px;
         width: 210px;
         /* background-color:green; */
-        
+
     }
+
     .loyalty-program {
         padding: 90px 80px;
     }
+
     .inner-content-wrap {
         padding: 80px;
     }
+
     .loyalty-program h2 {
         font-size: 50px;
         margin-bottom: 70px;
     }
 
 }
+
 /* 404 page */
 .page-404 {
     padding: 140px 0 97px;
@@ -2690,103 +2948,133 @@ footer a.download-btn:hover {
     .our-team p {
         margin-bottom: 50px;
     }
+
     .our-team .team-col {
-	    margin-bottom: 30px;
-	}
-	.team-detail {
-	    margin-top: 40px;
-	}
+        margin-bottom: 30px;
+    }
+
+    .team-detail {
+        margin-top: 40px;
+    }
+
     .techy-caption-box {
         margin-left: 0;
     }
+
     .staff-firm {
         padding: 75px 50px 50px;
     }
+
     .staff-firm {
         padding: 75px 0 50px;
     }
+
     .staff-firm h2 {
         font-size: 30px;
     }
+
     .our-services {
         padding: 80px 0;
     }
+
     .our-services .service-detail {
         padding: 0 25px;
         margin-bottom: 40px;
     }
+
     .our-services .service-col {
         padding: 35px 10px 40px;
         margin-top: 30px;
         margin-bottom: 0;
     }
+
     .contractors {
         padding: 100px 70px;
     }
+
     .contractor-caption-box {
         padding-left: 0;
         margin-top: 30px;
     }
+
     .information {
         padding: 75px 15px 80px;
     }
+
     .information h6 {
         font-size: 22px;
         margin-bottom: 15px;
     }
+
     .information h2 {
         font-size: 30px;
         margin-bottom: 40px;
     }
+
     .information .card-header button {
         padding: 13px 10px 13px 20px;
         font-size: 16px;
     }
+
     .information .card-body {
         padding: 10px 10px 15px;
         font-size: 14px;
         line-height: 20px;
     }
+
     .contact-us {
         padding: 80px 50px;
     }
+
     .contact-us h3 {
         font-size: 30px;
         margin-bottom: 40px;
     }
+
     .contact-us p {
         margin-bottom: 50px;
         padding: 0 10px;
     }
+
     .loyalty-program {
         padding: 80px 70px;
     }
+
     .inner-content-wrap {
         padding: 70px;
     }
+
     .loyalty-program h2 {
         font-size: 35px;
         margin-bottom: 50px;
     }
-    .program-bnr, .safety-bnr {
+
+    .program-bnr,
+    .safety-bnr {
         margin-top: 40px;
     }
-    .program-bnr, .safety-bnr img {
+
+    .program-bnr,
+    .safety-bnr img {
         display: block;
         margin: 0 auto;
     }
+
     .benefits-col img {
         max-width: 180px;
     }
+
     .benefits-col ul {
         padding: 0 0 0 15px;
     }
+
     footer .ftr-right {
         padding: 100px 0 90px 0px;
     }
 }
 
 @media screen and (max-width: 767px) {
+
     header {
         height: 85px;
         padding: 20px 0;
@@ -2933,42 +3221,52 @@ footer a.download-btn:hover {
     }
 
     .our-team .nav-tabs .nav-link {
-	    padding: 15px;
-	    font-size: 14px;
-	}
-	.our-team .tab-content {
-	    padding: 20px;
-	}
-	.our-team .nav-tabs .nav-link img {
-	    margin-right: 5px;
-	}
-	.our-team .tab-content p {
-	    font-size: 16px;
-	    line-height: 20px;
-	    margin-bottom: 15px;
-	}
-	.our-team .team-detail p {
-	    font-size: 16px;
-	    line-height: 20px;
-	    margin-bottom: 20px;
-	}
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .our-team .tab-content {
+        padding: 20px;
+    }
+
+    .our-team .nav-tabs .nav-link img {
+        margin-right: 5px;
+    }
+
+    .our-team .tab-content p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .our-team .team-detail p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
     .techy-difference {
         padding: 70px 50px;
     }
+
     .staff-firm {
         padding: 70px 0px;
     }
+
     .staff-firm h2 {
         font-size: 25px;
         margin-bottom: 30px;
     }
+
     .firm-col {
         margin-bottom: 40px;
     }
+
     .staff-firm .firm-col .firm-col-head {
         margin-bottom: 50px;
         justify-content: center !important;
     }
+
     .staff-firm .firm-col p {
         text-align: center;
     }
@@ -2976,72 +3274,89 @@ footer a.download-btn:hover {
     .our-services {
         padding: 70px 0;
     }
+
     .contractors {
         padding: 70px 50px;
     }
+
     .contractor-caption-box h3 {
         font-size: 40px;
         margin-bottom: 25px;
     }
+
     .our-services .service-col {
         text-align: center;
     }
+
     .information {
         padding: 70px 0;
     }
+
     .controler-signs {
         right: 10px;
     }
+
     .contact-us {
-        padding: 70px 0;
+        padding: 0 !important;
     }
+
     .contact-us h3 {
         font-size: 25px;
         margin-bottom: 30px;
     }
+
     .contact-us p {
         font-size: 20px;
         margin-bottom: 40px;
         padding: 0;
     }
 
-
     .contact-us .contact-form button img {
         margin-left: 20px;
     }
+
     .loyalty-program {
         padding: 70px 15px;
     }
+
     .inner-content-wrap {
         padding: 50px 30px;
     }
+
     .loyalty-program h2 {
         font-size: 30px;
         margin-bottom: 40px;
     }
+
     .loyalty-program h4 {
         font-size: 22px;
         margin-bottom: 15px;
     }
+
     .loyalty-program p {
         font-size: 14px;
         margin-bottom: 15px;
     }
+
     .loyalty-program h5 {
         font-size: 25px;
     }
+
     .benefits-col img {
         max-width: 150px;
     }
+
     .safety-compliance h3 {
         font-size: 25px;
         margin-bottom: 25px;
     }
+
     .safety-compliance ul li {
         font-size: 16px;
         line-height: 20px;
         padding-left: 20px;
     }
+
     footer .copy-rights {
         padding: 20px 0;
     }
@@ -3079,8 +3394,8 @@ footer a.download-btn:hover {
     }
 
     footer .contact-detail p {
-        font-size: 16px;
-        padding-left: 15px;
+        font-size: 12px;
+        padding-left: 10px;
     }
 
     footer .contact-icon {
@@ -3182,65 +3497,81 @@ footer a.download-btn:hover {
         font-size: 18px;
         line-height: 22px;
     }
+
     .techy-difference {
         padding: 70px 30px;
     }
+
     .staff-firm h2 {
         font-size: 20px;
         margin-bottom: 20px;
         line-height: 25px;
     }
+
     .our-services .service-detail {
         padding: 0 15px;
     }
+
     .our-services .service-detail h3 {
         font-size: 35px;
         margin-bottom: 30px;
     }
+
     .contractors {
         padding: 70px 30px;
     }
+
     .contractor-caption-box h3 {
         font-size: 35px;
         margin-bottom: 20px;
     }
+
     .contractor-caption-box p {
         font-size: 16px;
         line-height: 20px;
     }
+
     .contractor-caption-box a {
         font-size: 18px;
         padding: 10px 30px;
     }
+
     .information h6 {
         font-size: 20px;
         margin-bottom: 15px;
     }
+
     .information h2 {
         font-size: 25px;
         margin-bottom: 30px;
     }
-    
+
     .contact-us h3 {
         font-size: 20px;
     }
+
     .contact-us p {
         font-size: 18px;
         margin-bottom: 30px;
     }
+
     .benefits-col {
         margin-bottom: 50px;
     }
+
     .benefits-col ul {
         padding: 0 0 0 85px;
     }
+
     .benefits-col h6 {
         font-size: 16px;
         margin-bottom: 20px;
     }
+
     .benefits-col ul li {
         font-size: 16px;
     }
+
     footer .copy-rights p {
         font-size: 16px;
     }
@@ -3273,6 +3604,20 @@ footer a.download-btn:hover {
 
     .chat-box button img {
         width: 90px;
+    }
+    .contact-detail {
+        margin-top: 20px;
+    }
+    a.contact-dot-verfication {
+        font-size: 21px;
+
+    }
+
+    a.employ-ver {
+        font-size: 21px;
+    }
+    .contact-us{
+        padding: 10px;
     }
 }
 
@@ -3311,29 +3656,37 @@ footer a.download-btn:hover {
         font-size: 17px;
         line-height: 20px;
     }
+
     .techy-difference {
         padding: 70px 15px;
     }
+
     .techy-caption-box {
         padding: 40px 25px;
     }
+
     .techy-caption-box h3 {
         font-size: 25px;
     }
+
     .techy-caption-box p {
         font-size: 14px;
         line-height: 18px;
     }
+
     .contractors {
         padding: 70px 15px;
     }
+
     .information .card-header button {
         padding: 10px;
         font-size: 15px;
     }
+
     .benefits-col {
         margin-bottom: 40px;
     }
+
     footer .subscriber .subscribe {
         width: 200px;
     }
@@ -3341,23 +3694,46 @@ footer a.download-btn:hover {
     .chat-box button img {
         width: 80px;
     }
+
     .benefits-col ul {
         padding: 0 0 0 35px;
     }
+    .contact-detail {
+        margin-top: 15px;
+    }
+    a.contact-dot-verfication {
+        font-size: 18px;
+
+    }
+
+    a.employ-ver {
+        font-size: 18px;
+    }
+    .contact-us {
+        padding: 10px;
+    }
+   
 
 }
+
 @media screen and (max-width: 375px) {
     .inner-content-wrap {
         padding: 40px 15px;
     }
+
     .loyalty-program h5 {
         font-size: 22px;
     }
+
     .benefits-col ul {
         padding: 0 0 0 10px;
     }
+
     .loyalty-program h2 {
         font-size: 25px;
+    }
+    .contact-us {
+        padding: 10px;
     }
 }
 
@@ -3366,7 +3742,7 @@ footer a.download-btn:hover {
 
 /* CONTACT */
 .contact-banner {
-    
+
     background-size: cover;
     padding: 115px 15px 515px 80px;
 }
@@ -3470,31 +3846,31 @@ footer a.download-btn:hover {
 }
 
 /* .contact-us .contact-form button  */
- .contact-us input.wpcf7-form-control.wpcf7-submit {
-        background: #a714c6;
-        line-height: 67px;
-        padding: 0 40px;
-        border: none;
-        border-radius: 50px;
-        outline: none;
-        color: #ffffff;
-        font-size: 22px;
-        letter-spacing: 1px;
-        height: 67px;
-        font-weight: 500;
-        width: 233px;
-        box-shadow: 0 20px 45px 0 #acb9c7;
-        display: flex;
-        align-items: center;
-        justify-content: center;  
-        }
+.contact-us input.wpcf7-form-control.wpcf7-submit {
+    background: #a714c6;
+    line-height: 67px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    height: 67px;
+    font-weight: 500;
+    width: 233px;
+    box-shadow: 0 20px 45px 0 #acb9c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 
 /* extras */
 
 
- .wpcf7-validation-errors,
+.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
     border: 2px solid #00c7b7;
     color: white;
@@ -3507,14 +3883,14 @@ div.wpcf7-mail-sent-ok {
 }
 
 div.wpcf7-validation-errors,
-div.wpcf7-acceptance-missing{
-   border: 2px solid #00c7b7;
-   color: white;
+div.wpcf7-acceptance-missing {
+    border: 2px solid #00c7b7;
+    color: white;
 }
 
 
 
-a.service-btn{
+a.service-btn {
     font-size: 36px;
     line-height: 28px;
     color: #ffffff;
@@ -3529,18 +3905,20 @@ a.service-btn{
 }
 
 a.service-btn:hover {
-    background:#00c7b7;
+    background: #00c7b7;
 
 }
-.team-qoute{
-    color:white !important;
-    font-style:italic;
-    font-size:18px !important;
+
+.team-qoute {
+    color: white !important;
+    font-style: italic;
+    font-size: 18px !important;
 
 }
-.team-designation{
+
+.team-designation {
     color: #a714c6 !important;
-    
+
 }
 
 
@@ -3556,7 +3934,7 @@ a.service-btn:hover {
 
 footer .ftr-menu ul li a {
     font-size: 24px;
-    color:#00d4e0;
+    color: #00d4e0;
 }
 
 .wp-video {
@@ -3564,29 +3942,61 @@ footer .ftr-menu ul li a {
     height: auto;
     margin-top: 100px;
 }
+
 .our-services .service-col ul {
     text-align: left;
 }
 
-.loyalty-program p:last-child{
-    font-size:21px;
+.loyalty-program p:last-child {
+    font-size: 21px;
     font-weight: 500;
+}
+
+.contact-detail {
+    margin-top: 60px;
+}
+
+.submit-center {
+    display: flex;
+    justify-content: center;
 }
 
 a.contact-dot-verfication {
     color: #a714c6;
-    font-size: 21px;
-
 }
+
 a.employ-ver {
     color: #04d5e0;
-    font-size:20px;
+
 }
 
- .contact-detail {
-     margin-top: 25px;
- }
- .submit-center {
-     display: flex;
-     justify-content: center;
- }
+@media only screen and (max-width: 767px) {
+    .banner {
+        background-position: 69% center;
+    }
+    .inner-page-bnr {
+        padding: 100px 0 250px;
+        background-size: cover;
+        background-position: 45% center;
+    }
+    .contractor-banner.inner-page-bnr {
+        background-size: cover;
+        background-position: 25% center;
+
+    }
+}
+
+
+h1.entry-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.entry-content p {
+    font-size: 21px;
+    text-align: start;
+}
+
+.general-page{
+    padding: 198px 230px 160px;
+}
