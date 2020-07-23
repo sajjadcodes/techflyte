@@ -3998,5 +3998,7 @@ h1.entry-title {
 }
 
 .general-page{
-    padding: 198px 230px 160px;
+    padding: 80px 0px;
+    max-width:1050px;
+    margin: 0 auto;
 }
