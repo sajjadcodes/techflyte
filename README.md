@@ -1,2 +1,2 @@
-# techflyte
+# Techflyte
 Techflyte is  hiring platform
