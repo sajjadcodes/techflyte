@@ -14,7 +14,6 @@ function tech_partner_cpt_init() {
     'search_items'       => __( 'Search Partner' ),
     'not_found'          => __( 'No Partner found' ),
     'not_found_in_trash' => __( 'No Partner found in the Trash' ), 
-    'parent_item_colon'  => ’,
     'menu_name'          => 'Techflyte Partner'
   );
   $args = array(

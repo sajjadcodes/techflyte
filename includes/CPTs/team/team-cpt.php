@@ -15,7 +15,6 @@ function tech_team_cpt_init() {
     'search_items'       => __( 'Search Members' ),
     'not_found'          => __( 'No Members found' ),
     'not_found_in_trash' => __( 'No Members found in the Trash' ), 
-    'parent_item_colon'  => ’,
     'menu_name'          => 'Techflyte Team'
   );
   $args = array(
@@ -33,9 +32,9 @@ function tech_team_cpt_init() {
   register_post_type( 'team', $args ); 
 }
 
+add_action('init', 'tech_team_cpt_init');
 
-
-function my_rewrite_flush() {
-    tech_team_cpt_init();
-    flush_rewrite_rules();
-}
+// function my_rewrite_flush() {
+//     tech_team_cpt_init();
+//     flush_rewrite_rules();
+// }

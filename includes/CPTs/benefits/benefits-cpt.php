@@ -14,7 +14,6 @@ function tech_benefits_cpt_init() {
     'search_items'       => __( 'Search Benefits' ),
     'not_found'          => __( 'No Benefits found' ),
     'not_found_in_trash' => __( 'No Benefits found in the Trash' ), 
-    'parent_item_colon'  => ’,
     'menu_name'          => 'Techflyte Benefits'
   );
   $args = array(

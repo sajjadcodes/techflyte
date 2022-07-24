@@ -1,9 +1,7 @@
 <?php 
 
-
-
 // Exit if accessed directly
-			defined('ABSPATH') || exit;
+	defined('ABSPATH') || exit;
 
 	// includes
 			$techflyte_includes = array(
@@ -11,28 +9,27 @@
 				'/includes/front/enqueue.php',
 				'/includes/customizer.php',
 				'includes/cpts/team/team-cpt.php',
+				'includes/cpts/faq/faq-cpt.php',
 				'includes/cpts/benefits/benefits-cpt.php',
 				'includes/cpts/partner/partner-cpt.php',
 			);
-			foreach($techflyte_includes as $file){
-				include(get_theme_file_path($file)); 
 
+			foreach($techflyte_includes as $file){
+				
+				require_once(get_theme_file_path($file)); 
 			}
 
-			
-
+		
 // hook
 			$techflyte_init_hooks = array(
 				'tech_team_cpt_init',
 				'tech_faq_cpt_init',
 				'tech_benefits_cpt_init',
 				'tech_partner_cpt_init',
-
 			);
 
-		foreach($techflyte_init_hooks as $flyte_hooks){
-
-			add_action('init',$flyte_hooks);
+		foreach($techflyte_init_hooks as $flyte_hook){
+			add_action('init',$flyte_hook);
 		}
 
  
