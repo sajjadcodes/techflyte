@@ -14,7 +14,7 @@ function tech_faq_cpt_init() {
     'search_items'       => __( 'Search Questions' ),
     'not_found'          => __( 'No Questions found' ),
     'not_found_in_trash' => __( 'No Questions found in the Trash' ), 
-    'parent_item_colon'  => ’,
+    'parent_item_colon'  => __( 'Parent FAQs:', 'textdomain' ),
     'menu_name'          => 'Techflyte FAQ'
   );
   $args = array(
